@@ -1,0 +1,78 @@
+@use '@angular/material' as mat;
+
+// Define your custom palette
+$custom-accent-palette: (
+  50: #dddae9,
+  100: #c2b8e0,
+  300: #917adb,
+  500: #5632D0,
+  700: #3d12c9,
+  900: #3d12c9,
+  contrast: (
+    50: #07074D,
+    100: #07074D,
+    300: #07074D,
+    500: #FFF,
+    700: #FFF,
+    900: #FFF,
+  )
+);
+
+$custom-primary-palette: (
+  50: #7a7a91,
+  100: #575781,
+  200: #48487a,
+  300: #29295f,
+  400: #16165a,
+  500: #07074D,
+  700: #030349,
+  900: #000044,
+  contrast: (
+    50: #000,
+    100: #FFF,
+    300: #FFF,
+    500: #FFF,
+    700: #FFF,
+    900: #FFF,
+  )
+);
+
+$custom-tertiary-palette: (
+  50: #e8e9c2,
+  100: #e7e985,
+  300: #eaec6c,
+  500: #E2E71B,
+  700: #e4e70f,
+  900: #e2e601,
+  contrast: (
+    50: #07074D,
+    100: #07074D,
+    300: #07074D,
+    500: #07074D,
+    700: #07074D,
+    900: #07074D,
+  )
+);
+
+$custom-primary: mat.m2-define-palette($custom-primary-palette, 500, 300);
+$custom-accent: mat.m2-define-palette($custom-accent-palette);
+$custom-warn: mat.m2-define-palette($custom-tertiary-palette);
+
+// Define your theme
+$custom-theme: mat.m2-define-light-theme((
+  color: (
+    primary: $custom-primary,
+    accent: $custom-accent,
+    warn: $custom-warn,
+  ),
+  typography: (
+    brand-family: 'Comic Sans',
+    bold-weight: 900
+  ),
+  density: (
+    scale: -1
+  )
+));
+
+// Include the theme
+@include mat.all-component-themes($custom-theme);

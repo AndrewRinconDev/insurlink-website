@@ -27,7 +27,10 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/fonts/styles.css",
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/assets/styles/theme.styles.scss",
+              "src/assets/styles/styles.css"
             ],
             "scripts": []
           },
@@ -85,6 +88,7 @@
               }
             ],
             "styles": [
+              "src/theme.styles.scss",
               "src/styles.css"
             ],
             "scripts": []

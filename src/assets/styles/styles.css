@@ -1,0 +1,36 @@
+:root {
+  --primaryColor: #5632D0;
+  --secondaryColor: #07074D;
+  --tertiaryColor: #E2E71B;
+  --mat-menu-item-label-text-font: 'Sofia Pro Light' !important;
+  --mat-menu-item-label-text-size: 16px !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Sofia Pro Light' !important; }
+
+.gradient {
+  background: linear-gradient(90deg, #5632D0 0%, #07074D 100%);
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+::ng-deep .primary-bg {
+  background-color: #5632D0 !important;
+}
+
+::ng-deep .secondary-bg {
+  background-color: #07074D !important;
+}
+
+::ng-deep .tertiary-bg {
+  background-color: #E2E71B !important;
+}
+
+::ng-deep .white-text {
+  color: white;
+}
+
+

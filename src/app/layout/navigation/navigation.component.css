@@ -1,0 +1,100 @@
+div, button, a, p, h1, h2, h3, h4, h5, h6, span, mat-toolbar, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{ 
+  font-family: var(--mat-menu-item-label-text-font) !important;
+}
+
+.nav-toolbar {
+  height: 80px;
+}
+
+::ng-deep .max-width-none {
+  max-width: none !important;
+}
+
+::ng-deep .sidebar-bg {
+  background-color: var(--secondaryColor) !important;
+}
+
+::ng-deep .return-menu-bg {
+  background-color: #313166ee !important;
+  justify-content: flex-start !important;  
+}
+
+::ng-deep .sidebar-bg a,
+::ng-deep .white-text {
+  color: white !important;
+}
+
+::ng-deep .menu-button {
+  border-radius: inherit !important;
+  color: white !important;
+  display: flex !important;
+  width: 100% !important;
+}
+
+.menu-item-button {
+  justify-content: space-between !important;
+  gap: 10px !important;
+}
+
+.menu-item-button > mat-icon {
+  margin-right: 0px !important;
+  order: 2 !important;
+}
+
+::ng-deep .side-nav-items .mat-mdc-menu-submenu-icon {
+  color: white !important;
+}
+
+.desktop-navbar-items {
+  display: none;
+  flex-direction: row;
+}
+
+.desktop-navbar-items > button,
+.desktop-navbar-items a  {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.link-button,
+.side-nav-items > button,
+.desktop-navbar-items > button,
+.desktop-navbar-items a  {
+  font-size: 16px;
+}
+
+.side-nav-items{
+  width: 100vw !important;
+}
+
+.side-nav-container {
+  min-height: 100vh !important;
+}
+
+.main-desktop{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-navbar-items {
+    display: flex;
+  } 
+
+  #menuIcon,
+  .side-nav-container {
+    display: none;
+  }
+
+  .main-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop-navbar-items > button,
+.desktop-navbar-items > a  {
+    padding: 0 30px;
+    font-size: 18px;
+  }
+}
