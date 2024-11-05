@@ -1,12 +1,14 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { companyOptions, generalOptions, groupLifeOptions, individualLifeOptions, navOptions, personOptions } from '../../../constants/navOptions';
 import { CommonModule } from '@angular/common';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { LayoutService } from '../../services/layout.service';
 
 @Component({
   selector: 'app-navigation',
@@ -19,8 +21,8 @@ import { CommonModule } from '@angular/common';
     MatMenuModule,
     MatSidenavModule,
     CommonModule,
-    RouterOutlet,
-    RouterModule
+    RouterModule,
+    CdkAccordionModule
   ],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css',
@@ -33,13 +35,13 @@ export class NavigationComponent {
   personOptions = personOptions;
   companyOptions = companyOptions;
 
-  typeMenu: number = 1;// 1: person, 2: company
+  openMobileMenu: boolean = false;
 
-  selectTypeMenu(type: number) {
-    this.typeMenu = type;
+  constructor(public layoutService: LayoutService) {}
+
+  toggleMobileMenu() {
+    this.openMobileMenu = !this.openMobileMenu;
   }
-
-
 
   // @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger | undefined;
 

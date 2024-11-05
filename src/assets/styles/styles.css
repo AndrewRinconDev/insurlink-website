@@ -2,12 +2,18 @@
   --primaryColor: #5632D0;
   --secondaryColor: #07074D;
   --tertiaryColor: #E2E71B;
+  --primaryTextColor: #07074D;
+  --secondaryBGColor: rgba(7, 7, 77, 0.92);
+  --secondaryHoverColor: rgba(5, 5, 55, 0.6);
+  --secondaryHover2Color: rgba(3, 3, 33, 0.75);
+  --secondaryTextColor: white;
   --mat-menu-item-label-text-font: 'Sofia Pro Light' !important;
   --mat-menu-item-label-text-size: 16px !important;
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Sofia Pro Light' !important; }
+body { margin: 0; font-family: 'Sofia Pro Light' !important;}
+* { box-sizing: border-box; }
 
 .gradient {
   background: linear-gradient(90deg, #5632D0 0%, #07074D 100%);

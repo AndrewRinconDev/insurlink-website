@@ -8,10 +8,3 @@ export interface NavOption {
   subMenu?: NavOption[];
   route?: string;
 }
-
-// interface NavOption {
-//   id: number;
-//   name: string;
-//   menuName: string;
-//   submenu: PersonOption[] | CompanyOption[];
-// }
