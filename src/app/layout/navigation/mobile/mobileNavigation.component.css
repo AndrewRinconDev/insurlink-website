@@ -1,0 +1,129 @@
+div,
+button,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+mat-toolbar,
+.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+  font-family: var(--mat-menu-item-label-text-font) !important;
+}
+
+::ng-deep .max-width-none {
+  max-width: none !important;
+}
+
+::ng-deep .sidebar-bg {
+  background-color: var(--secondaryColor) !important;
+}
+
+::ng-deep .return-menu-bg {
+  background-color: var(--secondaryHoverColor) !important;
+  justify-content: flex-start !important;
+}
+
+::ng-deep .sidebar-bg a,
+::ng-deep .white-text {
+  color: white !important;
+}
+
+::ng-deep .menu-button {
+  background: transparent !important;
+  border-radius: inherit !important;
+  color: white !important;
+  display: flex !important;
+  width: 100% !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1), 0px 1px 18px 0px rgba(0, 0, 0, 0.09) !important; 
+}
+
+.menu-button > mat-icon {
+  margin-right: 0 !important;
+  order: 2 !important;
+}
+
+.sublevel-menu {
+  margin-left: 20px !important;
+}
+
+.sublevel-menu > mat-icon {
+  margin-right: 20px !important;
+  order: 2 !important;
+}
+
+::ng-deep .side-nav-items .mat-mdc-menu-submenu-icon {
+  color: white !important;
+}
+
+.link-button,
+.side-nav-items>button {
+  font-size: 16px;
+}
+
+.side-nav-items {
+  width: 100vw !important;
+}
+
+.sidebar-container {
+  position: fixed;
+  background: var(--secondaryColor);
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  z-index: 99;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar-container.sidebar-submenu-2,
+.sidebar-container.sidebar-submenu {
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-container.sidebar-submenu {
+  /* background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), var(--secondaryColor); */
+  z-index: 100 !important;
+}
+
+.sidebar-container.sidebar-submenu-2 {
+  /* background: linear-gradient(to right, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), var(--secondaryColor); */
+  z-index: 101 !important;
+}
+
+.sidebar-options-container {
+  padding: 80px 0 0;
+  color: white;
+}
+
+.back-button {
+  background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), var(--secondaryColor) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar-container {
+    display: none !important;
+  }
+
+  ::ng-deep .main-desktop {
+    display: block !important;
+  }
+}
+
+.accordion {
+  display: block;
+  width: 100%;
+}
+
+.accordion-item {
+  display: block;
+}
+
+.accordion-item-header {
+  display: flex;
+  width: 100%;
+}

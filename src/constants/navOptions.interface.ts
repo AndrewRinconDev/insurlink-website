@@ -5,6 +5,6 @@ export interface NavOption {
   id?: number;
   name: string;
   menuName: MatMenuPanel<any> | null;
-  subMenu?: NavOption[];
+  submenu?: NavOption[];
   route?: string;
 }

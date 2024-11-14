@@ -1,0 +1,64 @@
+div,
+button,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+mat-toolbar,
+.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+  font-family: var(--mat-menu-item-label-text-font) !important;
+}
+
+::ng-deep .max-width-none {
+  max-width: none !important;
+}
+
+::ng-deep .return-menu-bg {
+  background-color: var(--secondaryHoverColor) !important;
+  justify-content: flex-start !important;
+}
+
+.desktop-navbar-items {
+  display: none;
+  flex-direction: row;
+}
+
+.desktop-navbar-items>button,
+.desktop-navbar-items a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.link-button,
+.desktop-navbar-items>button,
+.desktop-navbar-items a {
+  font-size: 16px;
+}
+
+::ng-deep .main-desktop {
+  display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-navbar-items {
+    display: flex;
+  }
+
+  ::ng-deep .main-desktop {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop-navbar-items>button,
+  .desktop-navbar-items>a {
+    padding: 0 30px;
+    font-size: 18px;
+  }
+}

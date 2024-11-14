@@ -1,0 +1,49 @@
+<div [ngStyle]="{'width': isOpenMobileMenu ? '100vw' : 0}" class="sidebar-container">
+  <div class="sidebar-options-container">
+    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/">Inicio</a>
+    <button mat-fab extended class="menu-button" (click)="togglePortfolioMenu()">
+      <span>Portafolio</span>
+      <mat-icon color="white">chevron_right</mat-icon>
+    </button>
+    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/about">Nosotros</a>
+    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/blog">Blog</a>
+    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/qa">Q&A</a>
+    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/contact">Contactanos</a>
+  </div>
+</div>
+
+<div [ngStyle]="{'width': isOpenPortfolioMenu && isOpenMobileMenu ? '100vw' : 0}"
+  class="sidebar-container sidebar-submenu">
+  <div class="sidebar-options-container" *ngIf="portfolioOption">
+    <button mat-fab extended class="menu-button back-button" (click)="isOpenPortfolioMenu = false">
+      <span>{{portfolioOption.name}}</span>
+      <mat-icon color="white">arrow_back</mat-icon>
+    </button>
+    <div (click)="$event.stopPropagation();">
+      <button mat-button (click)="setPortfolioType(1)">Personas</button>
+      <button mat-button (click)="setPortfolioType(2)">Empresas</button>
+    </div>
+    <div *ngFor="let portfolioSubmenu of portfolioOption.submenu">
+      <a *ngIf="portfolioSubmenu.route" mat-fab extended class="menu-button sublevel-menu" [routerLink]="portfolioSubmenu.route"
+        (click)="toggleMobileMenu()">{{portfolioSubmenu.name}}</a>
+      <button *ngIf="!portfolioSubmenu.route" mat-fab extended class="menu-button sublevel-menu"
+        (click)="toggleSubmenu(portfolioSubmenu.id)">
+        <span>{{portfolioSubmenu.name}}</span>
+        <mat-icon color="white">chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div [ngStyle]="{'width': isOpenSubmenu && isOpenMobileMenu ? '100vw' : 0}" class="sidebar-container sidebar-submenu-2">
+  <div class="sidebar-options-container" *ngIf="submenuOption">
+    <button mat-fab extended class="menu-button back-button" (click)="isOpenSubmenu = false">
+      <span>{{submenuOption.name}}</span>
+      <mat-icon color="white">arrow_back</mat-icon>
+    </button>
+    <div *ngFor="let submenuOption of submenuOption.submenu">
+      <a *ngIf="submenuOption.route" mat-fab extended class="menu-button sublevel-menu" [routerLink]="submenuOption.route"
+        (click)="toggleMobileMenu()">{{submenuOption.name}}</a>
+    </div>
+  </div>
+</div>

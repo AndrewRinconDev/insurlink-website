@@ -1,0 +1,44 @@
+<div class="desktop-navbar-items">
+  <a mat-button style="position: relative;" routerLink="/group-life">Inicio</a>
+  <button mat-button [matMenuTriggerFor]="portfolio" style="position: relative;" class="menu-item-button">
+    <mat-icon color="white">keyboard_arrow_down</mat-icon>
+    <span>Portafolio</span>
+  </button>
+  <a mat-button style="position: relative;" routerLink="/about">Nosotros</a>
+  <a mat-button style="position: relative;" routerLink="/blog">Blog</a>
+  <a mat-button style="position: relative;" routerLink="/qa">Q&A</a>
+  <a mat-button style="position: relative;" routerLink="/contact">Contactanos</a>
+
+  <mat-menu #portfolio="matMenu" xPosition="after" color="primary" class="main-desktop">
+    <div (click)="$event.stopPropagation();">
+      <button mat-button (click)="layoutService.setTypeMenu(1)">Personas</button>
+      <button mat-button (click)="layoutService.setTypeMenu(2)">Empresas</button>
+    </div>
+    <!-- personas -->
+    <div *ngIf="layoutService.getTypeMenu() == 1">
+      <button mat-menu-item [matMenuTriggerFor]="individualLife">Vida Individual</button>
+      <button mat-menu-item [matMenuTriggerFor]="groupLife">Vida Grupo</button>
+      <button mat-menu-item [matMenuTriggerFor]="Generals">Generales</button>
+      <a mat-menu-item style="position: relative;" routerLink="/autos">Autos</a>
+      <a mat-menu-item style="position: relative;" routerLink="/pets">Mascotas</a>
+      <a mat-menu-item style="position: relative;" routerLink="/travel">Viaje</a>
+      <a mat-menu-item style="position: relative;" routerLink="/bikes">Bicicletas</a>
+    </div>
+    <!-- empresas -->
+    <div *ngIf="layoutService.getTypeMenu() == 2">
+      <a *ngFor="let companyOption of companyOptions" mat-menu-item style="position: relative;" [routerLink]="companyOption.route">{{companyOption.name}}</a>
+    </div>
+  </mat-menu>
+
+  <mat-menu #individualLife="matMenu">
+    <a *ngFor="let individualLifeOption of individualLifeOptions" mat-menu-item style="position: relative;" [routerLink]="individualLifeOption.route">{{individualLifeOption.name}}</a>
+  </mat-menu>
+
+  <mat-menu #groupLife="matMenu">
+    <a *ngFor="let groupLifeOption of groupLifeOptions" mat-menu-item style="position: relative;" [routerLink]="groupLifeOption.route">{{groupLifeOption.name}}</a>
+  </mat-menu>
+
+  <mat-menu #Generals="matMenu">
+    <a *ngFor="let generalOption of generalOptions" mat-menu-item style="position: relative;" [routerLink]="generalOption.route">{{generalOption.name}}</a>
+  </mat-menu>
+</div>

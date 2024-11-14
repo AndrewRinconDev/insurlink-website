@@ -80,13 +80,13 @@ export const personOptions = [
     id: 2,
     name: 'Vida Grupo',
     menuName: "group-life",
-    subMenu: groupLifeOptions,
+    submenu: groupLifeOptions,
   },
   {
     id: 3,
     name: 'Generales',
     menuName: "general",
-    subMenu: generalOptions,
+    submenu: generalOptions,
   },
   {
     id: 4,
@@ -158,4 +158,4 @@ export const navOptions = [
     menuName: "company",
     submenu: companyOptions,
   }
-];
+] as unknown as NavOption[];

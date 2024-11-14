@@ -16,48 +16,9 @@ mat-toolbar,
 
 .nav-toolbar {
   height: 80px !important;
-  z-index: 100 !important;
-  position: relative;
+  z-index: 200 !important;
+  position: fixed !important;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-::ng-deep .max-width-none {
-  max-width: none !important;
-}
-
-::ng-deep .sidebar-bg {
-  background-color: var(--secondaryColor) !important;
-}
-
-::ng-deep .return-menu-bg {
-  background-color: var(--secondaryHoverColor) !important;
-  justify-content: flex-start !important;
-}
-
-::ng-deep .sidebar-bg a,
-::ng-deep .white-text {
-  color: white !important;
-}
-
-::ng-deep .menu-button {
-  background: transparent !important;
-  border-radius: inherit !important;
-  color: white !important;
-  display: flex !important;
-  width: 100% !important;
-  justify-content: space-between !important;
-  gap: 10px !important;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1), 0px 1px 18px 0px rgba(0, 0, 0, 0.09) !important; 
-}
-
-::ng-deep .submenu-button {
-  background: var(--secondaryHoverColor) !important;
-  box-shadow: 0px 0px 5px 0px rgba(107, 107, 107, 0.14), 0px 1px 18px 0px rgba(107, 107, 107, 0.09) !important; 
-}
-
-::ng-deep .submenu-2-button {
-  background: var(--secondaryHover2Color) !important;
-  box-shadow: 0px 0px 5px 0px rgba(107, 107, 107, 0.14), 0px 1px 18px 0px rgba(107, 107, 107, 0.09) !important; 
 }
 
 .menu-button > mat-icon {
@@ -65,87 +26,8 @@ mat-toolbar,
   order: 2 !important;
 }
 
-::ng-deep .side-nav-items .mat-mdc-menu-submenu-icon {
-  color: white !important;
-}
-
-.desktop-navbar-items {
-  display: none;
-  flex-direction: row;
-}
-
-.desktop-navbar-items>button,
-.desktop-navbar-items a {
-  color: white;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-.link-button,
-.side-nav-items>button,
-.desktop-navbar-items>button,
-.desktop-navbar-items a {
-  font-size: 16px;
-}
-
-.side-nav-items {
-  width: 100vw !important;
-}
-
-.sidebar-container {
-  position: fixed;
-  background: var(--secondaryBGColor);
-  height: 100vh;
-  overflow: hidden;
-  top: 0;
-  z-index: 99;
-  transition: all 0.2s ease-in-out;
-}
-
-.sidebar-options-container {
-  padding: 100px 0 0;
-  color: white;
-}
-
-::ng-deep .main-desktop {
-  display: none !important;
-}
-
 @media screen and (min-width: 768px) {
-  .desktop-navbar-items {
-    display: flex;
-  }
-
-  #menuIcon,
-  .sidebar-container {
+  #menuIcon {
     display: none !important;
   }
-
-  ::ng-deep .main-desktop {
-    display: block !important;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-
-  .desktop-navbar-items>button,
-  .desktop-navbar-items>a {
-    padding: 0 30px;
-    font-size: 18px;
-  }
-}
-
-
-.accordion {
-  display: block;
-  width: 100%;
-}
-
-.accordion-item {
-  display: block;
-}
-
-.accordion-item-header {
-  display: flex;
-  width: 100%;
 }
