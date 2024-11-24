@@ -1,0 +1,68 @@
+<app-product-banner />
+<div class="content-container">
+  <mat-tab-group [selectedIndex]="(selectedProduct - 1)">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct(1)">
+          <mat-icon class="tab-icon-custom">volunteer_activism</mat-icon>
+          Seguro de vida
+        </div>
+      </ng-template>
+      Content 1
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct(2)">
+        <mat-icon class="tab-icon-custom">diversity_1</mat-icon>
+        Seguro vida grupo
+      </div>
+      </ng-template>
+      Content 2
+    </mat-tab>
+    <mat-tab class="tab-custom">
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct(3)">
+          <mat-icon class="tab-icon-custom">cottage</mat-icon>
+          Generales
+        </div>
+      </ng-template>
+      Content 3
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct(4)">
+          <mat-icon class="tab-icon-custom">directions_car</mat-icon>
+          Autos
+        </div>
+      </ng-template>
+      Content 4
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct(5)">
+          <mat-icon class="tab-icon-custom">pets</mat-icon>
+          Mascotas
+        </div>
+      </ng-template>
+      Content 5
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct(6)">
+          <mat-icon class="tab-icon-custom">flight</mat-icon>
+          Viaje
+        </div>
+      </ng-template>
+      Content 6
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct(7)">
+          <mat-icon class="tab-icon-custom">pedal_bike</mat-icon>
+          Bicicletas
+        </div>
+      </ng-template>
+      Content 7
+    </mat-tab>
+  </mat-tab-group>
+</div>

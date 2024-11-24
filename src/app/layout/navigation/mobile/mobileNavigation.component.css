@@ -100,6 +100,12 @@ mat-toolbar,
   color: white;
 }
 
+.sidebar-options-container .active {
+  color: var(--tertiaryColor) !important;
+  border-bottom: 3px solid var(--tertiaryColor);
+}
+
+
 .back-button {
   background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), var(--secondaryColor) !important;
 }

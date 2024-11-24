@@ -27,9 +27,8 @@ import { NavOption } from '../../../../constants/navOptions.interface';
 })
 export class MobileNavigationComponent implements OnInit {
   navOptions = navOptions;
-  isOpenPortfolioMenu: boolean = false;
-  isOpenSubmenu: boolean = false;
-  portfolioOption?: NavOption = {} as NavOption;
+  isOpenProductMenu: boolean = false;
+  ProductOption?: NavOption = {} as NavOption;
   submenuOption?: NavOption = {} as NavOption;
 
   @Input()
@@ -41,24 +40,21 @@ export class MobileNavigationComponent implements OnInit {
   constructor(public layoutService: LayoutService) {}
 
   ngOnInit() {
-    this.isOpenSubmenu = false;
+    // this.isOpenSubmenu = false;
   }
 
-  setPortfolioType(type: number) {
-    this.layoutService.setTypeMenu(type);
-    this.togglePortfolioMenu();
+  setPersonsType() {
+    this.layoutService.setTypeMenu(1);
+    this.toggleProductMenu(1);
   }
 
-  togglePortfolioMenu() {
-    this.isOpenPortfolioMenu = true;
-    
-    const typeMenu = this.layoutService.getTypeMenu();
-    this.portfolioOption = navOptions.find((option) => option.id === typeMenu);
+  setCompanyType() {
+    this.layoutService.setTypeMenu(2);
+    this.toggleProductMenu(2);
   }
 
-  toggleSubmenu(submenuId?: number) {
-    this.isOpenSubmenu = true;
-    
-    this.submenuOption = this.portfolioOption?.submenu?.find((submenu) => submenu.id === submenuId);
+  toggleProductMenu(type: number) {
+    this.isOpenProductMenu = true;    
+    this.ProductOption = navOptions.find((option) => option.id === type);
   }
 }

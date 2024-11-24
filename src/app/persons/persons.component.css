@@ -1,0 +1,54 @@
+/* tabs */
+
+/* ::ng-deep .mat-mdc-tab-label-container {
+  background-color: rgb(141, 115, 225) !important;
+
+} */
+
+::ng-deep .mdc-tab.mat-mdc-tab.mat-mdc-focus-indicator {
+  background-color: var(--secondaryColor);
+}
+
+::ng-deep .mat-mdc-tab-group,
+::ng-deep .mat-mdc-tab-nav-bar,
+::ng-deep .mat-mdc-tab .mat-mdc-tab-indicator__content--underline {
+  --mdc-tab-indicator-active-indicator-height: 0;
+  --mat-tab-header-inactive-focus-label-text-color: rgba(255, 255, 255, .9) !important;
+  --mat-tab-header-inactive-hover-label-text-color: rgba(255, 255, 255, .9) !important;
+  --mat-tab-header-active-focus-label-text-color: var(--secondaryColor) !important;
+  --mat-tab-header-active-hover-label-text-color: #fff !important;
+  --mat-tab-header-active-focus-indicator-color: var(--secondaryColor) !important;
+  --mat-tab-header-active-hover-indicator-color: #fff !important;
+  --mat-tab-header-active-label-text-color: var(--secondaryColor) !important;
+  --mdc-tab-indicator-active-indicator-color: var(--secondaryColor) !important;
+  --mat-tab-header-inactive-label-text-color: rgba(255, 255, 255, .6) !important;
+}
+
+::ng-deep .mdc-tab-indicator--active {
+  background-color: var(--tertiaryColor) !important;
+}
+
+::ng-deep .mdc-tab {
+  padding: 0 !important;
+}
+
+::ng-deep .mdc-tab__content,
+::ng-deep .mdc-tab__text-label,
+.tab-container-action {
+  width: 100%;
+  height: 100%;
+}
+
+.tab-container-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.tab-icon-custom {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+}

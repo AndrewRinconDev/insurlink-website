@@ -14,6 +14,10 @@ mat-toolbar,
   font-family: var(--mat-menu-item-label-text-font) !important;
 }
 
+::ng-deep .mat-mdc-menu-content {
+  min-width: 200px;
+}
+
 ::ng-deep .max-width-none {
   max-width: none !important;
 }
@@ -39,6 +43,20 @@ mat-toolbar,
 .desktop-navbar-items>button,
 .desktop-navbar-items a {
   font-size: 16px;
+}
+
+.desktop-navbar-items .active {
+  border-bottom: 3px solid var(--tertiaryColor);
+}
+
+::ng-deep .mat-mdc-menu-item.active-menu {
+  background: #07074d12;
+}
+
+.menu-item-button > mat-icon {
+  margin-right: 0 !important;
+  margin-left: 5px !important;
+  order: 2 !important;
 }
 
 ::ng-deep .main-desktop {

@@ -1,1 +1,8 @@
-* { margin: 0; font-family: 'Sofia Pro Light' !important; }
+* {
+  margin: 0;
+  font-family: 'Sofia Pro Light' !important;
+}
+
+.body-container {
+  padding-top: 80px;
+}

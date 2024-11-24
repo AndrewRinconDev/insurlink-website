@@ -73,75 +73,82 @@ export const personOptions = [
   {
     id: 1,
     name: 'Vida Individual',
-    menuName: "individual-life",
-    submenu: individualLifeOptions,
+    menuName: null,
+    route: '/persons/1',
   },
   {
     id: 2,
     name: 'Vida Grupo',
-    menuName: "group-life",
-    submenu: groupLifeOptions,
+    menuName: null,
+    route: '/persons/2',
   },
   {
     id: 3,
     name: 'Generales',
-    menuName: "general",
-    submenu: generalOptions,
+    menuName: null,
+    route: '/persons/3',
   },
   {
     id: 4,
     name: 'Autos',
     menuName: null,
-    route: '/autos',
+    route: '/persons/4',
   },
   {
     id: 5,
     name: 'Mascotas',
     menuName: null,
-    route: '/pets',
+    route: '/persons/5',
   },
   {
     id: 6,
     name: 'Viaje',
     menuName: null,
-    route: '/travel',
+    route: '/persons/6',
   },
   {
     id: 7,
     name: 'Bicicletas',
     menuName: null,
-    route: '/bikes',
+    route: '/persons/7',
   },
 ] as NavOption[];
 
 export const companyOptions = [
   {
+    id: 1,
     name: 'Cumplimiento',
-    route: '/compliance',
+    route: '/companies/1',
   },
   {
+    id: 2,
     name: 'RC',
-    route: '/rc',
+    route: '/companies/2',
   },
   {
+    id: 3,
     name: 'Lineas Financieras',
-    route: '/financial-lines',
+    route: '/companies/3',
   },
   {
+    id: 4,
     name: 'Todo Riesgo construcción',
-    route: '/all-risk-construction',
+    route: '/companies/4',
   },
   {
+    id: 5,
     name: 'Montaje',
-    route: '/assembly',
+    route: '/companies/5',
   },
   {
+    id: 6,
     name: 'Maquinaría y Equipo',
-    route: '/machinery-and-equipment',
+    route: '/companies/6',
   },
   {
+    id: 7,
     name: 'Transporte',
-    route: '/transport',
+    route: '/companies/7',
   }
 ] as NavOption[];
 
