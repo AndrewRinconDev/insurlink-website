@@ -53,6 +53,11 @@ mat-toolbar,
   background: #07074d12;
 }
 
+::ng-deep .mat-mdc-menu-item.active-menu .mat-mdc-menu-item-text {
+  color: var(--primaryColor) !important;
+  font-weight: bold !important;
+}
+
 .menu-item-button > mat-icon {
   margin-right: 0 !important;
   margin-left: 5px !important;

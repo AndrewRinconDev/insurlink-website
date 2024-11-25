@@ -1,5 +1,10 @@
 <div class="banner-container">
-  <div class="banner-overlay">
+  <div class="banner-image-container" [@bannerImage]="state">
+    <!-- <img [src]="selectedProductInfo.bannerImage" alt="product-banner" /> -->
+    <img src="/images/products/persons/drive.jpg" class="banner-image" alt="product-banner" />
+    <div class="overlay-image"></div>
+  </div>
+  <div class="banner-overlay" [@bannerContent]="state">
     <div class="banner-content">
       <h1>{{selectedProductInfo.name}}</h1>
       <p>{{selectedProductInfo.introduction}}</p>

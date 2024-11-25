@@ -4,12 +4,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterLinkActive, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { LayoutService } from '../../../services/layout.service';
 import { companyOptions, individualLifeOptions, groupLifeOptions, generalOptions, personOptions } from '../../../../constants/navOptions';
-import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-desktop-navigation',
