@@ -11,10 +11,16 @@ import { TooltipDirective } from '@coreui/angular';
 })
 export class OurAlliesComponent implements OnInit {
   allies = [
-    { name: 'Ally 1', image: '/images/insurlink-logo.png' },
-    { name: 'Ally 2', image: '/images/insurlink-logo.png' },
-    { name: 'Ally 3', image: '/images/insurlink-logo.png' },
-    { name: 'Ally 4', image: '/images/insurlink-logo.png' }
+    { name: 'Mapfre', image: '/images/logos/mapfre.png' },
+    { name: 'Allianz', image: '/images/logos/allianz.png' },
+    { name: 'HDI', image: '/images/logos/hdi.png' },
+    { name: 'Liberty Seguros', image: '/images/logos/liberty.png' },
+    { name: 'Chubb', image: '/images/logos/chubb.png' },
+    { name: 'BBVA', image: '/images/logos/bbva.png' },
+    { name: 'SBS', image: '/images/logos/sbs.png' },
+    { name: 'Mok Travel Assist', image: '/images/logos/mok.png' },
+    { name: 'Axa Colpatria', image: '/images/logos/axa.png' },
+    { name: 'Cesce', image: '/images/logos/cesce.png' },
   ];
   currentIndex = 0;
 

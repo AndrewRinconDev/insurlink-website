@@ -6,5 +6,10 @@
         <img cTooltip="{{ally.name}}" [src]="ally.image" alt="{{ally.name}}">
       </div>
     </div>
+    <div aria-hidden class="banner-content" *ngFor="let ally of allies">
+      <div class="image-container">
+        <img cTooltip="{{ally.name}}" [src]="ally.image" alt="{{ally.name}}">
+      </div>
+    </div>
   </div>
 </div>

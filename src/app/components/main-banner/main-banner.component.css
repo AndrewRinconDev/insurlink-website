@@ -1,8 +1,7 @@
 /* banner */
 
 .banner-container {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/main-banner.jpg');
-  background-position: center right;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,17 +11,21 @@
   width: 100vw;
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
-.banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, .65);
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(0 0, 70% 0%, 60% 100%, 0% 100%);
-  transition: all 2s linear;
+.banner-1 {
+  background-image: url('/images/home/main-banner-1.png');
+}
+
+.banner-2 {
+  background-image: url('/images/home/main-banner-2.png');
+}
+
+.banner-3 {
+  padding: 20px 10%;
+  background-image: url('/images/home/main-banner-3.png');
+  /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/home/main-banner-3.png'); */
 }
 
 .is-ready {
@@ -37,6 +40,7 @@
   gap: 30px;
   width: 350px;
   height: 100%;
+  z-index: 1;
 }
 
 .banner-content.bigger {
@@ -58,7 +62,7 @@
   padding: 0 60px;
 }
 
-.banner-content button {
+.banner-content a {
   margin-top: 30px;
   font-size: 24px;
   padding: 30px;
@@ -99,6 +103,20 @@
     justify-content: center !important;
   }
 
+  .banner-3 {
+    background-position: center right;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    transition: all 2s linear;
+  }
+
   .banner-content {
     width: 100%;
     gap: 10px;
@@ -114,7 +132,7 @@
     margin-bottom: 0;
   }
 
-  .banner-content button {
+  .banner-content a {
     font-size: 20px;
     padding: 24px;
     margin-top: 10px;
@@ -148,7 +166,7 @@
     padding: 0;
   }
 
-  .banner-content button {
+  .banner-content a {
     font-size: 20px;
     padding: 24px;
   }

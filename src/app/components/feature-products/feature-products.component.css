@@ -24,14 +24,15 @@
   border-radius: 70px;
   position: relative;
   transition: transform 0.5s;
-  padding: 30px 25px 60px 25px;
+  padding: 30px 25px 65px 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
 }
 
 .card img{
-  width: 160px;
+  width: 220px;
 }
 
 .card h2{
