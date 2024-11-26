@@ -1,0 +1,40 @@
+<div class="section-container">
+  <h1>En InsurLink, <b>simplificamos</b> y <b>optimizamos</b> tu experiencia con los seguros.</h1>
+  <h1>Así es como lo hacemos:</h1>
+  <div class="content-container">
+    <div class="image-container"></div>
+    <div class="content">
+      <div class="divider-container"></div>
+      <div *ngFor="let experience of insuranceExperienceData">
+        <h2>{{experience.title}}</h2>
+        <p>{{experience.description}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="rating-container">
+    <div class="rating-item">
+      <span>27</span>
+      <h1>Aseguradoras Aliadas</h1>
+    </div>
+    <div class="rating-item">
+      <span>XX+</span>
+      <h1>Pólizas emitidas</h1>
+    </div>
+    <div class="rating-item">
+      <span>XX+</span>
+      <h1>Líneas de Producto</h1>
+    </div>
+  </div>
+  <h1>Clientes que confian en nosotros</h1>
+  <div class="customers-container">
+    <div class="customer-item">
+      <img src="/images/logos/miniso.png" alt="">
+    </div>
+    <div class="customer-item">
+      <img src="/images/logos/farmacias-simi.png" alt="">
+    </div>
+    <div class="customer-item">
+      <img src="/images/logos/gabrica.png" alt="">
+    </div>
+  </div>
+</div>

@@ -10,11 +10,24 @@
   --secondaryTextColor: white;
   --mat-menu-item-label-text-font: 'Sofia Pro Light' !important;
   --mat-menu-item-label-text-size: 16px !important;
+  /* coreUI Theme */
+  --cui-indigo: var(--primaryColor);
+  --cui-blue: var(--secondaryColor);
+  --cui-yellow: var(--tertiaryColor);
+  --cui-primary: var(--secondaryColor);
+  --cui-info: var(--secondaryColor);
+  --cui-warning: var(--tertiaryColor);
+  --cui-font-sans-serif: 'Sofia Pro Light' !important;
+  --cui-body-font-family: var(--cui-font-sans-serif);
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Sofia Pro Light' !important;}
 * { box-sizing: border-box !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sofia Pro regular' !important;
+}
 
 .gradient {
   background: linear-gradient(90deg, var(--primaryColor) 0%, var(--secondaryColor) 100%);
