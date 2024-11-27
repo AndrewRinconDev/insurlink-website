@@ -122,7 +122,7 @@ export const companyOptions = [
   },
   {
     id: 2,
-    name: 'RC',
+    name: 'Responsabilidad Civil',
     route: '/companies/2',
   },
   {

@@ -67,6 +67,7 @@
   font-size: 24px;
   padding: 30px;
   border-radius: 30px;
+  text-align: center;
 }
 
 .carousel-container {
@@ -146,6 +147,10 @@
 @media screen and (max-width: 767px) {
   .banner-container {
     padding: 20px 10%;
+  }
+
+  .banner-2 {
+    background-position: center left;
   }
 
   .banner-container, 

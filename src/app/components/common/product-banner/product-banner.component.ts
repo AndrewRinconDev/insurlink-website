@@ -1,6 +1,6 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { personProductsData } from '../../../../constants/data/productData';
+import { companyProductsData, personProductsData } from '../../../../constants/data/productData';
 import {
   animate,
   state,
@@ -54,14 +54,18 @@ import { ActivatedRoute } from '@angular/router';
   ],
 })
 export class ProductBannerComponent implements AfterViewInit, OnInit {
+  @Input()
+  isPerson: boolean = true;
+
   selectedProductInfo: any;
-  productsInfo = personProductsData;
   selectedProduct: number = 1;
   isInitialized: boolean = false;
+  productsInfo: any[] = [];
   state = 'hidden';
-
-  constructor(private route: ActivatedRoute) {}
-
+  
+  constructor(private route: ActivatedRoute) {
+  }
+  
   ngAfterViewInit() {
     this.showState();
   }
@@ -71,8 +75,10 @@ export class ProductBannerComponent implements AfterViewInit, OnInit {
       this.state = 'shown';
     }, 100);
   }
-
+  
   ngOnInit() {
+    this.productsInfo = this.isPerson ? personProductsData : companyProductsData;
+    
     this.route.paramMap.subscribe((params) => {
       this.state = 'hidden';
       this.selectedProduct = Number(params.get('id')) ?? 1;
@@ -84,6 +90,7 @@ export class ProductBannerComponent implements AfterViewInit, OnInit {
   }
 
   getProductInfo(id: number) {
+    console.log(this.productsInfo, this.isPerson);
     this.selectedProductInfo = this.productsInfo.find(
       (product) => product.id === id
     );
