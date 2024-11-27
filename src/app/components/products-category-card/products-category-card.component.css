@@ -8,7 +8,7 @@
 }
 
 .card-container h1 {
-  color: var(--primaryColor);
+  color: var(--primaryTextColor);
   width: 100%;
   text-align: center;
   font-size: 3rem;

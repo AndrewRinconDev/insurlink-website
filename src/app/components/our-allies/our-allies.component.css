@@ -6,7 +6,7 @@
 }
 
 .section-container h1 {
-  color: var(--primaryColor);
+  color: var(--primaryTextColor);
   font-size: 3rem;
   text-align: center;
   margin: 0;

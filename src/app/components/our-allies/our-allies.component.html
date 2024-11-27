@@ -1,12 +1,12 @@
 <div class="section-container">
   <h1>Nuestros Aliados</h1>
   <div class="banner-container">
-    <div class="banner-content" *ngFor="let ally of allies">
+    <div class="banner-content remove-bg" *ngFor="let ally of allies">
       <div class="image-container">
         <img cTooltip="{{ally.name}}" [src]="ally.image" alt="{{ally.name}}">
       </div>
     </div>
-    <div aria-hidden class="banner-content" *ngFor="let ally of allies">
+    <div aria-hidden class="banner-content remove-bg" *ngFor="let ally of allies">
       <div class="image-container">
         <img cTooltip="{{ally.name}}" [src]="ally.image" alt="{{ally.name}}">
       </div>

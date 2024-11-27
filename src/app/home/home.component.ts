@@ -4,6 +4,7 @@ import { ProductsCategoryCardComponent } from '../components/products-category-c
 import { FeatureProductsComponent } from "../components/feature-products/feature-products.component";
 import { OurAlliesComponent } from "../components/our-allies/our-allies.component";
 import { InsuranceExperienceComponent } from "../components/insurance-experience/insurance-experience.component";
+import { CustomersComponent } from "../components/customers/customers.component";
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,8 @@ import { InsuranceExperienceComponent } from "../components/insurance-experience
     ProductsCategoryCardComponent,
     FeatureProductsComponent,
     OurAlliesComponent,
-    InsuranceExperienceComponent
+    InsuranceExperienceComponent,
+    CustomersComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

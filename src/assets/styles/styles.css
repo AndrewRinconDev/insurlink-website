@@ -37,6 +37,11 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1 1 auto;
 }
 
+.remove-bg {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+
 ::ng-deep .primary-bg {
   background-color: var(--primaryColor) !important;
 }
