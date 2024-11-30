@@ -1,0 +1,23 @@
+.banner-container {
+  background-image: url('/images/home/home-section.png');
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  background-attachment: fixed;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.banner-content {
+  width: 610px;
+  padding: 60px;
+  margin-left: 50px;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  color: #fff;
+}

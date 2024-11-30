@@ -5,6 +5,7 @@ import { FeatureProductsComponent } from "../components/feature-products/feature
 import { OurAlliesComponent } from "../components/our-allies/our-allies.component";
 import { InsuranceExperienceComponent } from "../components/insurance-experience/insurance-experience.component";
 import { CustomersComponent } from "../components/customers/customers.component";
+import { HomeBannerComponent } from "../components/home-banner/home-banner.component";
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,8 @@ import { CustomersComponent } from "../components/customers/customers.component"
     FeatureProductsComponent,
     OurAlliesComponent,
     InsuranceExperienceComponent,
-    CustomersComponent
+    CustomersComponent,
+    HomeBannerComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
