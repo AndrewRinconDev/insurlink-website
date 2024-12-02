@@ -36,6 +36,10 @@ mat-toolbar,
   flex-direction: row;
 }
 
+.desktop-navbar-items a:hover {
+  color: var(--tertiaryColor);
+}
+
 .desktop-navbar-items>button,
 .desktop-navbar-items a {
   color: white;

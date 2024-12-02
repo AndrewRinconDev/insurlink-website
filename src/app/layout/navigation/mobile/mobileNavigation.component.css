@@ -48,6 +48,10 @@ mat-toolbar,
   order: 2 !important;
 }
 
+.menu-button:hover {
+  color: var(--tertiaryColor);
+}
+
 .sublevel-menu {
   margin-left: 20px !important;
 }
@@ -110,7 +114,7 @@ mat-toolbar,
   background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), var(--secondaryColor) !important;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .sidebar-container {
     display: none !important;
   }

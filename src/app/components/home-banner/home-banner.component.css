@@ -21,3 +21,19 @@
   font-size: 48px;
   color: #fff;
 }
+
+@media screen and (max-width: 767px) {
+  .banner-container {
+    justify-content: center;
+  }
+  .banner-content {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .banner-content h1 {
+    font-size: 32px;
+  }
+  
+}
