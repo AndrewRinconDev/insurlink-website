@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  clip-path: polygon(0 0, 60% 0%, 50% 100%, 0% 100%);
+  /* clip-path: polygon(0 0, 60% 0%, 50% 100%, 0% 100%); */
 }
 
 .banner-image-container {
@@ -25,6 +25,8 @@
   right: 0;
   top: 0;
   overflow: hidden;
+  z-index: 1;
+  clip-path: ellipse(80% 200% at 80% 70%);
 }
 
 .banner-image {
