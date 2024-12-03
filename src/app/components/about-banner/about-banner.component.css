@@ -31,3 +31,23 @@
   color: white;
   text-align: center;
 }
+
+@media screen and (max-width: 1024px){
+  .about-content{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .about-content{
+    width: 100%;
+  }
+
+  .about-content h1{
+    font-size: 36px;
+  }
+
+  .about-content p{
+    font-size: 24px;
+  }
+}

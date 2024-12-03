@@ -26,4 +26,12 @@ export const routes: Routes = [
     path: 'companies/:id',
     component: CompaniesComponent,
   },
+  {
+    path: 'insurers',
+    component: HomeComponent,
+  },
+  {
+    path: 'contact',
+    component: HomeComponent,
+  },
 ];

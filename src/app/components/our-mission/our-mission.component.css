@@ -85,3 +85,9 @@
   margin-bottom: 0;
   color: #545454;
 }
+
+@media screen and (max-width: 767px) {
+  .our-mission-container > h1{
+    font-size: 36px;
+  }
+}
