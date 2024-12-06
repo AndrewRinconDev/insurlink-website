@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient {
-  background: linear-gradient(90deg, var(--primaryColor) 0%, var(--secondaryColor) 100%);
+  background: linear-gradient(45deg, var(--primaryColor) 0%, var(--secondaryColor) 100%);
 }
 
 .flex-spacer {
