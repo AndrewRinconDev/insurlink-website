@@ -1,0 +1,102 @@
+.our-innovation-section {
+  padding: 80px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondaryColor);
+}
+
+.our-innovation-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 50px;
+}
+
+.our-innovation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  width: calc(100% - 300px);
+  padding: 0 50px 100px 20px;
+  z-index: 1;
+}
+
+.our-innovation-content h1 {
+  font-size: 48px;
+  color: var(--tertiaryColor);
+}
+
+.our-innovation-content p {
+  font-size: 30px;
+  color: white;
+}
+
+.highlight-paragraph {
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.our-innovation-container img {
+  width: 400px;
+  max-width: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .our-innovation-section {
+    padding: 80px 20px;
+  }
+
+  .our-innovation-container {
+    gap: 20px;
+  }
+
+  .our-innovation-content {
+    width: 70%;
+    padding: 0 0 150px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-innovation-section {
+    padding: 50px 20px;
+  }
+
+  .our-innovation-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .our-innovation-content {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+
+  .our-innovation-content h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .our-innovation-content p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .our-innovation-container img {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    bottom: 0;
+  }
+  
+}

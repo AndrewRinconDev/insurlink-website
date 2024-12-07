@@ -76,7 +76,9 @@
     width: 100%;
     padding: 40px 20px 190px 20px;
   }
+}
 
+@media screen and (max-width: 768px) {
   .our-history-content h1 {
     font-size: 36px;
     margin-bottom: 20px;
