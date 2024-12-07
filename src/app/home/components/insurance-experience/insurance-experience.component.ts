@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { insuranceExperienceData } from '../../../constants/data/insuranceExperienceData';
 import { CommonModule } from '@angular/common';
+import { insuranceExperienceData } from '../../../../constants/data/insuranceExperienceData';
 
 @Component({
   selector: 'app-insurance-experience',

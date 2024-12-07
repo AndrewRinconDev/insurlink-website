@@ -3,7 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ProductBannerComponent } from '../components/common/product-banner/product-banner.component';
+import { ProductBannerComponent } from '../common/components/product-banner/product-banner.component';
 
 @Component({
   selector: 'app-persons',

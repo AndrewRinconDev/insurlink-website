@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { AboutBannerComponent } from "../components/about-banner/about-banner.component";
-import { OurMissionComponent } from "../components/our-mission/our-mission.component";
-import { OurHistoryComponent } from "../components/our-history/our-history.component";
-import { OurValuesComponent } from "../components/our-values/our-values.component";
+import { AboutBannerComponent } from './components/about-banner/about-banner.component';
+import { OurMissionComponent } from './components/our-mission/our-mission.component';
+import { OurHistoryComponent } from './components/our-history/our-history.component';
+import { OurValuesComponent } from './components/our-values/our-values.component';
+
 
 @Component({
   selector: 'app-about',
