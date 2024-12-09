@@ -1,0 +1,59 @@
+.pension-insure-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.pension-insure-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+
+}
+
+.pension-insure-container p {
+  font-size: 24px;
+  color: var(--primaryTextColor);
+}
+
+.pension-insure-coverage-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, var(--primaryColor) 0%, var(--secondaryColor) 100%);
+}
+
+.pension-insure-coverage-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 0 0;
+  gap: 10px;
+}
+.pension-insure-coverage-container h2,
+.pension-insure-coverage-content p {
+  color: white;
+}
+
+.pension-insure-coverage-content li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pension-insure-coverage-content mat-icon {
+  color: var(--tertiaryColor);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.pension-insure-coverage-content p {
+  margin: 0;
+  max-width: 90%;
+}

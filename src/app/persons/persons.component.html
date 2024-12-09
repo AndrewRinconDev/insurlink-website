@@ -1,68 +1,86 @@
 <app-product-banner [isPerson]="true" />
-<div class="content-container">
+<div class="persons-content-container">
   <mat-tab-group [selectedIndex]="(selectedProduct - 1)">
     <mat-tab>
       <ng-template mat-tab-label>
         <div class="tab-container-action" (click)="routeProduct(1)">
           <mat-icon class="tab-icon-custom">volunteer_activism</mat-icon>
-          Seguro de vida
+          Vida
         </div>
       </ng-template>
-      Content 1
+      <app-life-insure />
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
         <div class="tab-container-action" (click)="routeProduct(2)">
-        <mat-icon class="tab-icon-custom">diversity_1</mat-icon>
-        Seguro vida grupo
+        <mat-icon class="tab-icon-custom">health_and_safety</mat-icon>
+        Salud
       </div>
       </ng-template>
-      Content 2
+      <app-health-insure />
     </mat-tab>
     <mat-tab class="tab-custom">
       <ng-template mat-tab-label>
         <div class="tab-container-action" (click)="routeProduct(3)">
-          <mat-icon class="tab-icon-custom">cottage</mat-icon>
-          Generales
+          <mat-icon class="tab-icon-custom">school</mat-icon>
+          Educación
         </div>
       </ng-template>
-      Content 3
+      <app-education-insure />
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
         <div class="tab-container-action" (click)="routeProduct(4)">
-          <mat-icon class="tab-icon-custom">directions_car</mat-icon>
-          Autos
+          <mat-icon class="tab-icon-custom">savings</mat-icon>
+          Pensión
         </div>
       </ng-template>
-      Content 4
+      <app-pension-insure />
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
         <div class="tab-container-action" (click)="routeProduct(5)">
-          <mat-icon class="tab-icon-custom">pets</mat-icon>
-          Mascotas
+          <mat-icon class="tab-icon-custom">cottage</mat-icon>
+          Hogar
         </div>
       </ng-template>
-      Content 5
+      <app-home-insure />
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
         <div class="tab-container-action" (click)="routeProduct(6)">
-          <mat-icon class="tab-icon-custom">flight</mat-icon>
-          Viaje
+          <mat-icon class="tab-icon-custom">real_estate_agent</mat-icon>
+          Arriendo
         </div>
       </ng-template>
-      Content 6
+      <app-lease-insure />
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
         <div class="tab-container-action" (click)="routeProduct(7)">
+          <mat-icon class="tab-icon-custom">directions_car</mat-icon>
+          Autos
+        </div>
+      </ng-template>
+      <app-autos-insure />
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct(8)">
           <mat-icon class="tab-icon-custom">pedal_bike</mat-icon>
           Bicicletas
         </div>
       </ng-template>
-      Content 7
+      <app-bike-insure />
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct(9)">
+          <mat-icon class="tab-icon-custom">flight</mat-icon>
+          Viaje
+        </div>
+      </ng-template>
+      <app-flight-insure />
     </mat-tab>
   </mat-tab-group>
 </div>

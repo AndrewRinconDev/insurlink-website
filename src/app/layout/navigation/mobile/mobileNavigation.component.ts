@@ -57,4 +57,9 @@ export class MobileNavigationComponent implements OnInit {
     this.isOpenProductMenu = true;    
     this.ProductOption = navOptions.find((option) => option.id === type);
   }
+
+  goTop(){
+    window.scrollTo(0, 0);
+    this.toggleMobileMenu();
+  }
 }

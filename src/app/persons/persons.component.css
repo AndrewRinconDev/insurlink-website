@@ -5,13 +5,13 @@
 
 } */
 
-::ng-deep .mdc-tab.mat-mdc-tab.mat-mdc-focus-indicator {
+::ng-deep .persons-content-container .mdc-tab.mat-mdc-tab.mat-mdc-focus-indicator {
   background-color: var(--secondaryColor);
 }
 
-::ng-deep .mat-mdc-tab-group,
-::ng-deep .mat-mdc-tab-nav-bar,
-::ng-deep .mat-mdc-tab .mat-mdc-tab-indicator__content--underline {
+::ng-deep .persons-content-container .mat-mdc-tab-group,
+::ng-deep .persons-content-container .mat-mdc-tab-nav-bar,
+::ng-deep .persons-content-container .mat-mdc-tab .mat-mdc-tab-indicator__content--underline {
   --mdc-tab-indicator-active-indicator-height: 0;
   --mat-tab-header-inactive-focus-label-text-color: rgba(255, 255, 255, .9) !important;
   --mat-tab-header-inactive-hover-label-text-color: rgba(255, 255, 255, .9) !important;
@@ -24,21 +24,21 @@
   --mat-tab-header-inactive-label-text-color: rgba(255, 255, 255, .6) !important;
 }
 
-::ng-deep .mat-mdc-tab-labels {
+::ng-deep .persons-content-container .mat-mdc-tab-labels {
   background-color: var(--secondaryColor) !important;
 }
 
-::ng-deep .mdc-tab-indicator--active {
+::ng-deep .persons-content-container .mdc-tab-indicator--active {
   background-color: var(--tertiaryColor) !important;
   border-radius: 20px;
 }
 
-::ng-deep .mdc-tab {
+::ng-deep .persons-content-container .mdc-tab {
   padding: 0 !important;
 }
 
-::ng-deep .mdc-tab__content,
-::ng-deep .mdc-tab__text-label,
+::ng-deep .persons-content-container .mdc-tab__content,
+::ng-deep .persons-content-container .mdc-tab__text-label,
 .tab-container-action {
   width: 100%;
   height: 100%;

@@ -72,45 +72,57 @@ export const generalOptions = [
 export const personOptions = [
   {
     id: 1,
-    name: 'Vida Individual',
+    name: 'Vida',
     menuName: null,
     route: '/persons/1',
   },
   {
     id: 2,
-    name: 'Vida Grupo',
+    name: 'Salud',
     menuName: null,
     route: '/persons/2',
   },
   {
     id: 3,
-    name: 'Generales',
+    name: 'Educación',
     menuName: null,
     route: '/persons/3',
   },
   {
     id: 4,
-    name: 'Autos',
+    name: 'Pensión',
     menuName: null,
     route: '/persons/4',
   },
   {
     id: 5,
-    name: 'Mascotas',
+    name: 'Hogar',
     menuName: null,
     route: '/persons/5',
   },
   {
-    id: 6,
-    name: 'Viaje',
+    id: 5,
+    name: 'Arriendo',
     menuName: null,
     route: '/persons/6',
   },
   {
     id: 7,
-    name: 'Bicicletas',
+    name: 'Autos',
     menuName: null,
     route: '/persons/7',
+  },
+  {
+    id: 8,
+    name: 'Bicicletas',
+    menuName: null,
+    route: '/persons/8',
+  },
+  {
+    id: 9,
+    name: 'Viaje',
+    menuName: null,
+    route: '/persons/9',
   },
 ] as NavOption[];
 

@@ -17,11 +17,11 @@
 
   <mat-menu #persons="matMenu" xPosition="after" color="primary" class="main-desktop">
     <a *ngFor="let personOption of personOptions" mat-menu-item style="position: relative;"
-      [routerLink]="personOption.route" routerLinkActive="active-menu">{{personOption.name}}</a>
+      [routerLink]="personOption.route" routerLinkActive="active-menu" (click)="goTop()">{{personOption.name}}</a>
   </mat-menu>
 
   <mat-menu #companies="matMenu" xPosition="after" color="primary" class="main-desktop">
     <a *ngFor="let companyOption of companyOptions" mat-menu-item style="position: relative;"
-      [routerLink]="companyOption.route" routerLinkActive="active-menu">{{companyOption.name}}</a>
+      [routerLink]="companyOption.route" routerLinkActive="active-menu" (click)="goTop()">{{companyOption.name}}</a>
   </mat-menu>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MainBannerComponent } from './components/main-banner/main-banner.component';
 import { ProductsCategoryCardComponent } from './components/products-category-card/products-category-card.component';
 import { FeatureProductsComponent } from './components/feature-products/feature-products.component';
@@ -24,5 +24,11 @@ import { WhyInsurlinkComponent } from './components/why-insurlink/why-insurlink.
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

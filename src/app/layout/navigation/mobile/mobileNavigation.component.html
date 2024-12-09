@@ -32,7 +32,7 @@
     </button>
     <div *ngFor="let ProductSubmenu of ProductOption.submenu">
       <a mat-fab extended class="menu-button sublevel-menu" [routerLink]="ProductSubmenu.route" routerLinkActive="active"
-        (click)="toggleMobileMenu()">{{ProductSubmenu.name}}</a>
+        (click)="goTop()">{{ProductSubmenu.name}}</a>
     </div>
   </div>
 </div>

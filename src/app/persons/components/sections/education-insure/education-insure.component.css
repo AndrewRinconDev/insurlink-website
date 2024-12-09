@@ -1,0 +1,60 @@
+.education-insure-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.education-insure-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+
+}
+
+.education-insure-container p {
+  font-size: 24px;
+  color: var(--primaryTextColor);
+}
+
+.education-insure-coverage-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid var(--primaryColor);
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--primaryColor);
+}
+
+.education-insure-coverage-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 0 0;
+  gap: 10px;
+}
+.education-insure-coverage-container h2,
+.education-insure-coverage-content p {
+  color: white;
+}
+
+.education-insure-coverage-content li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education-insure-coverage-content mat-icon {
+  color: var(--tertiaryColor);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.education-insure-coverage-content p {
+  margin: 0;
+  max-width: 90%;
+}
