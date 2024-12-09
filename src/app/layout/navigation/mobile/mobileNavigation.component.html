@@ -1,24 +1,24 @@
 <div [ngStyle]="{'width': isOpenMobileMenu ? '100vw' : 0}" class="sidebar-container">
   <div class="sidebar-options-container">
-    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/home"
+    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/inicio"
       routerLinkActive="active">Inicio</a>
     <a mat-fab extended class="menu-button" (click)="toggleProductMenu(1)" routerLinkActive="active"
-    routerLink="/persons" [routerLinkActiveOptions]="{exact: false}">
+    routerLink="/personas" [routerLinkActiveOptions]="{exact: false}">
       <span>Personas</span>
       <mat-icon color="white">chevron_right</mat-icon>
     </a>
     <a mat-fab extended class="menu-button" (click)="toggleProductMenu(2)" routerLinkActive="active"
-    routerLink="/companies" [routerLinkActiveOptions]="{exact: false}">
+    routerLink="/empresas" [routerLinkActiveOptions]="{exact: false}">
       <span>Empresas</span>
       <mat-icon color="white">chevron_right</mat-icon>
     </a>
-    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/about"
+    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/nosotros"
       routerLinkActive="active">Nosotros</a>
     <!-- <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/blog"
       routerLinkActive="active">Blog</a> -->
-    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/insurers"
+    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/aseguradoras"
       routerLinkActive="active">Aseguradoras</a>
-    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/contact"
+    <a mat-fab extended class="menu-button" (click)="toggleMobileMenu()" routerLink="/contacto"
       routerLinkActive="active">Contactanos</a>
   </div>
 </div>

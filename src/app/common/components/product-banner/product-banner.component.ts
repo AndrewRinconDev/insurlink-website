@@ -1,6 +1,9 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { companyProductsData, personProductsData } from '../../../../constants/data/productData';
+import {
+  companyProductsData,
+  personProductsData,
+} from '../../../../constants/data/productData';
 import {
   animate,
   state,
@@ -62,10 +65,9 @@ export class ProductBannerComponent implements AfterViewInit, OnInit {
   isInitialized: boolean = false;
   productsInfo: any[] = [];
   state = 'hidden';
-  
-  constructor(private route: ActivatedRoute) {
-  }
-  
+
+  constructor(private route: ActivatedRoute) {}
+
   ngAfterViewInit() {
     this.showState();
   }
@@ -75,24 +77,25 @@ export class ProductBannerComponent implements AfterViewInit, OnInit {
       this.state = 'shown';
     }, 100);
   }
-  
+
   ngOnInit() {
-    this.productsInfo = this.isPerson ? personProductsData : companyProductsData;
-    
+    this.productsInfo = this.isPerson
+      ? personProductsData
+      : companyProductsData;
+
     this.route.paramMap.subscribe((params) => {
       this.state = 'hidden';
-      this.selectedProduct = Number(params.get('id')) ?? 1;
-      this.getProductInfo(this.selectedProduct);
+      const routeParam = params.get('category') ?? 'vida';
+      this.getProductInfo(routeParam);
       this.isInitialized && this.showState();
     });
 
     this.isInitialized = true;
   }
 
-  getProductInfo(id: number) {
-    console.log(this.productsInfo, this.isPerson);
+  getProductInfo(category: string) {
     this.selectedProductInfo = this.productsInfo.find(
-      (product) => product.id === id
+      (option) => option.shortName.toLowerCase() == category
     );
   }
 }

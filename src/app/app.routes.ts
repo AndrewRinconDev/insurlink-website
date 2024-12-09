@@ -7,31 +7,35 @@ import { AboutComponent } from './about/about.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/inicio',
     pathMatch: 'full',
   },
   {
-    path: 'home',
+    path: 'inicio',
     component: HomeComponent,
   },
   {
-    path: 'about',
+    path: 'nosotros',
     component: AboutComponent,
   },
   {
-    path: 'persons/:id',
+    path: 'personas/:category',
     component: PersonsComponent,
   },
   {
-    path: 'companies/:id',
+    path: 'personas/:category/:type',
+    component: PersonsComponent,
+  },
+  {
+    path: 'empresas/:category',
     component: CompaniesComponent,
   },
   {
-    path: 'insurers',
+    path: 'aseguradoras',
     component: HomeComponent,
   },
   {
-    path: 'contact',
+    path: 'contacto',
     component: HomeComponent,
   },
 ];

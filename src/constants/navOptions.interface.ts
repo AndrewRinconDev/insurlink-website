@@ -7,4 +7,5 @@ export interface NavOption {
   menuName: MatMenuPanel<any> | null;
   submenu?: NavOption[];
   route?: string;
+  shortName?: string;
 }

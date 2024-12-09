@@ -1,19 +1,19 @@
 <div class="desktop-navbar-items">
-  <a mat-button style="position: relative;" routerLink="/home" routerLinkActive="active">Inicio</a>
-  <a mat-button [matMenuTriggerFor]="persons" style="position: relative;" class="menu-item-button" routerLink="/persons"
+  <a mat-button style="position: relative;" routerLink="/inicio" routerLinkActive="active">Inicio</a>
+  <a mat-button [matMenuTriggerFor]="persons" style="position: relative;" class="menu-item-button" routerLink="/personas"
     routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
     <span>Personas</span>
     <mat-icon color="white">keyboard_arrow_down</mat-icon>
   </a>
   <a mat-button [matMenuTriggerFor]="companies" style="position: relative;" class="menu-item-button"
-    routerLink="/companies" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
+    routerLink="/empresas" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
     <span>Empresas</span>
     <mat-icon color="white">keyboard_arrow_down</mat-icon>
   </a>
-  <a mat-button style="position: relative;" routerLink="/about" routerLinkActive="active">Nosotros</a>
+  <a mat-button style="position: relative;" routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
   <!-- <a mat-button style="position: relative;" routerLink="/blog" routerLinkActive="active">Blog</a> -->
-  <a mat-button style="position: relative;" routerLink="/insurers" routerLinkActive="active">Aseguradoras</a>
-  <a mat-button style="position: relative;" routerLink="/contact" routerLinkActive="active">Contactanos</a>
+  <a mat-button style="position: relative;" routerLink="/aseguradoras" routerLinkActive="active">Aseguradoras</a>
+  <a mat-button style="position: relative;" routerLink="/contacto" routerLinkActive="active">Contactanos</a>
 
   <mat-menu #persons="matMenu" xPosition="after" color="primary" class="main-desktop">
     <a *ngFor="let personOption of personOptions" mat-menu-item style="position: relative;"

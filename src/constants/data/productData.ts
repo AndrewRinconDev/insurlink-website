@@ -18,7 +18,7 @@ export const personProductsData = [
   {
     id: 3,
     name: 'Póliza de Educación',
-    shortName: 'Educación',
+    shortName: 'Educacion',
     bannerImage: '/images/products/persons/drive.jpg',
     introduction: '<b>Invierte en el futuro de tus hijos</b> con la póliza educativa, asegura su educación y haz realidad sus sueños, pase lo que pase.',
     description: 'Protege el futuro educativo de tus hijos con la póliza de educación en Colombia. Se garantiza el pago de la matrícula, pensiones y otros gastos escolares en caso de imprevistos, asegurando que continúen sus estudios sin interrupciones. Una inversión en tranquilidad y en el bienestar académico de tu familia.',
@@ -26,7 +26,7 @@ export const personProductsData = [
   {
     id: 4,
     name: 'Seguro de Pensión',
-    shortName: 'Pensión',
+    shortName: 'Pension',
     bannerImage: '/images/products/persons/drive.jpg',
     introduction: '<b>Asegura tu futuro</b> con nuestra póliza de pensión: tranquilidad financiera para disfrutar cada etapa de la vida.',
     description: 'Las pólizas de pensiones garantizan ingresos estables en la jubilación, ofreciendo respaldo financiero a largo plazo y opciones de ahorro y protección adaptadas a tus necesidades.',
@@ -42,7 +42,7 @@ export const personProductsData = [
   {
     id: 6,
     name: 'Seguro de Arrendamiento',
-    shortName: 'Arrendamiento',
+    shortName: 'Arriendo',
     bannerImage: '/images/products/persons/drive.jpg',
     introduction: 'Protege tu hogar y tu tranquilidad con nuestra póliza de arrendamiento: cobertura completa para inquilinos y propietarios, diseñada para respaldarte en cada situación.',
     description: 'Cubre los riesgos asociados al alquiler de propiedades, protegiendo tanto al arrendador como al inquilino. Incluye garantías por impago de alquiler y daños a la propiedad, asegurando una relación arrendaticia sin preocupaciones.',
@@ -50,7 +50,7 @@ export const personProductsData = [
   {
     id: 7,
     name: 'Póliza de Automoviles',
-    shortName: 'Auto',
+    shortName: 'Autos',
     bannerImage: '/images/products/persons/drive.jpg',
     introduction: '<b>Protege tu camino</b> con nuestra póliza de auto en Insurlink: cobertura completa, precios competitivos y asistencia confiable para que conduzcas con tranquilidad.',
     description: 'Conduce con tranquilidad. Nuestra póliza incluye cobertura por daños a terceros, pérdida total, accidentes, robo y asistencia vial. Diseñada para cumplir con la normativa en Colombia y ofrecerte máxima protección en cada kilómetro.',
@@ -77,6 +77,7 @@ export const companyProductsData = [
   {
     id: 1,
     name: 'Cumplimiento',
+    shortName: 'cumplimiento',
     bannerImage: '/images/companies.jpg',
     introduction: 'Cumplimiento',
     description: 'Cumplimiento',
@@ -84,20 +85,23 @@ export const companyProductsData = [
   {
     id: 2,
     name: 'Responsabilidad Civil',
+    shortName: 'responsabilidad-civil',
     bannerImage: '/images/companies.jpg',
     introduction: 'Responsabilidad Civil',
     description: 'Responsabilidad Civil',
   },
   {
     id: 3,
-    name: 'Líneas financieras',
+    name: 'Líneas Financieras',
+    shortName: 'lineas-financieras',
     bannerImage: '/images/companies.jpg',
     introduction: 'Líneas financieras',
     description: 'Líneas financieras',
   },
   {
     id: 4,
-    name: 'Todo Riesgo construcción',
+    name: 'Todo Riesgo Construcción',
+    shortName: 'todo-riesgo-construccion',
     bannerImage: '/images/companies.jpg',
     introduction: 'Todo Riesgo construcción',
     description: 'Todo Riesgo construcción',
@@ -105,6 +109,7 @@ export const companyProductsData = [
   {
     id: 5,
     name: 'Montaje',
+    shortName: 'montaje',
     bannerImage: '/images/companies.jpg',
     introduction: 'Montaje',
     description: 'Montaje',
@@ -112,6 +117,7 @@ export const companyProductsData = [
   {
     id: 6,
     name: 'Maquinaría y Equipo',
+    shortName: 'maquinaria-y-equipo',
     bannerImage: '/images/companies.jpg',
     introduction: 'Maquinaría y Equipo',
     description: 'Maquinaría y Equipo',
@@ -119,6 +125,7 @@ export const companyProductsData = [
   {
     id: 7,
     name: 'Transporte',
+    shortName: 'transporte',
     bannerImage: '/images/companies.jpg',
     introduction: 'Transporte',
     description: 'Transporte',

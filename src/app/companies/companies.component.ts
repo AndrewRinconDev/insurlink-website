@@ -5,6 +5,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductBannerComponent } from '../common/components/product-banner/product-banner.component';
 import { BreadcrumbComponent, BreadcrumbItemComponent } from '@coreui/angular';
+import { companyOptions } from '../../constants/navOptions';
 
 @Component({
   selector: 'app-companies',
@@ -17,13 +18,14 @@ export class CompaniesComponent implements OnInit {
   selectedProduct: number = 1;
   constructor(private route: ActivatedRoute, private router: Router) {}
 
-  ngOnInit() {    
+  ngOnInit() {
     this.route.paramMap.subscribe((params) => {
-      this.selectedProduct = Number(params.get('id')) ?? 1;
+      const routeParam = params.get('category') ?? 'vida';
+      this.selectedProduct = companyOptions.find((option) => option.shortName == routeParam)?.id ?? 1;
     });
   }
 
-  routeProduct(id: number) {
-    this.router.navigate([`/companies/${id}`]);
+  routeProduct(category: string) {
+    this.router.navigate([`/empresas/${category}`]);
   }
 }

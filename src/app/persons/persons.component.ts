@@ -13,6 +13,7 @@ import { AutosInsureComponent } from './components/sections/autos-insure/autos-i
 import { BikeInsureComponent } from "./components/sections/bike-insure/bike-insure.component";
 import { FlightInsureComponent } from "./components/sections/flight-insure/flight-insure.component";
 import { LifeInsureComponent } from "./components/sections/life-insure/life-insure.component";
+import { personOptions } from '../../constants/navOptions';
 
 @Component({
   selector: 'app-persons',
@@ -41,11 +42,12 @@ export class PersonsComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe((params) => {
-      this.selectedProduct = Number(params.get('id')) ?? 1;
+      const routeParam = params.get('category') ?? 'vida';
+      this.selectedProduct = personOptions.find((option) => option.shortName == routeParam)?.id ?? 1;
     });
   }
 
-  routeProduct(id: number) {
-    this.router.navigate([`/persons/${id}`]);
+  routeProduct(category: string) {
+    this.router.navigate([`/personas/${category}`]);
   }
 }
