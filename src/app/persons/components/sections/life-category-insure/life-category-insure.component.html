@@ -1,0 +1,44 @@
+<section>
+  <div class="life-category-container" *ngIf="!selectedType">
+    <h1>Selecciona el seguro de tu interés</h1>
+    <div class="life-category-card" (click)="selectType('vida')">
+      <div class="life-category-icon-container">
+        <img src="/icons/life-insure.png" alt="Icono de seguro de vida">
+      </div>
+      <div class="life-category-content">
+        <h2>Vida</h2>
+        <p>Protege a tus seres queridos con una póliza de vida que asegura su. Tranquilidad hoy para un futuro seguro.</p>
+      </div>
+    </div>
+    <div class="life-category-card" (click)="selectType('accidentes-personales')">
+      <div class="life-category-icon-container">
+        <img src="/icons/accident.png" alt="Icono de accidentes personales">
+      </div>
+      <div class="life-category-content">
+        <h2>Accidentes Personales</h2>
+        <p>Protege lo más valioso: tu tranquilidad. Con la póliza de accidentes personales, estás cubierto ante imprevistos, porque cuidar de ti es nuestra prioridad.</p>
+      </div>
+    </div>
+    <div class="life-category-card" (click)="selectType('enfermedades-graves')">
+      <div class="life-category-icon-container">
+        <img src="/icons/desease.png" alt="Icono de enfermedes graves">
+      </div>
+      <div class="life-category-content">
+        <h2>Enfermedades Graves</h2>
+        <p>Enfrenta lo inesperado con tranquilidad. La póliza de enfermedades graves te ofrece respaldo económico para que solo te enfoques en tu recuperación.</p>
+      </div>
+    </div>
+    <div class="life-category-card" (click)="selectType('exequial')">
+      <div class="life-category-icon-container">
+        <img src="/icons/funeral.png" alt="Icono de exequial">
+      </div>
+      <div class="life-category-content">
+        <h2>Exequial</h2>
+        <p>En Insurlink te damos tranquilidad: nuestra póliza exequial cubre gastos funerarios y acompaña a tu familia en los momentos más difíciles.</p>
+      </div>
+    </div>
+  </div>
+  <app-life-insure *ngIf="selectedType" />
+</section>
+
+

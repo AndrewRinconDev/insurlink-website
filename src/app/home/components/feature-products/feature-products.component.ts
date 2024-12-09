@@ -10,5 +10,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './feature-products.component.css'
 })
 export class FeatureProductsComponent {
-
+  goTop() {
+    window.scrollTo(0, 0);
+  }
 }

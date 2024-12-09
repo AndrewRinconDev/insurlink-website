@@ -12,8 +12,9 @@ import { LeaseInsureComponent } from './components/sections/lease-insure/lease-i
 import { AutosInsureComponent } from './components/sections/autos-insure/autos-insure.component';
 import { BikeInsureComponent } from "./components/sections/bike-insure/bike-insure.component";
 import { FlightInsureComponent } from "./components/sections/flight-insure/flight-insure.component";
-import { LifeInsureComponent } from "./components/sections/life-insure/life-insure.component";
 import { personOptions } from '../../constants/navOptions';
+import { LifeCategoryInsureComponent } from "./components/sections/life-category-insure/life-category-insure.component";
+import { PetInsureComponent } from "./components/sections/pet-insure/pet-insure.component";
 
 @Component({
   selector: 'app-persons',
@@ -31,7 +32,8 @@ import { personOptions } from '../../constants/navOptions';
     AutosInsureComponent,
     BikeInsureComponent,
     FlightInsureComponent,
-    LifeInsureComponent
+    LifeCategoryInsureComponent,
+    PetInsureComponent
 ],
   templateUrl: './persons.component.html',
   styleUrl: './persons.component.css',

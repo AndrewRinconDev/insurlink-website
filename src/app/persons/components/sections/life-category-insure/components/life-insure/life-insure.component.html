@@ -1,0 +1,23 @@
+<section class="life-insure-section">
+  <div class="life-insure-container">
+    <div class="breadbrumbs-container">
+      <c-breadcrumb>
+        <c-breadcrumb-item url="/inicio">Inicio</c-breadcrumb-item>
+        <c-breadcrumb-item url="/personas/vida">Pólizas de Vida</c-breadcrumb-item>
+        <c-breadcrumb-item [active]="true">{{selectedTypeInfo.name}}</c-breadcrumb-item>
+      </c-breadcrumb>
+    </div>
+    <!-- <h1>Seguro de Salud</h1> -->
+    <p>{{selectedTypeInfo.introduction}}</p>
+    <div class="life-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="life-insure-coverage-content">
+        <li *ngFor="let selectedCoverages of selectedTypeInfo.coverages" >
+          <mat-icon>check</mat-icon>
+          <p>{{selectedCoverages}}</p>
+        </li>
+      </ul>
+    </div>
+    <p>{{selectedTypeInfo.description}}</p>
+  </div>
+</section>

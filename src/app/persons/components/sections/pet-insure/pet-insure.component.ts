@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-life-insure',
+  selector: 'app-pet-insure',
   standalone: true,
   imports: [MatIconModule],
-  templateUrl: './life-insure.component.html',
-  styleUrl: './life-insure.component.css'
+  templateUrl: './pet-insure.component.html',
+  styleUrl: './pet-insure.component.css'
 })
-export class LifeInsureComponent {
+export class PetInsureComponent {
 
 }

@@ -49,6 +49,14 @@ export const personProductsData = [
   },
   {
     id: 7,
+    name: 'Seguro de Mascotas',
+    shortName: 'Mascotas',
+    bannerImage: '/images/products/persons/drive.jpg',
+    introduction: 'Con nuestro seguro de mascotas, garantizas cuidado, tranquilidad y protección para ese miembro especial de tu familia. ¡Dale a tu peludo el amor y la seguridad que merece! ❤️ Cotiza hoy y vive con total tranquilidad.',
+    description: 'Nuestras pólizas de mascotas están diseñadas para ofrecerte tranquilidad y asegurar el bienestar de tu mejor amigo Porque ellos son más que mascotas, ¡son familia!.',
+  },
+  {
+    id: 8,
     name: 'Póliza de Automoviles',
     shortName: 'Autos',
     bannerImage: '/images/products/persons/drive.jpg',
@@ -56,7 +64,7 @@ export const personProductsData = [
     description: 'Conduce con tranquilidad. Nuestra póliza incluye cobertura por daños a terceros, pérdida total, accidentes, robo y asistencia vial. Diseñada para cumplir con la normativa en Colombia y ofrecerte máxima protección en cada kilómetro.',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Seguro de Bicicletas',
     shortName: 'Bicicletas',
     bannerImage: '/images/products/persons/drive.jpg',
@@ -64,12 +72,72 @@ export const personProductsData = [
     description: 'Protege tu bicicleta contra robos, daños y accidentes. Con el seguro de bicicletas de Insurlink, pedalea con confianza sabiendo que tu inversión está segura en todo momento.',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Seguro de Viaje',
     shortName: 'Viaje',
     bannerImage: '/images/products/persons/drive.jpg',
     introduction: '<b>Viaja tranquilo</b> con cobertura ante emergencias médicas, pérdida de equipaje y cancelación de vuelos. Nuestro seguro de viaje te brinda respaldo en cada aventura, dentro y fuera del país',
     description: 'Explora el mundo con la tranquilidad de saber que estás protegido. En Insurlink, te ofrecemos pólizas de viaje diseñadas para que disfrutes cada momento sin preocupaciones. Ya sea que estés planeando una escapada de fin de semana, una aventura internacional o un viaje de negocios, contamos con el respaldo que necesitas.',
+  },
+];
+
+export const lifeProductsData = [
+  {
+    id: 1,
+    name: 'Vida',
+    shortName: 'vida',
+    introduction: 'La póliza de vida te ofrece la tranquilidad de proteger a tus seres queridos ante cualquier eventualidad. Brinda respaldo económico para cubrir gastos imprevistos, garantizar estabilidad financiera y asegurar el bienestar de tu familia. Con opciones flexibles y personalizables, esta póliza es una inversión en tu tranquilidad y en el futuro de quienes más amas.',
+    coverages: [
+      'Fallecimiento por cualquier causa',
+      'Invalidez.',
+      'Muerte Accidental',
+      'Enfermedades Graves.'
+    ]
+  },
+  {
+    id: 2,
+    name: 'Accidentes Personales',
+    shortName: 'accidentes-personales',
+    introduction: 'La póliza de Accidentes Personales en Colombia te protege ante eventos imprevistos que puedan afectar tu integridad física. Ofrecemos cobertura para gastos médicos, indemnización por incapacidad o muerte accidental, y asistencia en casos de emergencia. Es una solución práctica y accesible para cuidar de ti y tu familia, brindando respaldo económico en situaciones inesperadas.',
+    coverages: [
+      'Indenización por muerte accidental.',
+      'Incapacidad total o parcial por accidente.',
+      'Gastos médicos por accidente',
+      'Renta diaria por hospitalización.',
+      'Gastos funerarios.'
+    ]
+  },
+  {
+    id: 3,
+    name: 'Enfermedades Graves',
+    shortName: 'enfermedades-graves',
+    introduction: 'La póliza de enfermedades graves, te protege ante el impacto financiero que pueden generar diagnósticos complejos como cáncer, infartos, accidentes cerebrovasculares y más. Te brinda una cobertura económica que te permite enfocarte en tu recuperación, asegurando tranquilidad para ti y tus seres queridos en los momentos más desafiantes. Disfruta de beneficios adicionales como asistencia médica, pagos flexibles y apoyo personalizado para que nunca enfrentes estos retos solo.',
+    description: 'Es importante destacar que las coberturas específicas pueden variar según la aseguradora y el plan contratado. Algunas pólizas también ofrecen beneficios adicionales, como asistencia en viaje derivada del diagnóstico, segunda opinión médica, indemnización por cirugía relacionada y apoyo familia.',
+    coverages: [
+      'Cáncer.',
+      'Infarto de miocardio',
+      'Accidente cerebrovascular (ACV).',
+      'Insuficiencia renal crónica.',
+      'Esclerosis múltiple',
+      'Enfermedad de Parkinson.',
+      'Demencia, incluyendo enfermedad de Alzheimer.',
+      'Trasplante de órganos vitales.',
+      'Quemaduras graves.'
+    ]
+  },
+  {
+    id: 4,
+    name: 'Exequial',
+    shortName: 'exequial',
+    bannerImage: '/images/products/persons/drive.jpg',
+    introduction: 'La póliza exequial está diseñada para brindarte tranquilidad en los momentos más difíciles. Ofrece cobertura integral para gastos funerarios, incluyendo servicios de velación, inhumación o cremación, traslado del fallecido y asesoría en trámites legales. Además, permite incluir a tus seres queridos para garantizar su bienestar y apoyo cuando más lo necesitan. Protege a tu familia con un respaldo económico y emocional en los momentos más sensibles.',
+    coverages: [
+      'Traslado del fallecido al lugar de residencia, siempre que éste se encuentre dentro de territorio nacional.',
+      'Auxilio lote en propiedad.',
+      'Auxilio por destino final.',
+      'Gastos emergentes.',
+      'Indemnización desamparo súbito (opcional).'
+    ]
   },
 ];
 

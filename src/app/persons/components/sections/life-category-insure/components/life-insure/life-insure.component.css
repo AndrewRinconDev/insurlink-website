@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 20px;
+  padding: 0;
 }
+
+/* coverage */
 
 .life-insure-container {
   display: flex;
@@ -11,6 +13,7 @@
   max-width: 1000px;
   width: 100%;
   gap: 30px;
+  padding: 80px 20px;
 }
 
 .life-insure-container p {

@@ -1,0 +1,65 @@
+.pet-insure-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.pet-insure-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  gap: 30px;
+}
+
+.pet-insure-container p {
+  font-size: 24px;
+  color: var(--primaryTextColor);
+}
+
+.pet-insure-coverage-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 0;
+  border-radius: 10px;  
+  border: 2px solid var(--primaryColor);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* background: linear-gradient(45deg, var(--primaryColor) 0%, var(--secondaryColor) 100%); */
+}
+
+.pet-insure-coverage-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 0 0;
+  gap: 10px;
+}
+
+.pet-insure-coverage-container h2{
+  color: var(--primaryColor);
+}
+
+.pet-insure-coverage-content p {
+  color: var(--primaryTextColor);
+  /* color: white; */
+}
+
+.pet-insure-coverage-content li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pet-insure-coverage-content mat-icon {
+  color: var(--primaryColor);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.pet-insure-coverage-content p {
+  margin: 0;
+  max-width: 90%;
+}

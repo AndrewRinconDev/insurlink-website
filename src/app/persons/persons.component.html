@@ -8,7 +8,7 @@
           Vida
         </div>
       </ng-template>
-      <app-life-insure />
+      <app-life-category-insure />
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
@@ -54,6 +54,15 @@
         </div>
       </ng-template>
       <app-lease-insure />
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct('mascotas')">
+          <mat-icon class="tab-icon-custom">pets</mat-icon>
+          Mascotas
+        </div>
+      </ng-template>
+      <app-pet-insure />
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
