@@ -25,11 +25,14 @@
   --mat-tab-header-label-text-size: 16px !important;
 }
 
-::ng-deep .companies-content-container .mat-mdc-tab {
-  padding: 20px 0 !important;
+::ng-deep .companies-content-container .mat-mdc-tab-labels {
+  background-color: var(--secondaryColor) !important;
+  padding: 8px 0;
 }
+
 ::ng-deep .companies-content-container .mdc-tab-indicator--active {
   background-color: var(--tertiaryColor) !important;
+  border-radius: 20px;
 }
 
 ::ng-deep .companies-content-container .mdc-tab {

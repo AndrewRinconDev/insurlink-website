@@ -1,20 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BreadcrumbComponent, BreadcrumbItemComponent } from '@coreui/angular';
-import { lifeProductsData } from '../../../../../../../constants/data/productData';
-import { CommonModule } from '@angular/common';
+import { collectivesProductsData } from '../../../../../../../constants/data/productData';
 
 @Component({
-  selector: 'app-life-insure',
+  selector: 'app-collective-insure',
   standalone: true,
   imports: [CommonModule, MatIconModule, MatButtonModule, BreadcrumbComponent, BreadcrumbItemComponent],
-  templateUrl: './life-insure.component.html',
-  styleUrl: './life-insure.component.css'
+  templateUrl: './collective-insure.component.html',
+  styleUrl: './collective-insure.component.css'
 })
-export class LifeInsureComponent implements OnInit {
-  selectedTypeInfo: any | null = null;
+export class CollectiveInsureComponent implements OnInit {
+selectedTypeInfo: any | null = null;
 
   constructor(private route: ActivatedRoute, private router: Router) {}
 
@@ -28,6 +28,6 @@ export class LifeInsureComponent implements OnInit {
   selectTypeInfo(type: string | null) {
     if (!type) return;
 
-    this.selectedTypeInfo = lifeProductsData.find((product) => product.shortName === type);
+    this.selectedTypeInfo = collectivesProductsData.find((product) => product.shortName === type);
   }
 }

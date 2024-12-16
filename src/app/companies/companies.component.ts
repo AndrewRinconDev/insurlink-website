@@ -4,15 +4,25 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductBannerComponent } from '../common/components/product-banner/product-banner.component';
-import { BreadcrumbComponent, BreadcrumbItemComponent } from '@coreui/angular';
 import { companyOptions } from '../../constants/navOptions';
+import { CollectiveCategoryInsureComponent } from './components/sections/collective-category-insure/collective-category-insure.component';
+import { CoOwnershipInsureComponent } from './components/sections/co-ownership-insure/co-ownership-insure.component';
+import { ComplianceInsureComponent } from './components/sections/compliance-insure/compliance-insure.component';
 
 @Component({
   selector: 'app-companies',
   standalone: true,
-  imports: [MatButtonModule, MatTabsModule, MatIconModule, ProductBannerComponent, BreadcrumbComponent, BreadcrumbItemComponent],
+  imports: [
+    MatButtonModule,
+    MatTabsModule,
+    MatIconModule,
+    ProductBannerComponent,
+    CollectiveCategoryInsureComponent,
+    CoOwnershipInsureComponent,
+    ComplianceInsureComponent,
+  ],
   templateUrl: './companies.component.html',
-  styleUrl: './companies.component.css'
+  styleUrl: './companies.component.css',
 })
 export class CompaniesComponent implements OnInit {
   selectedProduct: number = 1;
@@ -21,7 +31,9 @@ export class CompaniesComponent implements OnInit {
   ngOnInit() {
     this.route.paramMap.subscribe((params) => {
       const routeParam = params.get('category') ?? 'vida';
-      this.selectedProduct = companyOptions.find((option) => option.shortName == routeParam)?.id ?? 1;
+      this.selectedProduct =
+        companyOptions.find((option) => option.shortName == routeParam)?.id ??
+        1;
     });
   }
 

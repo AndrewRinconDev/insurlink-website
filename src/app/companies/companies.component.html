@@ -3,65 +3,54 @@
   <mat-tab-group [selectedIndex]="(selectedProduct - 1)">
     <mat-tab>
       <ng-template mat-tab-label>
-        <div class="tab-container-action" (click)="routeProduct('cumplimiento')">
-          <mat-icon class="tab-icon-custom">volunteer_activism</mat-icon>
-          Cumplimiento
+        <div class="tab-container-action" (click)="routeProduct('colectivos')">
+          <mat-icon class="tab-icon-custom">diversity_3</mat-icon>
+          Colectivos
         </div>
       </ng-template>
-      <c-breadcrumb>
-        <c-breadcrumb-item [active]="true">Home</c-breadcrumb-item>
-      </c-breadcrumb>
-      <c-breadcrumb>
-        <c-breadcrumb-item url="#">Home</c-breadcrumb-item>
-        <c-breadcrumb-item [active]="true">Library</c-breadcrumb-item>
-      </c-breadcrumb>
-      <c-breadcrumb>
-        <c-breadcrumb-item url="#">Home</c-breadcrumb-item>
-        <c-breadcrumb-item url="#">Library</c-breadcrumb-item>
-        <c-breadcrumb-item [active]="true">Data</c-breadcrumb-item>
-      </c-breadcrumb>
+      <app-collective-category-insure />
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <div class="tab-container-action" (click)="routeProduct('responsabilidad-civil')">
-        <mat-icon class="tab-icon-custom">diversity_1</mat-icon>
-        Responsabilidad Civil
+        <div class="tab-container-action" (click)="routeProduct('copropiedades')">
+        <mat-icon class="tab-icon-custom">apartment</mat-icon>
+        Copropiedades
       </div>
       </ng-template>
-      Content 2
+      <app-co-ownership-insure />
     </mat-tab>
     <mat-tab class="tab-custom">
       <ng-template mat-tab-label>
-        <div class="tab-container-action" (click)="routeProduct('lineas-financieras')">
-          <mat-icon class="tab-icon-custom">cottage</mat-icon>
-          Líneas Financieras
+        <div class="tab-container-action" (click)="routeProduct('cumplimiento')">
+          <mat-icon class="tab-icon-custom">handshake</mat-icon>
+          Cumplimiento
         </div>
       </ng-template>
-      Content 3
+      <app-compliance-insure />
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <div class="tab-container-action" (click)="routeProduct('todo-riesgo-construccion')">
-          <mat-icon class="tab-icon-custom">directions_car</mat-icon>
-          Todo Riesgo Construcción
+        <div class="tab-container-action" (click)="routeProduct('responsabilidad-civil-extracontractual')">
+          <mat-icon class="tab-icon-custom">diversity_1</mat-icon>
+          Responsabilidad Civil Extracontractual
         </div>
       </ng-template>
       Content 4
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <div class="tab-container-action" (click)="routeProduct('montaje')">
-          <mat-icon class="tab-icon-custom">pets</mat-icon>
-          Montaje
+        <div class="tab-container-action" (click)="routeProduct('lineas-financieras')">
+          <mat-icon class="tab-icon-custom">assured_workload</mat-icon>
+          Líneas Financieras
         </div>
       </ng-template>
       Content 5
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <div class="tab-container-action" (click)="routeProduct('maquinaria-y-equipo')">
-          <mat-icon class="tab-icon-custom">flight</mat-icon>
-          Maquinaría y Equipo
+        <div class="tab-container-action" (click)="routeProduct('todo-riesgo-construccion')">
+          <mat-icon class="tab-icon-custom">engineering</mat-icon>
+          Todo Riesgo Construcción
         </div>
       </ng-template>
       Content 6
@@ -69,11 +58,20 @@
     <mat-tab>
       <ng-template mat-tab-label>
         <div class="tab-container-action" (click)="routeProduct('transporte')">
-          <mat-icon class="tab-icon-custom">pedal_bike</mat-icon>
+          <mat-icon class="tab-icon-custom">local_shipping</mat-icon>
           Transporte
         </div>
       </ng-template>
       Content 7
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-container-action" (click)="routeProduct('pyme')">
+          <mat-icon class="tab-icon-custom">store</mat-icon>
+          PYME / Todo Riesgo daño material
+        </div>
+      </ng-template>
+      Content 8
     </mat-tab>
   </mat-tab-group>
 </div>

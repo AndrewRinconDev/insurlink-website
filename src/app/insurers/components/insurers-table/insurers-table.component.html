@@ -1,0 +1,44 @@
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!-- Company Column -->
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef>Compañía</mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <div class="insurers-image-container">
+        <img src="/images/logos/{{element.image}}" alt="Logo de {{element.name}}" class="insurers-image"
+          [matTooltip]="element.name">
+      </div>
+    </mat-cell>
+  </ng-container>
+
+  <!-- Mobile Column -->
+  <ng-container matColumnDef="mobile">
+    <mat-header-cell *matHeaderCellDef>Desde tu Celular</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.contact.mobile}} </mat-cell>
+  </ng-container>
+
+  <!-- Local Column -->
+  <ng-container matColumnDef="local">
+    <mat-header-cell *matHeaderCellDef>Desde Bogotá</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.contact?.local}} </mat-cell>
+  </ng-container>
+
+  <!-- National Column -->
+  <ng-container matColumnDef="national">
+    <mat-header-cell *matHeaderCellDef>Línea Nacional</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.contact?.national}} </mat-cell>
+  </ng-container>
+
+  <!-- Payment Column -->
+  <ng-container matColumnDef="link">
+    <mat-header-cell *matHeaderCellDef> Link </mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <a mat-button [href]="element.url" target="_blank" class="insurers-link">
+        <mat-icon>payments</mat-icon>
+        <span>Pagos</span>
+      </a>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

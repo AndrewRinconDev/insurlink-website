@@ -1,0 +1,107 @@
+/* insurance cards  */
+
+.collective-category-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: var(--secondaryColor); */
+  background-color: #f1f1f1;
+  padding: 80px 50px 100px;
+  gap: 50px;
+}
+
+.collective-category-container > h1 {
+  font-size: 48px;
+  color: var(--primaryTextColor);
+  text-align: center;
+  width: 100%;
+}
+
+.collective-category-card {
+  background-color: white;
+  padding: 0 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(7, 7, 77, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  width: 350px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.collective-category-card:hover {
+  box-shadow: 0 0 10px rgba(7, 7, 77, 0.3);
+  border: 3px solid var(--secondaryColor);
+}
+
+.collective-category-card.active {
+  box-shadow: 0 0 10px rgba(7, 7, 77, 0.5);
+  border: 4px solid var(--secondaryColor);
+}
+
+.collective-category-icon-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 200px;
+  height: 170px;
+  padding: 0 35px;
+  
+  flex-direction: row;
+}
+
+.collective-category-icon-container::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--tertiaryColor);
+  border-radius: 50%;
+}
+
+.collective-category-icon-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.collective-category-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.collective-category-content h2,
+.collective-category-content p {
+  text-align: center;
+}
+
+.collective-category-content h2{
+  border-bottom: 3px solid var(--tertiaryColor);
+  width: min-content;
+}
+
+.collective-category-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #545454;
+}
+
+@media screen and (max-width: 767px) {
+  .collective-category-container {
+    padding: 50px 30px;
+  }
+
+  .collective-category-container > h1{
+    font-size: 36px;
+  }
+}

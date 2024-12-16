@@ -144,58 +144,119 @@ export const lifeProductsData = [
 export const companyProductsData = [
   {
     id: 1,
-    name: 'Cumplimiento',
-    shortName: 'cumplimiento',
+    name: 'Colectivos',
+    shortName: 'colectivos',
     bannerImage: '/images/companies.jpg',
-    introduction: 'Cumplimiento',
+    introduction: 'Protege lo más valioso: con nuestra Póliza de Vida Colectivo, brinda tranquilidad y respaldo a tus empleados cuando más lo necesiten.',
     description: 'Cumplimiento',
   },
   {
     id: 2,
-    name: 'Responsabilidad Civil',
-    shortName: 'responsabilidad-civil',
+    name: 'Copropiedades',
+    shortName: 'copropiedades',
     bannerImage: '/images/companies.jpg',
-    introduction: 'Responsabilidad Civil',
-    description: 'Responsabilidad Civil',
+    introduction: 'Protege tu comunidad con el seguro que se adapta a tus necesidades. ¡Tu tranquilidad, nuestra prioridad',
+    description: 'copropiedades',
   },
   {
     id: 3,
-    name: 'Líneas Financieras',
-    shortName: 'lineas-financieras',
+    name: 'Cumplimiento',
+    shortName: 'cumplimiento',
     bannerImage: '/images/companies.jpg',
-    introduction: 'Líneas financieras',
-    description: 'Líneas financieras',
+    introduction: 'Protege tus contratos y garantiza el cumplimiento de tus acuerdos con nuestra póliza de cumplimiento, ¡seguridad y confianza en cada proyecto!',
+    description: 'cumplimiento',
   },
   {
     id: 4,
-    name: 'Todo Riesgo Construcción',
-    shortName: 'todo-riesgo-construccion',
+    name: 'Responsabilidad Civil Extracontractual',
+    shortName: 'responsabilidad-civil-extracontractual',
     bannerImage: '/images/companies.jpg',
-    introduction: 'Todo Riesgo construcción',
-    description: 'Todo Riesgo construcción',
+    introduction: '¡Protege tu negocio con una póliza de RCE! Cubre imprevistos y garantiza tu tranquilidad al cuidar a tus clientes y tu patrimonio.',
+    description: 'Responsabilidad Civil Extracontractual',
   },
   {
     id: 5,
-    name: 'Montaje',
-    shortName: 'montaje',
+    name: 'Líneas Financieras',
+    shortName: 'lineas-financieras',
     bannerImage: '/images/companies.jpg',
-    introduction: 'Montaje',
-    description: 'Montaje',
+    introduction: 'Protege el futuro de tu negocio con nuestra Póliza de Líneas Financieras: cobertura completa para tu tranquilidad y la de tu empresa.',
+    description: 'Líneas Financieras',
   },
   {
     id: 6,
-    name: 'Maquinaría y Equipo',
-    shortName: 'maquinaria-y-equipo',
+    name: 'Todo Riesgo Construcción',
+    shortName: 'todo-riesgo-construccion',
     bannerImage: '/images/companies.jpg',
-    introduction: 'Maquinaría y Equipo',
-    description: 'Maquinaría y Equipo',
+    introduction: 'Protege tu obra desde el primer ladrillo: Contrata ahora tu Póliza de Todo Riesgo Construcción y construye con tranquilidad.',
+    description: 'Todo Riesgo Construcción',
   },
   {
     id: 7,
     name: 'Transporte',
     shortName: 'transporte',
     bannerImage: '/images/companies.jpg',
-    introduction: 'Transporte',
+    introduction: 'Protege tus envíos con nuestra póliza de Transporte de Mercancías: seguridad, confianza y respaldo en cada kilómetro. ¡Contrátala hoy mismo!',
     description: 'Transporte',
+  },
+  {
+    id: 7,
+    name: 'PYME / Todo Riesgo daño material',
+    shortName: 'pyme',
+    bannerImage: '/images/companies.jpg',
+    introduction: 'Protege tu negocio y asegura su crecimiento con nuestra póliza PYME: cobertura completa y tranquilidad para ti y tu empresa.',
+    description: 'PYME / Todo Riesgo daño material',
   }
+];
+
+export const collectivesProductsData = [
+  {
+    id: 1,
+    name: 'Vida Grupo',
+    shortName: 'vida-grupo',
+    introduction: 'En Insurlink, ofrecemos pólizas de vida de grupo diseñadas para proteger a los empleados de una organización, asegurando su bienestar y el de sus familias. Este tipo de seguro es una excelente opción para empresas que desean brindar a sus colaboradores una cobertura amplia y un respaldo adicional ante imprevistos.',
+    coverages: [
+      'Fallecimiento por cualquier causa',
+      'Muerte Accidental.',
+      'Enfermedad Grave',
+      'Invalidez o desmembración'
+    ]
+  },
+  {
+    id: 2,
+    name: 'Póliza Exequial',
+    shortName: 'exequial-grupo',
+    introduction: 'Asegura tranquilidad para ti y tus empleados cubriendo los gastos funerarios en momentos difíciles. Nuestra póliza exequial brinda respaldo económico y acompañamiento en situaciones de pérdida.',
+    coverages: [
+      'Traslado del fallecido al lugar de residencia, siempre que éste se encuentre dentro de territorio nacional.',
+      'Auxilio lote en propiedad.',
+      'Auxilio por destino final.',
+      'Gastos emergentes.',
+      'Indemnización desamparo súbito (opcional).'
+    ]
+  },
+  {
+    id: 3,
+    name: ' Vida Grupo para Deudores',
+    shortName: 'vida-grupo-deudores',
+    introduction: 'Protege el patrimonio de tus empleados y asegura el pago de tus deudas en caso de fallecimiento. Esta póliza está diseñada para garantizar que tus obligaciones financieras no se conviertan en una carga para tu familia.',
+    coverages: [
+      '<b>Fallecimiento por cualquier causa:</b> En caso de muerte del asegurado, la aseguradora cubre el saldo insoluto de la deuda, liberando a los herederos de esta obligación.',
+      '<b>Incapacidad Total y Permanente (ITP):</b> Si el asegurado sufre una incapacidad que le impide generar ingresos de manera definitiva, la aseguradora asume el pago de la deuda pendiente.',
+    ]
+  },
+  {
+    id: 4,
+    name: 'Salud',
+    shortName: 'salud-grupo',
+    bannerImage: '/images/products/persons/drive.jpg',
+    introduction: 'Las pólizas de salud están diseñadas para brindar protección integral a los colaboradores de una empresa y a sus familias, asegurando acceso a servicios médicos de calidad. Estas pólizas ofrecen coberturas adaptadas a las necesidades específicas del grupo, promoviendo el bienestar físico y emocional del equipo humano.',
+    coverageTitle: 'Beneficios Claves',
+    coverages: [
+      '<b>Cobertura médica amplia:</b> Incluye consultas, hospitalización, cirugías, medicamentos, exámenes diagnósticos y más.',
+      '<b>Planes personalizados:</b> Flexibilidad para ajustar las coberturas según el presupuesto y las necesidades de la organización.',
+      '<b>Red de especialistas:</b> Acceso a una amplia red de clínicas, hospitales y profesionales médicos de confianza.',
+      '<b>Prevención y bienestar:</b> Programas de chequeos preventivos, vacunación y apoyo en la promoción de hábitos saludables.',
+      '<b>Atención rápida:</b> Procesos ágiles y eficientes para autorizaciones y reembolsos.'
+    ]
+  },
 ];

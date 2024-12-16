@@ -145,45 +145,51 @@ export const personOptions = [
 export const companyOptions = [
   {
     id: 1,
+    name: 'Colectivos',
+    shortName: 'colectivos',
+    route: '/empresas/colectivos',
+  },
+  {
+    id: 2,
+    name: 'Copropiedades',
+    shortName: 'copropiedades',
+    route: '/empresas/copropiedades',
+  },
+  {
+    id: 3,
     name: 'Cumplimiento',
     shortName: 'cumplimiento',
     route: '/empresas/cumplimiento',
   },
   {
-    id: 2,
-    name: 'Responsabilidad Civil',
-    shortName: 'responsabilidad-civil',
-    route: '/empresas/responsabilidad-civil',
+    id: 4,
+    name: 'Responsabilidad Civil Extracontractual',
+    shortName: 'responsabilidad-civil-extracontractual',
+    route: '/empresas/responsabilidad-civil-extracontractual',
   },
   {
-    id: 3,
-    name: 'Lineas Financieras',
+    id: 5,
+    name: 'Líneas Financieras',	
     shortName: 'lineas-financieras',
     route: '/empresas/lineas-financieras',
   },
   {
-    id: 4,
-    name: 'Todo Riesgo construcción',
+    id: 6,
+    name: 'Todo Riesgo Construcción',
     shortName: 'todo-riesgo-construccion',
     route: '/empresas/todo-riesgo-construccion',
-  },
-  {
-    id: 5,
-    name: 'Montaje',
-    shortName: 'montaje',
-    route: '/empresas/montaje',
-  },
-  {
-    id: 6,
-    name: 'Maquinaría y Equipo',
-    shortName: 'maquinaria-y-equipo',
-    route: '/empresas/maquinaria-y-equipo',
   },
   {
     id: 7,
     name: 'Transporte',
     shortName: 'transporte',
     route: '/empresas/transporte',
+  },
+  {
+    id: 8,
+    name: 'PYME / Todo Riesgo daño material',
+    shortName: 'pyme',
+    route: '/empresas/pyme',
   }
 ] as NavOption[];
 

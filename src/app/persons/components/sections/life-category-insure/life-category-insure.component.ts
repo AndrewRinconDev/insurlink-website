@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { LifeInsureComponent } from "./components/life-insure/life-insure.component";
 import { CommonModule } from '@angular/common';
+import { LifeInsureComponent } from "./components/life-insure/life-insure.component";
 
 @Component({
   selector: 'app-life-category-insure',

@@ -1,0 +1,227 @@
+export const insurersDirectory = [
+  {
+    id: 1,
+    name: 'ALLIANZ COLOMBIA SEGUROS',
+    contact: {
+      mobile: '#265',
+      local: '601 5941133',
+      national: '018000 513500',
+    },
+    url: 'https://www.allianz.co/clientes/todos-los-clientes/pagos.html',
+    image: 'allianz.png',
+  },
+  {
+    id: 2,
+    name: 'ASEGURADORA SOLIDARIA DE COLOMBIA',
+    contact: {
+      mobile: '#789',
+      national: '018000 512021',
+    },
+    url: 'https://www.solipagosonline.com.co/UIPasarelaPagos/',
+    image: 'solidaria.png',
+  },
+  {
+    id: 6,
+    name: 'AXA COLPATRIA',
+    contact: {
+      mobile: '#247',
+      local: '601 4235757',
+      national: '018000 512620',
+    },
+    url: 'https://www.axacolpatria.co/pagosenlinea/opcionespago',
+    image: 'axa.png',
+  },
+  {
+    id: 7,
+    name: 'BBVA SEGUROS',
+    contact: {
+      local: '601 4010000',
+      national: '018000 912227',
+    },
+    url: 'https://www.zonapagos.com/pagosn2/LoginCliente',
+    image: 'bbva.png',
+  },
+  {
+    id: 9,
+    name: 'BMI',
+    contact: {
+      local: '601 5143099',
+      national: '018000 978625',
+    },
+    url: 'https://www.bmicos.com/colombia/pague-su-poliza/#pagos',
+    image: 'bmi.png',
+  },
+  {
+    id: 10,
+    name: 'BOLIVAR COMPAÑÍA DE SEGUROS /SEGUROS BOLIVAR / ARL',
+    contact: {
+      mobile: '#322',
+      local: '601 3122122',
+      national: '018000 123322',
+    },
+    url: 'https://transac.segurosbolivar.com/RecaudosElectronicos/faces/muestrapagos.jspx/pages/layout/consultUser.action',
+    image: 'bolivar.png',
+  },
+  {
+    id: 12,
+    name: 'CHUBB SEGUROS',
+    contact: {
+      mobile: '3105636320',
+      local: '601 3190402',
+      national: '018000 917500',
+    },
+    url: 'https://www.chubb.com/co-es/servicios-en-linea/pagos-en-linea.html',
+    image: 'chubb.png',
+  },
+  {
+    id: 13,
+    name: 'COLMENA SEGUROS DE VIDA Y ARL',
+    contact: {
+      mobile: '3157003033',
+      local: '601 4010447',
+      national: '018000 919667',
+    },
+    url: 'https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=12890',
+    image: 'colmena.png',
+  },
+  {
+    id: 14,
+    name: 'COLMEDICA MEDICINA PREPAGADA',
+    contact: {
+      local: '601 7464646',
+    },
+    url: 'https://www.colmedica.com/Paginas/PagoVirtualFactura.aspx',
+    image: 'colmedica.png',
+  },
+  {
+    id: 15,
+    name: 'COLSANITAS',
+    contact: {
+      mobile: '3103107676',
+      local: '601 44871920',
+      national: '018000 979020',
+    },
+    url: 'https://www.colsanitas.com/login?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&_com_liferay_login_web_portlet_LoginPortlet_redirect=%2Fgroup%2Foficina-virtual-mp%2Fpago-de-factura',
+    image: 'colsanitas.png',
+  },
+  {
+    id: 17,
+    name: 'HDI SEGUROS',
+    contact: {
+      mobile: '#204',
+      local: '601 3078320',
+      national: '018000 129728',
+    },
+    url: 'https://extranet.hdi.com.co/Front_PaymentModule',
+    image: 'hdi.png',
+  },
+  {
+    id: 19,
+    name: 'LIBERTY SEGUROS',
+    contact: {
+      mobile: '#224',
+      local: '601 3077050',
+      national: '018000 113390',
+    },
+    url: 'https://portal.cliente.libertyseguros.co/',
+    image: 'liberty.png',
+  },
+  {
+    id: 20,
+    name: 'MAPFRE COLOMBIA SEGUROS',
+    contact: {
+      mobile: '#624',
+      local: '601 3077024',
+      national: '018000 519991',
+    },
+    url: 'https://digital.mapfre.com.co/pagosWeb/vista/paginas/noFilterIniPagosPublico.jsf',
+    image: 'mapfre.png',
+  },
+  {
+    id: 21,
+    name: 'MOK TRAVEL',
+    contact: {
+      mobile: '3118040695',
+      local: '601 3559601',
+      national: '018000 415397',
+    },
+    url: 'https://www.moktravelassist.com/',
+    image: 'mok.png',
+  },
+  {
+    id: 22,
+    name: 'PREVISORA SEGUROS COLOMBIA',
+    contact: {
+      mobile: '#345',
+      local: '601 3487555',
+      national: '018000 910554',
+    },
+    url: 'https://aplicativosweb.previsora.gov.co/PortalPagos/Billing/PayU/PayU',
+    image: 'previsora.png',
+  },
+  {
+    id: 23,
+    name: 'SEGUROS MUNDIAL',
+    contact: {
+      mobile: '#935',
+      local: '601 3274712',
+      national: '018000 111935',
+    },
+    url: 'https://recaudos.mundialseguros.com.co/',
+    image: 'mundial.png',
+  },
+  {
+    id: 25,
+    name: 'SBS SEGUROS',
+    contact: {
+      mobile: '#360',
+      national: '018000 911360',
+    },
+    url: 'https://www.sbseguros.co/servicio-al-cliente/alternativas-pagos',
+    image: 'sbs.png',
+  },
+  {
+    id: 26,
+    name: 'SEGUROS GENERALES Y DE VIDA DEL ESTADO',
+    contact: {
+      mobile: '#388',
+      local: '601 4434818',
+      national: '018000 123010',
+    },
+    url: 'https://portaldepago.segurosdelestado.com/#/',
+    image: 'seguros-estado.png',
+  },
+  {
+    id: 27,
+    name: 'SEGUROS GENERALES Y DE VIDA SURAMERICANA',
+    contact: {
+      mobile: '#888',
+      local: '601 4378888',
+      national: '018000 518888',
+    },
+    url: 'https://www.segurossura.com.co/paginas/pago-express.aspx#/Pagos',
+    image: 'sura.png',
+  },
+  {
+    id: 28,
+    name: 'ZURICH SEGUROS',
+    contact: {
+      mobile: '#723',
+      local: '601 3190730',
+      national: '018000 112723',
+    },
+    url: 'https://web.zurichseguros.com.co/zcc-pp-web-app/login',
+    image: 'zurich.png',
+  },
+  {
+    id: 29,
+    name: 'LA EQUIDAD SEGUROS',
+    contact: {
+      mobile: '#324',
+      local: '601 7460392',
+      national: '018000 919538',
+    },
+    url: 'https://servicios.laequidadseguros.coop/clientes/pagoExterno/consultaPoliza',
+    image: 'equidad.png',
+  },  
+];

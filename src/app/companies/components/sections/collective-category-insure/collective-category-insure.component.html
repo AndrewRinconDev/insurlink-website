@@ -1,0 +1,42 @@
+<section>
+  <div class="collective-category-container" *ngIf="!selectedType">
+    <h1>Selecciona el seguro de tu interés</h1>
+    <div class="collective-category-card" (click)="selectType('vida-grupo')">
+      <div class="collective-category-icon-container">
+        <img src="/icons/life-group.png" alt="Icono de seguro de vida grupo">
+      </div>
+      <div class="collective-category-content">
+        <h2>Vida Grupo</h2>
+        <p>Protege lo más valioso: con nuestra Póliza de Vida Colectivo, brinda tranquilidad y respaldo a tus empleados cuando más lo necesiten.</p>
+      </div>
+    </div>
+    <div class="collective-category-card" (click)="selectType('exequial-grupo')">
+      <div class="collective-category-icon-container">
+        <img src="/icons/funeral-group.png" alt="Icono de exequial">
+      </div>
+      <div class="collective-category-content">
+        <h2>Exequial</h2>
+        <p>Protege a tus empleados con nuestra Póliza de Exequias Colectiva: tranquilidad y respaldo en los momentos más difíciles, con cobertura integral y accesible.</p>
+      </div>
+    </div>
+    <div class="collective-category-card" (click)="selectType('vida-grupo-deudores')">
+      <div class="collective-category-icon-container">
+        <img src="/icons/life-group-debtors.png" alt="Icono de vida grupo deudores">
+      </div>
+      <div class="collective-category-content">
+        <h2>Vida Grupo Deudores</h2>
+        <p>Protege a tus empleados, asegura el futuro: Vida Grupo Deudores, la tranquilidad que respalda tus compromisos.</p>
+      </div>
+    </div>
+    <div class="collective-category-card" (click)="selectType('salud-grupo')">
+      <div class="collective-category-icon-container">
+        <img src="/icons/health-group.png" alt="Icono de salud grupo">
+      </div>
+      <div class="collective-category-content">
+        <h2>Salud</h2>
+        <p>Cuidamos a tus empleados para que sigan dando lo mejor. Nuestras pólizas de salud ofrecen protección integral y beneficios personalizados, asegurando bienestar para todos.</p>
+      </div>
+    </div>
+  </div>
+  <app-collective-insure *ngIf="selectedType" />
+</section>

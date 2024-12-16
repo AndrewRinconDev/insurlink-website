@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 36px;
+  height: fit-content;
 }
 
 .health-insure-coverage-container h2{

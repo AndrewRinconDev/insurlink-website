@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { PersonsComponent } from './persons/persons.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { AboutComponent } from './about/about.component';
+import { InsurersComponent } from './insurers/insurers.component';
 
 export const routes: Routes = [
   {
@@ -31,8 +32,12 @@ export const routes: Routes = [
     component: CompaniesComponent,
   },
   {
+    path: 'empresas/:category/:type',
+    component: CompaniesComponent,
+  },
+  {
     path: 'aseguradoras',
-    component: HomeComponent,
+    component: InsurersComponent,
   },
   {
     path: 'contacto',

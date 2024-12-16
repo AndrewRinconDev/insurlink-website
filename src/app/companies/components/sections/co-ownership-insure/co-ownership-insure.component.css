@@ -1,38 +1,34 @@
-.life-insure-section {
+.co-ownership-insure-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
+  padding: 80px 20px;
 }
 
-/* coverage */
-
-.life-insure-container {
+.co-ownership-insure-container {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
   width: 100%;
-  gap: 30px;
-  padding: 80px 20px;
+
 }
 
-.life-insure-container p {
+.co-ownership-insure-container p {
   font-size: 24px;
   color: var(--primaryTextColor);
 }
 
-.life-insure-coverage-container {
+.co-ownership-insure-coverage-container {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  margin: 0;
-  border-radius: 10px;  
   border: 2px solid var(--primaryColor);
+  margin-top: 40px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* background: linear-gradient(45deg, var(--primaryColor) 0%, var(--secondaryColor) 100%); */
 }
 
-.life-insure-coverage-content {
+.co-ownership-insure-coverage-content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -41,30 +37,24 @@
   gap: 10px;
 }
 
-.life-insure-coverage-container h2{
-  color: var(--primaryColor);
-}
-
-.life-insure-coverage-content p {
-  color: var(--primaryTextColor);
-  /* color: white; */
-}
-
-.life-insure-coverage-content li {
+.co-ownership-insure-coverage-content li {
   display: flex;
   align-items: center;
   gap: 10px;
   height: fit-content;
 }
 
-.life-insure-coverage-content mat-icon {
+.co-ownership-insure-coverage-container h2{
+  color: var(--primaryColor);
+}
+
+.co-ownership-insure-coverage-content mat-icon {
   color: var(--primaryColor);
   font-weight: bold;
   font-size: 24px;
 }
 
-.life-insure-coverage-content p {
+.co-ownership-insure-coverage-content p {
   margin: 0;
   max-width: 90%;
-  line-height: 18px !important;
 }
