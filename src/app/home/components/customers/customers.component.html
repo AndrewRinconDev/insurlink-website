@@ -1,14 +1,10 @@
-<div class="customers">
-  <h1>Clientes que confian en nosotros</h1>
-  <div class="customers-container">
-    <div class="customer-item">
-      <img src="/images/logos/miniso.png" class="remove-bg" alt="miniso-image">
+<section class="customers-section">
+  <div class="customers">
+    <h1>Clientes que confian en nosotros</h1>
+    <div class="customers-container">
+      <div class="customer-item" *ngFor="let customer of customers">
+        <img [src]="customer.image" class="remove-bg" alt="{{customer.name}}-image">
+      </div>
     </div>
-    <div class="customer-item">
-      <img src="/images/logos/farmacias-simi.png" class="remove-bg" alt="simi-image">
-    </div>
-    <div class="customer-item">
-      <img src="/images/logos/gabrica.png" class="remove-bg" alt="gabrica-image">
-    </div>
-  </div>
-</div>
+  </div>  
+</section>

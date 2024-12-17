@@ -189,7 +189,7 @@ export const insurersDirectory = [
       national: '018000 123010',
     },
     url: 'https://portaldepago.segurosdelestado.com/#/',
-    image: 'seguros-estado.png',
+    image: 'estado.png',
   },
   {
     id: 27,

@@ -12,4 +12,16 @@
       </div>
     </div>
   </div>
+  <div class="banner-container">
+    <div class="banner-content-2 remove-bg" *ngFor="let ally of allies2">
+      <div class="image-container">
+        <img cTooltip="{{ally.name}}" [src]="ally.image" alt="{{ally.name}}">
+      </div>
+    </div>
+    <div aria-hidden class="banner-content-2 remove-bg" *ngFor="let ally of allies2">
+      <div class="image-container">
+        <img cTooltip="{{ally.name}}" [src]="ally.image" alt="{{ally.name}}">
+      </div>
+    </div>
+  </div>
 </div>

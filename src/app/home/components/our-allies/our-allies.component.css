@@ -21,7 +21,17 @@
 .banner-content {
   display: inline-block;
   will-change: transform;
-  animation: scroll 20s linear infinite;
+  animation: scroll 28s linear infinite;
+}
+
+.banner-content-2 {
+  display: inline-block;
+  will-change: transform;
+  animation: scroll-2 28s linear infinite;
+}
+
+.banner-content .image-container{
+  padding: 0 10px;
 }
 
 .image-container {
@@ -43,6 +53,16 @@
   }
 
   100% {
-    transform: translateX(-1000%);
+    transform: translateX(-1300%);
+  }
+}
+
+@keyframes scroll-2 {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(-1350%);
   }
 }

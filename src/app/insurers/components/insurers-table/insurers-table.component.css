@@ -23,6 +23,12 @@
   color: var(--primaryTextColor);
 }
 
+::ng-deep .mat-mdc-table mat-row.mat-mdc-row{
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .insurers-link {
     flex-direction: column;
@@ -30,5 +36,5 @@
 
   .mat-mdc-table {
     width: fit-content;
-  } 
+  }
 }
