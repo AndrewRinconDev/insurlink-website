@@ -5,12 +5,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BreadcrumbComponent, BreadcrumbItemComponent } from '@coreui/angular';
 import { collectivesProductsData } from '../../../../../../../constants/data/productData';
-import { CoverageCardsComponent } from "../../../../../../common/components/coverage-cards/coverage-cards.component";
 
 @Component({
   selector: 'app-collective-insure',
   standalone: true,
-  imports: [CommonModule, MatIconModule, MatButtonModule, BreadcrumbComponent, BreadcrumbItemComponent, CoverageCardsComponent],
+  imports: [CommonModule, MatIconModule, MatButtonModule, BreadcrumbComponent, BreadcrumbItemComponent],
   templateUrl: './collective-insure.component.html',
   styleUrl: './collective-insure.component.css'
 })
@@ -30,6 +29,5 @@ selectedTypeInfo: any | null = null;
     if (!type) return;
 
     this.selectedTypeInfo = collectivesProductsData.find((product) => product.shortName === type);
-    console.log('Selected type info:', this.selectedTypeInfo);
   }
 }

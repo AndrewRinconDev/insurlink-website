@@ -2,6 +2,14 @@
   <div class="health-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
     <p>{{healthProductsData.description}}</p>
+    <div class="health-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="health-insure-coverage-content">
+        <li *ngFor="let coverage of healthProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p>{{coverage}}</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
-<app-coverage-cards [coverageCardsData]="healthProductsData.coverages" title="Principales coberturas" />

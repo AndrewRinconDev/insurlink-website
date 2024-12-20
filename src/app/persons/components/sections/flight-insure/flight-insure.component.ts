@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { travelProductsData } from '../../../../../constants/data/productData';
-import { CoverageCardsComponent } from "../../../../common/components/coverage-cards/coverage-cards.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-flight-insure',
   standalone: true,
-  imports: [MatIconModule, CoverageCardsComponent],
+  imports: [MatIconModule, CommonModule],
   templateUrl: './flight-insure.component.html',
   styleUrl: './flight-insure.component.css'
 })

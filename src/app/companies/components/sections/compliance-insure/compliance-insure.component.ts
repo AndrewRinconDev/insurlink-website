@@ -12,5 +12,5 @@ import { CoverageCardsComponent } from "../../../../common/components/coverage-c
   styleUrl: './compliance-insure.component.css'
 })
 export class ComplianceInsureComponent {
-  complianceProductsData = complianceProductsData;
+  complianceProductsData = complianceProductsData
 }

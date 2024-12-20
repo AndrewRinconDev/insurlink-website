@@ -2,7 +2,7 @@
   background-image: url('/images/home/home-section.png');
   background-size: cover;
   background-position: center top;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   justify-content: flex-start;
   background-attachment: fixed;

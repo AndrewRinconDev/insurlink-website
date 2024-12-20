@@ -2,7 +2,16 @@
   <div class="education-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
     <p>{{educationProductsData.description}}</p>
+    <div class="education-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="education-insure-coverage-content">
+        <li *ngFor="let coverage of educationProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p>{{coverage}}</p>
+        </li>
+      </ul>
+    </div>
+    <p>Estas coberturas básicas aseguran que, ante eventualidades como fallecimiento o invalidez del asegurado, el beneficiario pueda continuar con su educación superior sin contratiempos financieros.</p>
   </div>
 </section>
-<app-coverage-cards [coverageCardsData]="educationProductsData.coverages" title="Principales coberturas" />
 

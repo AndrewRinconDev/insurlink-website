@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 20px 50px;
+  padding: 50px 20px 80px;
 }
 
 .education-insure-container {
@@ -10,7 +10,7 @@
   flex-direction: column;
   max-width: 1000px;
   width: 100%;
-
+  gap: 30px;
 }
 
 .education-insure-container p {
@@ -22,39 +22,51 @@
   display: flex;
   flex-direction: column;
   padding: 30px;
+  margin: 0;
+  border-radius: 10px;  
   border: 2px solid var(--primaryColor);
-  margin: 40px 0;
-  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: var(--primaryColor);
+  /* background: linear-gradient(45deg, var(--primaryColor) 0%, var(--secondaryColor) 100%); */
 }
 
 .education-insure-coverage-content {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   margin: 20px 0 0 0;
   gap: 10px;
 }
-.education-insure-coverage-container h2,
+
+.education-insure-coverage-container h2{
+  color: var(--primaryColor);
+}
+
 .education-insure-coverage-content p {
-  color: white;
+  color: var(--primaryTextColor);
+  /* color: white; */
 }
 
 .education-insure-coverage-content li {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
+  height: fit-content;
+  font-size: 24px;
 }
 
 .education-insure-coverage-content mat-icon {
-  color: var(--tertiaryColor);
+  color: var(--primaryColor);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .education-insure-coverage-content p {
   margin: 0;
-  max-width: 90%;
+  max-width: calc(100% - 36px);
+}
+
+@media screen and (max-width: 768px) {
+  .education-insure-coverage-content {
+    padding: 0;
+  }
 }

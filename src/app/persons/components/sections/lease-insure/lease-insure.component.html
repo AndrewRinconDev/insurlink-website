@@ -1,7 +1,16 @@
 <section class="lease-insure-section">
   <div class="lease-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>{{leaseProductsData.description}}</p> 
+    <p>{{leaseProductsData.description}}</p>
+    <div class="lease-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="lease-insure-coverage-content">
+        <li *ngFor="let coverage of leaseProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p [innerHTML]="coverage"></p>
+        </li>
+      </ul>
+    </div>   
   </div>
 </section>
-<app-coverage-cards [coverageCardsData]="leaseProductsData.coverages" />
+

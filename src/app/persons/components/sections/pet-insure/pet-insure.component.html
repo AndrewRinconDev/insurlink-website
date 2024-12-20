@@ -1,8 +1,15 @@
 <section class="pet-insure-section">
   <div class="pet-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>Nuestras pólizas de mascotas están diseñadas para ofrecerte tranquilidad y asegurar el bienestar de tu mejor amigo. <b>Porque ellos son más que mascotas, ¡son familia!.</b></p>
+    <p [innerHTML]="petProductsData.description"></p>
+    <div class="pet-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="pet-insure-coverage-content">
+        <li *ngFor="let coverage of petProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p [innerHTML]="coverage"></p>
+        </li>
+      </ul>
+    </div>    
   </div>
 </section>
-
-<app-coverage-cards [coverageCardsData]="petProductsData.coverages" />

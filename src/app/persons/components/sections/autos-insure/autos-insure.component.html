@@ -1,8 +1,16 @@
 <section class="autos-insure-section">
   <div class="autos-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>{{carProductsData.description}}</p>   
+    <p [innerHTML]="carProductsData.description"></p>
+    <div class="autos-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="autos-insure-coverage-content">
+        <li *ngFor="let coverage of carProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p [innerHTML]="coverage"></p>
+        </li>
+      </ul>
+    </div>    
   </div>
 </section>
 
-<app-coverage-cards [coverageCardsData]="carProductsData.coverages" />

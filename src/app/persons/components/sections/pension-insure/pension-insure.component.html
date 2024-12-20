@@ -2,12 +2,15 @@
   <div class="pension-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
     <p>{{pensionProductsData.description}}</p>
-  </div>
-</section>
-<app-coverage-cards [coverageCardsData]="pensionProductsData.coverages" title="Principales coberturas" />
-<section class="pension-insure-section">
-  <div class="pension-insure-container">
-    <!-- <h1>Seguro de Salud</h1> -->
+    <div class="pension-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="pension-insure-coverage-content">
+        <li *ngFor="let coverage of pensionProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p>{{coverage}}</p>
+        </li>
+      </ul>
+    </div>
     <p>Estas coberturas están diseñadas para brindar seguridad financiera tanto al afiliado como a sus seres queridos, adaptándose a las necesidades particulares de cada persona.</p>
   </div>
 </section>

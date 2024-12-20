@@ -2,9 +2,25 @@
   <div class="co-ownership-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
     <p>{{copropietiesProductsData.description}}</p>
+    <div class="co-ownership-insure-coverage-container">
+      <h2>Coberturas Básicas:</h2>
+      <ul class="co-ownership-insure-coverage-content">
+        <li *ngFor="let coverage of copropietiesProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p [innerHTML]="coverage"></p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="co-ownership-insure-coverage-container">
+      <h2>Coberturas Adicionales (Opcionales):</h2>
+      <ul class="co-ownership-insure-coverage-content">
+        <li *ngFor="let additionalCoverage of copropietiesProductsData.additionalCoverages">
+          <mat-icon>check</mat-icon>
+          <p [innerHTML]="additionalCoverage"></p>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
-
-<app-coverage-cards [coverageCardsData]="copropietiesProductsData.coverages" coverageCardsTitle="Coberturas Básicas" />
-<app-coverage-cards [coverageCardsData]="copropietiesProductsData.additionalCoverages" coverageCardsTitle="Coberturas Adicionales (Opcionales)" [isSecondary]="true" />
 

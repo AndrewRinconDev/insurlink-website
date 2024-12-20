@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { carProductsData } from '../../../../../constants/data/productData';
-import { CoverageCardsComponent } from "../../../../common/components/coverage-cards/coverage-cards.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-autos-insure',
   standalone: true,
-  imports: [MatIconModule, CoverageCardsComponent],
+  imports: [CommonModule, MatIconModule],
   templateUrl: './autos-insure.component.html',
   styleUrl: './autos-insure.component.css'
 })

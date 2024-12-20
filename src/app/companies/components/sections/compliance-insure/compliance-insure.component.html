@@ -2,8 +2,16 @@
   <div class="compliance-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
     <p>{{complianceProductsData.description}}</p>
+    <div class="compliance-insure-coverage-container">
+      <h2>Coberturas:</h2>
+      <ul class="compliance-insure-coverage-content">
+        <li *ngFor="let coverage of complianceProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p [innerHTML]="coverage"></p>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
-<app-coverage-cards [coverageCardsData]="complianceProductsData.coverages" coverageCardsTitle="Coberturas" />
-<app-coverage-cards [coverageCardsData]="complianceProductsData.otherProducts" coverageCardsTitle="Otras Pólizas" [isSecondary]="true" />
 
+<app-coverage-cards [coverageCardsData]="complianceProductsData.otherProducts" coverageCardsTitle="Otras Pólizas" [isSecondary]="true" />

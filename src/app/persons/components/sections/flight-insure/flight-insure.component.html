@@ -1,8 +1,15 @@
 <section class="flight-insure-section">
   <div class="flight-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>Explora el mundo con la tranquilidad de saber que estás protegido. En <b>Insurlink</b>, te ofrecemos <b>pólizas de viaje</b> diseñadas para que disfrutes cada momento sin preocupaciones. Ya sea que estés planeando una escapada de fin de semana, una aventura internacional o un viaje de negocios, contamos con el respaldo que necesitas.</p> 
+    <p [innerHTML]="travelProductsData.description"></p>
+    <div class="flight-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="flight-insure-coverage-content">
+        <li *ngFor="let coverage of travelProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p [innerHTML]="coverage"></p>
+        </li>
+      </ul>
+    </div>    
   </div>
 </section>
-
-<app-coverage-cards [coverageCardsData]="travelProductsData.coverages" />

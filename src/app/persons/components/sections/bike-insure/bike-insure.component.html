@@ -1,8 +1,16 @@
 <section class="bike-insure-section">
   <div class="bike-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>{{bikeProductsData.description}}</p>   
+    <p>{{bikeProductsData.description}}</p>
+    <div class="bike-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="bike-insure-coverage-content">
+        <li *ngFor="let coverage of bikeProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p>{{coverage}}</p>
+        </li>
+      </ul>
+    </div>    
   </div>
 </section>
 
-<app-coverage-cards [coverageCardsData]="bikeProductsData.coverages" />

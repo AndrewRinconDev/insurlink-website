@@ -2,8 +2,26 @@
   <div class="home-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
     <p>{{homeProductsData.description}}</p>
+    <div class="home-insure-coverage-container">
+      <h2>Principales coberturas:</h2>
+      <ul class="home-insure-coverage-content">
+        <li *ngFor="let coverage of homeProductsData.coverages">
+          <mat-icon>check</mat-icon>
+          <p>{{coverage}}</p>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="home-insure-coverage-container">
+      <h2>Asistencias:</h2>
+      <ul class="home-insure-coverage-content">
+        <li *ngFor="let assistance of homeProductsData.assists">
+          <mat-icon>check</mat-icon>
+          <p>{{assistance}}</p>
+        </li>
+      </ul>
+    </div>
+    
   </div>
 </section>
-<app-coverage-cards [coverageCardsData]="homeProductsData.coverages" />
-<app-coverage-cards [coverageCardsData]="homeProductsData.assists" [isSecondary]="true" coverageCardsTitle="Asistencias:" />
 

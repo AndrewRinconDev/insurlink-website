@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 20px 50px;
+  padding: 50px 20px 80px;
 }
 
 .compliance-insure-container {
@@ -30,7 +30,6 @@
 
 .compliance-insure-coverage-content {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   margin: 20px 0 0 0;
@@ -39,7 +38,7 @@
 
 .compliance-insure-coverage-content li {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
   height: fit-content;
 }
@@ -51,14 +50,19 @@
 .compliance-insure-coverage-content mat-icon {
   color: var(--primaryColor);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .compliance-insure-coverage-content p {
   margin: 0;
-  max-width: 90%;
+  max-width: calc(100% - 36px);
 }
 
+@media screen and (max-width: 768px) {
+  .compliance-insure-coverage-content {
+    padding: 0;
+  }
+}
 /* Cards */
 
 /* insurance cards  */
