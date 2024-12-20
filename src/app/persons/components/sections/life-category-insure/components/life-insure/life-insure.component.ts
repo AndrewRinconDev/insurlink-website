@@ -5,11 +5,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { BreadcrumbComponent, BreadcrumbItemComponent } from '@coreui/angular';
 import { lifeProductsData } from '../../../../../../../constants/data/productData';
 import { CommonModule } from '@angular/common';
+import { CoverageCardsComponent } from "../../../../../../common/components/coverage-cards/coverage-cards.component";
 
 @Component({
   selector: 'app-life-insure',
   standalone: true,
-  imports: [CommonModule, MatIconModule, MatButtonModule, BreadcrumbComponent, BreadcrumbItemComponent],
+  imports: [CommonModule, MatIconModule, MatButtonModule, BreadcrumbComponent, BreadcrumbItemComponent, CoverageCardsComponent],
   templateUrl: './life-insure.component.html',
   styleUrl: './life-insure.component.css'
 })

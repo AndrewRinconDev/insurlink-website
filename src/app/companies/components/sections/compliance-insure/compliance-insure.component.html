@@ -1,83 +1,9 @@
 <section class="compliance-insure-section">
   <div class="compliance-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>El seguro de cumplimiento garantiza que los compromisos establecidos en contratos sean honrados, protegiendo a las partes involucradas en proyectos, obras y servicios. Este seguro cubre posibles incumplimientos de obligaciones contractuales, brindando respaldo económico en casos de multas o sanciones. En Insurlink, te ofrecemos seguros de cumplimiento adaptados a contratos públicos y privados, asegurando tranquilidad en el desarrollo de tus proyectos.</p>
-    <div class="compliance-insure-coverage-container">
-      <h2>Coberturas:</h2>
-      <ul class="compliance-insure-coverage-content">
-        <li>
-          <mat-icon>check</mat-icon>
-          <p><b>Cumplimiento del Contrato:</b> Cubre al beneficiario en caso de que el contratista no cumpla con las obligaciones estipuladas en el contrato, garantizando que el proyecto o servicio se realice o que se cubran los daños económicos.</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p><b>Pago de Salarios y Prestaciones Sociales:</b> Garantiza que el contratista cumpla con el pago de salarios, prestaciones sociales y demás obligaciones laborales con sus empleados que trabajen en el proyecto.</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p><b>Calidad del Servicio o la Obra:</b> Cubre el cumplimiento de estándares de calidad establecidos en el contrato. Si el trabajo no cumple con las especificaciones, la póliza responde por los costos de rectificación.</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p><b>Garantía de Buen Manejo y Correcta Inversión del Anticipo:</b> En caso de que el contratista reciba un anticipo, esta cobertura asegura que el dinero será utilizado para los fines acordados en el contrato.</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p><b>Responsabilidad Civil Contractual:</b> Cubre los daños causados a terceros durante la ejecución del contrato, protegiendo a las partes involucradas ante posibles reclamos por daños o perjuicios.</p>
-        </li>
-      </ul>
-    </div>
+    <p>{{complianceProductsData.description}}</p>
   </div>
 </section>
-<section>
-  <div class="compliance-cards-container">
-    <h1>Otras Pólizas</h1>
-    <div class="compliance-cards-card">
-      <!-- <div class="compliance-cards-icon-container">
-        <img src="/icons/life-group.png" alt="Icono de seguro de vida grupo">
-      </div> -->
-      <div class="compliance-cards-content">
-        <h2>Seriedad de la Oferta</h2>
-        <p>Asegura que el oferente cumpla con los términos de su propuesta en licitaciones o concursos. En caso de no formalizar el contrato, la póliza cubre los daños causados al convocante.</p>
-      </div>
-    </div>
-    <div class="compliance-cards-card">
-      <!-- <div class="compliance-cards-icon-container">
-        <img src="/icons/funeral-group.png" alt="Icono de exequial">
-      </div> -->
-      <div class="compliance-cards-content">
-        <h2>Cumplimiento de Contrato</h2>
-        <p>Garantiza el cumplimiento de las obligaciones en contratos de obra, servicio o suministro. Protege al beneficiario en caso de incumplimiento por parte del contratista.
-        </p>
-      </div>
-    </div>
-    <div class="compliance-cards-card">
-      <!-- <div class="compliance-cards-icon-container">
-        <img src="/icons/life-group-debtors.png" alt="Icono de vida grupo deudores">
-      </div> -->
-      <div class="compliance-cards-content">
-        <h2>Responsabilidad Civil Extracontractual (RCE)</h2>
-        <p>Cubre los daños o perjuicios causados a terceros en actividades que no están relacionadas directamente con un contrato, protegiendo el patrimonio del asegurado.</p>
-      </div>
-    </div>
-    <div class="compliance-cards-card">
-      <!-- <div class="compliance-cards-icon-container">
-        <img src="/icons/health-group.png" alt="Icono de salud grupo">
-      </div> -->
-      <div class="compliance-cards-content">
-        <h2>Caución Judicial</h2>
-        <p>Brinda respaldo en procesos judiciales, garantizando el cumplimiento de obligaciones legales en temas como fianzas, libertades provisionales y embargos.</p>
-      </div>
-    </div>
-    <div class="compliance-cards-card">
-      <!-- <div class="compliance-cards-icon-container">
-        <img src="/icons/health-group.png" alt="Icono de salud grupo">
-      </div> -->
-      <div class="compliance-cards-content">
-        <h2>Disposiciones Legales</h2>
-        <p>Asegura el cumplimiento de normas y regulaciones legales en proyectos y operaciones, protegiendo ante sanciones por incumplimiento de leyes vigentes en Colombia.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<app-coverage-cards [coverageCardsData]="complianceProductsData.coverages" coverageCardsTitle="Coberturas" />
+<app-coverage-cards [coverageCardsData]="complianceProductsData.otherProducts" coverageCardsTitle="Otras Pólizas" [isSecondary]="true" />
 

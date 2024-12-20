@@ -9,15 +9,7 @@
     </div>
     <!-- <h1>Seguro de Salud</h1> -->
     <p>{{selectedTypeInfo.introduction}}</p>
-    <div class="collective-insure-coverage-container">
-      <h2>{{selectedTypeInfo.coverageTitle || 'Principales coberturas'}}:</h2>
-      <ul class="collective-insure-coverage-content">
-        <li *ngFor="let selectedCoverages of selectedTypeInfo.coverages" >
-          <mat-icon>check</mat-icon>
-          <p [innerHTML]="selectedCoverages"></p>
-        </li>
-      </ul>
-    </div>
-    <p>{{selectedTypeInfo.description}}</p>
   </div>
 </section>
+
+<app-coverage-cards [coverageCardsData]="selectedTypeInfo.coverages" [coverageCardsTitle]="selectedTypeInfo.coverageTitle"/>

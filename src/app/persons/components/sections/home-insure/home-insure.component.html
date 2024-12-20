@@ -1,67 +1,9 @@
 <section class="home-insure-section">
   <div class="home-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>Nuestra póliza de hogar en Colombia te protege contra incendios, robos, desastres naturales y más. Incluye cobertura para daños a la vivienda, bienes interiores y responsabilidad civil. Consulta los términos y requisitos específicos al personalizar tu plan. ¡Fácil, claro y a tu medida!</p>
-    <div class="home-insure-coverage-container">
-      <h2>Principales coberturas:</h2>
-      <ul class="home-insure-coverage-content">
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Terremoto</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Incendio y/o Explosión</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Granizo y Daños Por Agua</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Vientos Fuertes</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Hurto</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Daños Causados a Terceros</p>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="home-insure-coverage-container">
-      <h2>Asistencias:</h2>
-      <ul class="home-insure-coverage-content">
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Plomería</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Electricidad</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Cerrajería</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Secado de Alfombras</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Jardinería</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Servicio de Vigilancia</p>
-        </li>
-      </ul>
-    </div>
-    
+    <p>{{homeProductsData.description}}</p>
   </div>
 </section>
+<app-coverage-cards [coverageCardsData]="homeProductsData.coverages" />
+<app-coverage-cards [coverageCardsData]="homeProductsData.assists" [isSecondary]="true" coverageCardsTitle="Asistencias:" />
 

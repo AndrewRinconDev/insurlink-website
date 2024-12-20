@@ -1,47 +1,7 @@
 <section class="health-insure-section">
   <div class="health-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>Obtén acceso a una atención médica de calidad, cubriendo consultas, hospitalización, exámenes, cirugías y medicamentos según el plan elegido. Garantiza la atención oportuna, red de especialistas y cobertura integral para ti y tu familia. Cuida tu bienestar con la tranquilidad de contar con el mejor respaldo en salud.</p>
-    <div class="health-insure-coverage-container">
-      <h2>Principales coberturas:</h2>
-      <ul class="health-insure-coverage-content">
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Consultas médicas</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Hospitalización</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Cirugías</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Exámenes de laboratorio y diagnóstico</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Medicamentos</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Atención de urgencias</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Maternidad (según el plan)</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Terapias y rehabilitación</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Red de clínicas y hospitales</p>
-        </li>
-      </ul>
-    </div>
+    <p>{{healthProductsData.description}}</p>
   </div>
 </section>
+<app-coverage-cards [coverageCardsData]="healthProductsData.coverages" title="Principales coberturas" />

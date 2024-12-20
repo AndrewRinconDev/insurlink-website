@@ -1,32 +1,8 @@
 <section class="bike-insure-section">
   <div class="bike-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>Protege tu bicicleta contra robos, daños y accidentes. Con el seguro de bicicletas de Insurlink, pedalea con confianza sabiendo que tu inversión está segura en todo momento.</p>
-    <div class="bike-insure-coverage-container">
-      <h2>Principales coberturas:</h2>
-      <ul class="bike-insure-coverage-content">
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Daños a terceros</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Accidentes Personales</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Pérdidas totales por daños o hurto</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Renta diaria por hospitalización</p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>Asistencia</p>
-        </li>
-      </ul>
-    </div>    
+    <p>{{bikeProductsData.description}}</p>   
   </div>
 </section>
 
+<app-coverage-cards [coverageCardsData]="bikeProductsData.coverages" />

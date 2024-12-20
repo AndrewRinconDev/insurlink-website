@@ -1,0 +1,120 @@
+.coverage-cards-section {
+  display: flex;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.coverage-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.coverage-cards-container > h1 {
+  font-size: 44px;
+  color: var(--primaryTextColor);
+  text-align: center;
+  width: 100%;
+}
+
+.coverage-cards-container > h1.secondary {
+  color: var(--primaryColor);
+}
+
+.coverage-card {
+  background-color: white;
+  padding: 0 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  width: 330px;
+  transition: all 0.3s ease;
+}
+
+.coverage-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02) rotate(2deg);
+}
+
+.coverage-card-icon-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 200px;
+  height: 170px;
+  padding: 0 35px;
+  
+  flex-direction: row;
+}
+
+.coverage-card-icon-container::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--tertiaryColor);
+  border-radius: 50%;
+}
+
+.coverage-card-icon-container.secondary::before {
+  background-color: var(--primaryColor);
+  opacity: 0.8;
+}
+
+.coverage-card-icon-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.coverage-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.coverage-card-content h3,
+.coverage-card-content p {
+  text-align: center;
+}
+
+.coverage-card-content h3{
+  /* font-weight: bold; */
+  border-bottom: 3px solid var(--tertiaryColor);
+}
+
+.coverage-card-content h3.secondary{
+  /* font-weight: bold; */
+  border-bottom: 3px solid var(--primaryColor);
+}
+
+.coverage-card-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #545454;
+}
+
+@media screen and (max-width: 767px) {
+  .coverage-cards-container {
+    padding: 40px 20px;
+  }
+
+  .coverage-cards-container > h1{
+    font-size: 36px;
+  }
+}

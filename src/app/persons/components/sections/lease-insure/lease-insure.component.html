@@ -1,40 +1,7 @@
 <section class="lease-insure-section">
   <div class="lease-insure-container">
     <!-- <h1>Seguro de Salud</h1> -->
-    <p>Cubre los riesgos asociados al alquiler de propiedades, protegiendo tanto al arrendador como al inquilino. Incluye garantías por impago de alquiler y daños a la propiedad, asegurando una relación arrendaticia sin preocupaciones.</p>
-    <div class="lease-insure-coverage-container">
-      <h2>Principales coberturas:</h2>
-      <ul class="lease-insure-coverage-content">
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>
-            <b>Canon de arrendamiento:</b>
-            Garantiza el pago de los cánones mensuales en caso de incumplimiento por parte del arrendatario.
-          </p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>
-            <b>Cuotas de administración:</b>
-            Cubre las cuotas de administración ordinarias dejadas de pagar por el inquilino, siempre que estén claramente pactadas en el contrato de arrendamiento.
-          </p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>
-            <b>Servicios públicos domiciliarios:</b>
-            Ampara el pago de los servicios públicos que el arrendatario haya dejado pendientes al momento de la entrega del inmueble.
-          </p>
-        </li>
-        <li>
-          <mat-icon>check</mat-icon>
-          <p>
-            <b>Asistencia domiciliaria:</b>
-            Servicios adicionales como plomería, electricidad, cerrajería y reemplazo de vidrios, entre otros, para atender emergencias en el inmueble arrendado.
-          </p>
-        </li>
-      </ul>
-    </div>   
+    <p>{{leaseProductsData.description}}</p> 
   </div>
 </section>
-
+<app-coverage-cards [coverageCardsData]="leaseProductsData.coverages" />

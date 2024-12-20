@@ -7,17 +7,13 @@
         <c-breadcrumb-item [active]="true">{{selectedTypeInfo.name}}</c-breadcrumb-item>
       </c-breadcrumb>
     </div>
-    <!-- <h1>Seguro de Salud</h1> -->
+
     <p>{{selectedTypeInfo.introduction}}</p>
-    <div class="life-insure-coverage-container">
-      <h2>Principales coberturas:</h2>
-      <ul class="life-insure-coverage-content">
-        <li *ngFor="let selectedCoverages of selectedTypeInfo.coverages" >
-          <mat-icon>check</mat-icon>
-          <p>{{selectedCoverages}}</p>
-        </li>
-      </ul>
-    </div>
+  </div>
+</section>
+<app-coverage-cards [coverageCardsData]="selectedTypeInfo.coverages" title="Principales coberturas" />
+<section class="life-insure-section" *ngIf="selectedTypeInfo.description">
+  <div class="life-insure-container">
     <p>{{selectedTypeInfo.description}}</p>
   </div>
 </section>
