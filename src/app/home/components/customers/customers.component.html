@@ -1,8 +1,8 @@
 <section class="customers-section">
   <div class="customers">
     <h1>Clientes que confian en nosotros</h1>
-    <div class="customers-container">
-      <div class="customer-item" *ngFor="let customer of customers">
+    <div class="customers-container" >
+      <div class="customer-item" *ngFor="let customer of customers" [matTooltip]="customer.name">
         <img [src]="customer.image" class="remove-bg" alt="{{customer.name}}-image">
       </div>
     </div>

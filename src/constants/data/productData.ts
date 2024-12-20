@@ -46,7 +46,7 @@ export const personProductsData = [
     shortName: 'Hogar',
     bannerImage: '/images/products/persons/hogar_2.png',
     introduction:
-      '<b>Protege tu hogar con Insurlink</b> 🏠 Cubre lo que más importa: tu casa y todo lo que hay en ella. Con nuestra póliza de hogar, estarás preparado para lo inesperado. ¡Seguridad, tranquilidad y confianza al alcance de un clic!',
+      '<b>Protege tu hogar con Insurlink</b> 🏠 Cubre lo que más importa: tu casa y todo lo que hay en ella. Con nuestra póliza de hogar, estarás preparado para lo inesperado.',
     description:
       'Nuestra póliza de hogar en Colombia te protege contra incendios, robos, desastres naturales y más. Incluye cobertura para daños a la vivienda, bienes interiores y responsabilidad civil. Consulta los términos y requisitos específicos al personalizar tu plan. ¡Fácil, claro y a tu medida!',
   },
@@ -56,7 +56,7 @@ export const personProductsData = [
     shortName: 'Arriendo',
     bannerImage: '/images/products/persons/arriendo.png',
     introduction:
-      'Protege tu hogar y tu tranquilidad con nuestra póliza de arrendamiento: cobertura completa para inquilinos y propietarios, diseñada para respaldarte en cada situación.',
+      'Protege tu hogar y tu tranquilidad con la cobertura completa para inquilinos y propietarios, diseñada para respaldarte en cada situación.',
     description:
       'Cubre los riesgos asociados al alquiler de propiedades, protegiendo tanto al arrendador como al inquilino. Incluye garantías por impago de alquiler y daños a la propiedad, asegurando una relación arrendaticia sin preocupaciones.',
   },
@@ -66,7 +66,7 @@ export const personProductsData = [
     shortName: 'Mascotas',
     bannerImage: '/images/products/persons/mascotas.png',
     introduction:
-      'Con nuestro seguro de mascotas, garantizas cuidado, tranquilidad y protección para ese miembro especial de tu familia. ¡Dale a tu peludo el amor y la seguridad que merece! ❤️ Cotiza hoy y vive con total tranquilidad.',
+      'Con nuestro seguro de mascotas, garantizas cuidado, tranquilidad y protección para ese miembro especial de tu familia.',
     description:
       'Nuestras pólizas de mascotas están diseñadas para ofrecerte tranquilidad y asegurar el bienestar de tu mejor amigo Porque ellos son más que mascotas, ¡son familia!.',
   },
@@ -76,7 +76,7 @@ export const personProductsData = [
     shortName: 'Autos',
     bannerImage: '/images/products/persons/drive.jpg',
     introduction:
-      '<b>Protege tu camino</b> con nuestra póliza de auto en Insurlink: cobertura completa, precios competitivos y asistencia confiable para que conduzcas con tranquilidad.',
+      '<b>Protege tu camino</b> con nuestra póliza de auto con cobertura completa, precios competitivos y asistencia confiable para que conduzcas con tranquilidad.',
     description:
       'Conduce con tranquilidad. Nuestra póliza incluye cobertura por daños a terceros, pérdida total, accidentes, robo y asistencia vial. Diseñada para cumplir con la normativa en Colombia y ofrecerte máxima protección en cada kilómetro.',
   },
@@ -204,7 +204,7 @@ export const pensionProductsData = {
 
 export const homeProductsData = {
   description:
-    'Nuestra póliza de hogar en Colombia te protege contra incendios, robos, desastres naturales y más. Incluye cobertura para daños a la vivienda, bienes interiores y responsabilidad civil. Consulta los términos y requisitos específicos al personalizar tu plan. ¡Fácil, claro y a tu medida!',
+    'Nuestra póliza de hogar en Colombia te protege contra incendios, robos, desastres naturales y más. Incluye cobertura para daños a la vivienda, bienes interiores y responsabilidad civil. Consulta los términos y requisitos específicos al personalizar tu plan. <b>¡Seguridad, tranquilidad y confianza al alcance de un clic!</b>',
   coverages: [
     'Terremoto',
     'Incendio y/o Explosión',
@@ -234,7 +234,7 @@ export const leaseProductsData = {
 };
 
 export const petProductsData = {
-  description: 'Nuestras pólizas de mascotas están diseñadas para ofrecerte tranquilidad y asegurar el bienestar de tu mejor amigo. <b>Porque ellos son más que mascotas, ¡son familia!.</b>',
+  description: 'Nuestras pólizas de mascotas están diseñadas para ofrecerte tranquilidad y asegurar el bienestar de tu mejor amigo. ¡Dale a tu peludo el amor y la seguridad que merece! ❤️ Cotiza hoy y vive con total tranquilidad. <b>Porque ellos son más que mascotas, ¡son familia!.</b>',
   coverages: [
     '<b>Asistencia veterinaria:</b> Cubre consultas, tratamientos y emergencias.',
     '<b>Gastos médicos por accidentes o enfermedades:</b> Garantiza atención integral en situaciones imprevistas.',
@@ -442,27 +442,27 @@ export const complianceProductsData = {
   ],
   otherProducts: [
     {
-      image: '/icons/mision.png',
+      image: '/icons/judicial.png',
       title: 'Seriedad de la Oferta',
       description: 'Asegura que el oferente cumpla con los términos de su propuesta en licitaciones o concursos. En caso de no formalizar el contrato, la póliza cubre los daños causados al convocante.'
     },
     {
-      image: '/icons/mision.png',
+      image: '/icons/contract-2.png',
       title: 'Cumplimiento de Contrato',
       description: 'Garantiza el cumplimiento de las obligaciones en contratos de obra, servicio o suministro. Protege al beneficiario en caso de incumplimiento por parte del contratista.'
     },
     {
-      image: '/icons/mision.png',
+      image: '/icons/civil-responsibility.png',
       title: 'Responsabilidad Civil Extracontractual (RCE)',
       description: 'Cubre los daños o perjuicios causados a terceros en actividades que no están relacionadas directamente con un contrato, protegiendo el patrimonio del asegurado.'
     },
     {
-      image: '/icons/mision.png',
+      image: '/icons/causal.png',
       title: 'Caución Judicial',
       description: 'Brinda respaldo en procesos judiciales, garantizando el cumplimiento de obligaciones legales en temas como fianzas, libertades provisionales y embargos.'
     },
     {
-      image: '/icons/mision.png',
+      image: '/icons/legal-disposition.png',
       title: 'Disposiciones Legales',
       description: 'Asegura el cumplimiento de normas y regulaciones legales en proyectos y operaciones, protegiendo ante sanciones por incumplimiento de leyes vigentes en Colombia.'
     }

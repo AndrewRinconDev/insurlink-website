@@ -58,14 +58,14 @@
 .banner-content h1 {
   color: var(--primaryColor);
   text-align: center;
-  font-size: 64px;
+  font-size: 58px;
   margin: 0;
 }
 
 .banner-content p {
   color: var(--primaryTextColor);
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 12px;
 }
 
