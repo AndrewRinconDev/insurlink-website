@@ -1,4 +1,4 @@
-.insurers-image-container{
+.insurers-image-container {
   width: 100%;
   max-width: 100px;
   position: relative;
@@ -23,10 +23,25 @@
   color: var(--primaryTextColor);
 }
 
-::ng-deep .mat-mdc-table mat-row.mat-mdc-row{
+::ng-deep .mat-mdc-table mat-row.mat-mdc-row {
   height: 60px !important;
   display: flex;
   align-items: center;
+}
+
+::ng-deep .mat-mdc-table-sticky {
+  top: 79px !important;
+  background-color: var(--primaryColor) !important;
+  color: white !important;
+}
+
+::ng-deep .mat-mdc-table-sticky mat-header-cell {
+  font-size: 18px;
+}
+
+::ng-deep .mat-mdc-table-sticky mat-header-cell,
+::ng-deep mat-table mat-cell {
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -36,5 +51,13 @@
 
   .mat-mdc-table {
     width: fit-content;
+  }
+
+  ::ng-deep .mat-mdc-table-sticky {
+    top: 0 !important;
+  }
+
+  ::ng-deep .mat-mdc-table-sticky mat-header-cell {
+    font-size: 16px;
   }
 }

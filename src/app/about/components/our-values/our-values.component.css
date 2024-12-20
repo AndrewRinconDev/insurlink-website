@@ -38,7 +38,8 @@
   border: 2px solid var(--primaryColor);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   align-items: center;
-  background: linear-gradient(135deg, var(--primaryColor) 0%, var(--secondaryColor) 100%);
+  background: var(--primaryColor);
+  /* background: linear-gradient(135deg, var(--primaryColor) 0%, var(--secondaryColor) 100%); */
 }
 
 .our-values-image-container {

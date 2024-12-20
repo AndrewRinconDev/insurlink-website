@@ -105,6 +105,17 @@ export const insurersDirectory = [
     image: 'colsanitas.png',
   },
   {
+    id: 29,
+    name: 'LA EQUIDAD SEGUROS',
+    contact: {
+      mobile: '#324',
+      local: '601 7460392',
+      national: '018000 919538',
+    },
+    url: 'https://servicios.laequidadseguros.coop/clientes/pagoExterno/consultaPoliza',
+    image: 'equidad.png',
+  },
+  {
     id: 17,
     name: 'HDI SEGUROS',
     contact: {
@@ -160,6 +171,16 @@ export const insurersDirectory = [
     image: 'previsora.png',
   },
   {
+    id: 25,
+    name: 'SBS SEGUROS',
+    contact: {
+      mobile: '#360',
+      national: '018000 911360',
+    },
+    url: 'https://www.sbseguros.co/servicio-al-cliente/alternativas-pagos',
+    image: 'sbs.png',
+  },
+  {
     id: 23,
     name: 'SEGUROS MUNDIAL',
     contact: {
@@ -169,16 +190,6 @@ export const insurersDirectory = [
     },
     url: 'https://recaudos.mundialseguros.com.co/',
     image: 'mundial.png',
-  },
-  {
-    id: 25,
-    name: 'SBS SEGUROS',
-    contact: {
-      mobile: '#360',
-      national: '018000 911360',
-    },
-    url: 'https://www.sbseguros.co/servicio-al-cliente/alternativas-pagos',
-    image: 'sbs.png',
   },
   {
     id: 26,
@@ -213,15 +224,4 @@ export const insurersDirectory = [
     url: 'https://web.zurichseguros.com.co/zcc-pp-web-app/login',
     image: 'zurich.png',
   },
-  {
-    id: 29,
-    name: 'LA EQUIDAD SEGUROS',
-    contact: {
-      mobile: '#324',
-      local: '601 7460392',
-      national: '018000 919538',
-    },
-    url: 'https://servicios.laequidadseguros.coop/clientes/pagoExterno/consultaPoliza',
-    image: 'equidad.png',
-  },  
 ];
