@@ -1,11 +1,15 @@
+.carousel-container {
+  background-color: #dedede;
+  width: 100%;
+}
 .our-team-members-section{
-  padding: 80px 50px;
+  padding: 80px 50px 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  background-color: #dedede;
   flex-direction: column;
 }
 
@@ -36,11 +40,11 @@
   gap: 50px;
   flex-wrap: wrap;
   width: 100%;
-  padding: 50px 0;
+  padding: 20px 0 80px;
 }
 
 .team-member-card {
-  width: 450px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,11 +89,10 @@
   align-items: center;
   gap: 10px;
   flex-direction: column;
-
 }
 
 .team-member-details h2{
-  font-size: 36px;
+  font-size: 32px;
   margin: 0;
   color: var(--primaryTextColor);
 }
@@ -138,4 +141,28 @@
 .contact-container span{
   font-size: 20px;
   color: var(--primaryTextColor);
+}
+
+
+::ng-deep .carousel-indicators {
+  margin-bottom: 2rem;
+  width: 70%;
+  gap: 10px;
+}
+
+::ng-deep .carousel-control-next,
+::ng-deep .carousel-control-prev {
+  width: 10%;
+}
+
+::ng-deep .carousel-indicators button {
+  background-color: rgba(7, 7, 77, .5);
+  border: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+::ng-deep .carousel-indicators button.active {
+  background-color: var(--primaryColor);
 }

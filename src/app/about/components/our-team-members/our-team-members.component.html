@@ -1,125 +1,54 @@
 <section class="our-team-members-section">
   <h1>Nuestro Equipo</h1>
-  <div class="our-team-members-container">
-    <mat-tab-group [selectedIndex]="(selectedCategoryMember - 1)">
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <div class="tab-container-action" (click)="routeCategoryMember(1)">
-            <!-- <mat-icon class="tab-icon-custom">volunteer_activism</mat-icon> -->
-            Gerencia
-          </div>
-        </ng-template>
-
-        <div class="team-category-content">
-          <div class="team-member-card">
-            <div class="team-member-image">
-              <img src="/images/about/team/alexandra-peña.png" alt="Our Team Member 1">
-            </div>
-            <div class="team-member-details">
-              <h2>Alexandra Peña</h2>
-              <p>Gerente</p>
-              <button mat-flat-button color="warn" (click)="openDialog(1)">Contactar</button>
-            </div>
-          </div>
-          <div class="team-member-card">
-            <div class="team-member-image">
-              <img src="/images/about/team/miguel-acero.png" alt="Our Team Member 2">
-            </div>
-            <div class="team-member-details">
-              <h2>Miguel Acero</h2>
-              <p>Lider de Operaciones</p>
-              <button mat-flat-button color="warn" (click)="openDialog(2)">Contactar</button>
-            </div>
-          </div>
-        </div>
-
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <div class="tab-container-action" (click)="routeCategoryMember(2)">
-            <!-- <mat-icon class="tab-icon-custom">diversity_1</mat-icon> -->
-            Empresarial
-          </div>
-        </ng-template>
-        <div class="team-category-content">
-          <div class="team-member-card">
-            <div class="team-member-image">
-              <img src="/images/about/team/alexandra-peña.png" alt="Our Team Member 2">
-            </div>
-            <div class="team-member-details">
-              <div class="team-member-details-content">
-                <div class="title-container">
-                  <h2>Alexandra Peña</h2>
-                  <p>Gerente</p>
-                </div>
-                <img src="/images/about/team/alexandra-peña-qr.png" alt="alexandra-qr">
+  <div class="carousel-container">
+    <c-carousel [interval]="4000">
+      <c-carousel-indicators></c-carousel-indicators>
+      <c-carousel-inner>
+        <c-carousel-item>
+          <div class="team-category-content">
+            <div class="team-member-card" *ngFor="let member1 of teamMembers1">
+              <div class="team-member-image">
+                <img [src]="member1.image" [alt]="member1.name">
               </div>
-              <div class="contact-container">
-                <button mat-mini-fab color="warn" aria-label="Example icon button with a menu icon">
-                  <mat-icon>mail</mat-icon>
-                </button>
-                <!-- <mat-icon mat-flat-mini>mail</mat-icon> -->
-                <span> {{"lider.beneficios@insurlink.com.co"}}</span>
-              </div>
-              <div class="contact-container">
-                <button mat-mini-fab color="warn" aria-label="Example icon button with a menu icon">
-                  <mat-icon>call</mat-icon>
-                </button>
-                <!-- <mat-icon mat-flat-mini>call</mat-icon> -->
-                <span> 3182137613</span>
+              <div class="team-member-details">
+                <h2>{{member1.name}}</h2>
+                <p>{{member1.position}}</p>
+                <button mat-flat-button color="warn" (click)="openDialog(member1.id)">Contactar</button>
               </div>
             </div>
           </div>
-          <div class="team-member-card">
-            <div class="team-member-image">
-              <img src="/images/about/team/miguel-acero.png" alt="Our Team Member 2">
-            </div>
-            <div class="team-member-details">
-              <div class="team-member-details-content">
-                <div class="title-container">
-                  <h2>Miguel Acero</h2>
-                  <p>Lider de operaciones</p>
-                </div>
-                <img src="/images/about/team/alexandra-peña-qr.png" alt="alexandra-qr">
+        </c-carousel-item>
+        <c-carousel-item>
+          <div class="team-category-content">
+            <div class="team-member-card" *ngFor="let member2 of teamMembers2">
+              <div class="team-member-image">
+                <img [src]="member2.image" [alt]="member2.name">
               </div>
-              <div class="contact-container">
-                <button mat-mini-fab color="warn" aria-label="Example icon button with a menu icon">
-                  <mat-icon>mail</mat-icon>
-                </button>
-                <!-- <mat-icon mat-flat-mini>mail</mat-icon> -->
-                <span> {{"lider.beneficios@insurlink.com.co"}}</span>
-              </div>
-              <div class="contact-container">
-                <button mat-mini-fab color="warn" aria-label="Example icon button with a menu icon">
-                  <mat-icon>call</mat-icon>
-                </button>
-                <!-- <mat-icon mat-flat-mini>call</mat-icon> -->
-                <span> 3182137613</span>
+              <div class="team-member-details">
+                <h2>{{member2.name}}</h2>
+                <p>{{member2.position}}</p>
+                <button mat-flat-button color="warn" (click)="openDialog(member2.id)">Contactar</button>
               </div>
             </div>
           </div>
-        </div>
-      </mat-tab>
-    </mat-tab-group>
+        </c-carousel-item>
+        <c-carousel-item>
+          <div class="team-category-content">
+            <div class="team-member-card" *ngFor="let member3 of teamMembers3">
+              <div class="team-member-image">
+                <img [src]="member3.image" [alt]="member3.name">
+              </div>
+              <div class="team-member-details">
+                <h2>{{member3.name}}</h2>
+                <p>{{member3.position}}</p>
+                <button mat-flat-button color="warn" (click)="openDialog(member3.id)">Contactar</button>
+              </div>
+            </div>
+          </div>
+        </c-carousel-item>
+      </c-carousel-inner>
+      <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+      <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+    </c-carousel>
   </div>
 </section>
-
-<div class="modal fade" id="memberContactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>

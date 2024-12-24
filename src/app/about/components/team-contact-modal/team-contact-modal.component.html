@@ -2,19 +2,32 @@
   <button mat-icon-button class="close-button" aria-label="Close" (click)="closeDialog()">
     <mat-icon>close</mat-icon>
   </button>
-  <img src="/images/about/team/alexandra-peña-qr.png" alt="alexandra-qr">
+  <h2>{{memberInfo.name}}</h2>
+  <img [src]="memberInfo.qr" alt="QR {{memberInfo.name}}">
   <div class="contact-container">
-    <button mat-mini-fab color="warn" aria-label="Example icon button with a menu icon">
-      <mat-icon>mail</mat-icon>
+    <div>
+      <a mat-mini-fab color="warn" href="mailto:{{memberInfo.email}}" class="email-icon" aria-label="Email icon">
+        <mat-icon>mail</mat-icon>
+      </a>
+      
+      <a href="mailto:{{memberInfo.email}}">&nbsp;&nbsp;<span>{{memberInfo.email}}</span></a>
+    </div>
+    
+    <button mat-mini-fab color="primary" matTooltip="Copiar" class="copy-icon" (click)="copyToClipboard(memberInfo.email)" aria-label="Email copy icon">
+      <mat-icon>content_copy</mat-icon>
     </button>
-    <!-- <mat-icon mat-flat-mini>mail</mat-icon> -->
-    <span> {{"lider.beneficios@insurlink.com.co"}}</span>
   </div>
   <div class="contact-container">
-    <button mat-mini-fab color="warn" aria-label="Example icon button with a menu icon">
-      <mat-icon>call</mat-icon>
+    <div>
+      <a mat-mini-fab color="warn" aria-label="Phone icon" class="email-icon" href="https://wa.me/+57{{memberInfo.mobile}}" target="_blank">  
+        <!-- <mat-icon>call</mat-icon> -->
+        <svg [cIcon]="icons.cibWhatsapp" width="20" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+      </a>
+      <!-- <mat-icon mat-flat-mini>call</mat-icon> -->
+       <a href="https://wa.me/+57{{memberInfo.mobile}}" target="_blank">&nbsp;&nbsp;<span>{{memberInfo.mobile}}</span></a>
+    </div>
+    <button mat-mini-fab color="primary" matTooltip="Copiar" class="copy-icon" (click)="copyToClipboard(memberInfo.mobile)" aria-label="Phone copy icon">
+      <mat-icon>content_copy</mat-icon>
     </button>
-    <!-- <mat-icon mat-flat-mini>call</mat-icon> -->
-    <span> 3182137613</span>
   </div>
 </div>
