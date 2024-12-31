@@ -9,5 +9,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './products-category-card.component.css'
 })
 export class ProductsCategoryCardComponent {
-  
+  scrollTop() {
+    window.scrollTo(0, 0);
+  }
 }

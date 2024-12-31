@@ -468,3 +468,113 @@ export const complianceProductsData = {
     }
   ],
 };
+
+export const civilLiabilityProductsData = {
+  description: 'Protege a personas o empresas contra reclamos de terceros por daños o perjuicios causados en actividades no vinculadas a contratos específicos. Esta póliza cubre indemnizaciones por daños materiales, lesiones personales y perjuicios económicos, salvaguardando el patrimonio del asegurado en Colombia.',
+  otherProducts: [
+    {
+      image: '/icons/rce-company.png',
+      title: 'RCE Empresarial',
+      description: 'Protege a las empresas ante reclamaciones de terceros por daños causados en el desarrollo de sus actividades comerciales. Cubre daños a bienes, lesiones o perjuicios económicos derivados de la operación empresarial.'
+    },
+    {
+      image: '/icons/events.png',
+      title: 'RCE para Eventos',
+      description: 'Cubre a organizadores de eventos frente a reclamaciones por accidentes, daños o perjuicios sufridos por asistentes o terceros durante el evento, brindando respaldo en situaciones imprevistas.'
+    },
+    {
+      image: '/icons/vigilancia.png',
+      title: 'RCE para Vigilancia',
+      description: 'Protege a las empresas de seguridad y vigilancia en caso de reclamaciones por daños a terceros derivados de sus servicios de protección, incluyendo errores o negligencias en el ejercicio de sus funciones.'
+    },
+    {
+      image: '/icons/empresario.png',
+      title: 'RCE Profesional',
+      description: 'Ofrece cobertura a profesionales ante demandas por errores, omisiones o negligencias en la prestación de sus servicios. Es ideal para médicos, abogados, contadores y otros profesionales que puedan enfrentar reclamaciones.'
+    },
+    {
+      image: '/icons/hospital.png',
+      title: 'RCE para Clínicas y Hospitales',
+      description: 'Brinda cobertura a clínicas y hospitales frente a demandas por daños a pacientes o terceros debido a errores médicos, negligencias o accidentes en las instalaciones de salud, protegiendo su reputación y patrimonio.'
+    }
+  ],
+};
+
+export const financialProductsData = {
+  description: 'Protege a las empresas y personas que realizan actividades relacionadas con el manejo de fondos, inversión, crédito y otros servicios financieros. Estas pólizas cubren riesgos como fraudes, errores en la gestión financiera, y el incumplimiento de obligaciones por parte de las partes involucradas.',
+  otherProducts: [
+    {
+      image: '/icons/offer-2.png',
+      title: 'Directores y Administradores (D&O)',
+      description: 'Esta póliza protege a directores y administradores frente a reclamaciones por errores de gestión que puedan resultar en pérdidas financieras para la empresa o sus accionistas. Cubriendo defensa legal, indemnizaciones y gastos relacionados con demandas por negligencia o incumplimiento de deberes.'
+    },
+    {
+      image: '/icons/fraude.png',
+      title: 'Infidelidad y Riesgos Financieros (IRF)',
+      description: 'Cubre pérdidas financieras causadas por actos de fraude, malversación de fondos o robo por parte de empleados o terceros. Es esencial para proteger a las empresas de daños financieros derivados de actos de infidelidad dentro de la organización.'
+    },
+    {
+      image: '/icons/la-seguridad-cibernetica.png',
+      title: 'Protección Digital (Ciber)',
+      description: 'Ofrece cobertura ante incidentes relacionados con ciberseguridad, como hackeos, robo de información confidencial, daños a sistemas informáticos y violaciones de datos. Esta póliza ayuda a mitigar los riesgos asociados con la tecnología y la información digital en el entorno empresarial.'
+    },
+    {
+      image: '/icons/empresario.png',
+      title: 'Responsabilidad Civil Profesional (Errores y Omisiones)',
+      description: 'Cubre a los profesionales (como abogados, médicos, consultores, entre otros) frente a reclamaciones por daños derivados de errores o negligencias en la prestación de sus servicios. Es ideal para proteger la reputación y los activos del profesional en caso de que se alegue incumplimiento o mala praxis.'
+    }
+  ],
+};
+
+export const buildingProductsData = {
+  description: 'Cubre los riesgos asociados con la ejecución de proyectos de construcción, protegiendo tanto los bienes materiales como la responsabilidad civil. Cubre daños a la obra en proceso, robo de materiales, accidentes laborales y posibles daños a terceros. Es una herramienta esencial para garantizar la continuidad del proyecto y minimizar los riesgos durante su desarrollo.',
+  otherProducts: [
+    {
+      // image: '/icons/judicial.png',
+      title: 'Póliza de Montaje',
+      description: 'Cubre daños a la maquinaria, equipo y estructuras durante el proceso de montaje e instalación, protegiendo la obra contra imprevistos y pérdidas.'
+    },
+    {
+      // image: '/icons/contract-2.png',
+      title: 'Todo Riesgo Contratista',
+      description: 'Protege al contratista ante cualquier daño o pérdida que ocurra durante la ejecución de un proyecto de construcción, incluyendo materiales, equipos y responsabilidad civil.'
+    },
+    {
+      // image: '/icons/civil-responsibility.png',
+      title: 'Póliza de Maquinaria y Equipo',
+      description: 'Cubre los riesgos de daños, robo o mal funcionamiento de maquinaria y equipos utilizados en proyectos de construcción o industriales, asegurando su operatividad.'
+    }
+  ],
+};
+
+export const transportProductsData = {
+  description: 'Cubre los bienes transportados contra riesgos como robo, daños o pérdida durante el traslado, ya sea por tierra, aire o mar. Garantiza la seguridad de la mercancía desde el origen hasta el destino, protegiendo al propietario de las mercancías y a las empresas de transporte ante imprevistos.',
+  otherProducts: [
+    {
+      // image: '/icons/judicial.png',
+      title: 'Pólizas Automáticas de Mercancías',
+      description: 'Cubre automáticamente las mercancías en tránsito bajo una póliza general, sin necesidad de declarar cada envío individualmente, brindando flexibilidad y rapidez en el proceso.'
+    },
+    {
+      // image: '/icons/contract-2.png',
+      title: 'Pólizas Específicas de Mercancías',
+      description: 'Ofrecen cobertura personalizada para un tipo de mercancía o envío específico, garantizando protección completa contra daños, robo o pérdida durante el transporte.'
+    }
+  ],
+};
+
+export const pymeProductsData = {
+  description: 'Diseñada para pequeñas y medianas empresas, cubre los daños materiales a los bienes e instalaciones de la empresa debido a incendios, robos, desastres naturales o accidentes. Proporciona protección integral para el patrimonio de tu negocio.',
+  otherProducts: [
+    {
+      // image: '/icons/judicial.png',
+      title: 'Póliza de Manejo Global Comercial',
+      description: 'Ofrece una cobertura integral para empresas con operaciones comerciales internacionales, protegiendo desde la mercancía hasta los bienes materiales y la responsabilidad civil, tanto en el país como en el extranjero.'
+    },
+    {
+      // image: '/icons/contract-2.png',
+      title: 'Póliza de Lucro Cesante',
+      description: 'Cubre la pérdida de ingresos o beneficios de una empresa debido a daños materiales o eventos imprevistos que interrumpan su actividad económica, como incendios, desastres naturales o robos.'
+    }
+  ],
+};

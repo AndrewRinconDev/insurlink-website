@@ -17,8 +17,9 @@
 }
 
 .card {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1/1;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -65,4 +66,14 @@
 .card:hover .overlay h2 {
   color: var(--tertiaryColor);
   border-bottom-width: thin;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    padding: 50px 20px;
+  }
+
+  .card-container h1 {
+    font-size: 36px;
+  }
 }

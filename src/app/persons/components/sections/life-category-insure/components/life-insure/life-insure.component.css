@@ -13,7 +13,7 @@
   max-width: 1000px;
   width: 100%;
   gap: 30px;
-  padding: 50px 20px 80px;
+  padding: 50px 50px 80px;
 }
 
 .life-insure-container p {
@@ -68,8 +68,22 @@
   max-width: calc(100% - 36px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  .life-insure-container {
+    padding: 50px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .life-insure-coverage-content {
     padding: 0;
+  }
+
+  .life-cards-container > h1{
+    font-size: 36px;
+  }
+  
+  .life-insure-container > p {
+    text-align: center;
   }
 }

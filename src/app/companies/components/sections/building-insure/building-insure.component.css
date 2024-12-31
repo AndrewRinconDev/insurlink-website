@@ -1,0 +1,149 @@
+.building-insure-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.building-insure-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+
+}
+
+.building-insure-container p {
+  font-size: 24px;
+  color: var(--primaryTextColor);
+}
+
+.building-insure-coverage-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid var(--primaryColor);
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.building-insure-coverage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 0 0;
+  gap: 10px;
+}
+
+.building-insure-coverage-content li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  height: fit-content;
+}
+
+.building-insure-coverage-container h2{
+  color: var(--primaryColor);
+}
+
+.building-insure-coverage-content mat-icon {
+  color: var(--primaryColor);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.building-insure-coverage-content p {
+  margin: 0;
+  max-width: calc(100% - 36px);
+}
+
+@media screen and (max-width: 768px) {
+  .building-insure-coverage-content {
+    padding: 0;
+  }
+}
+/* Cards */
+
+/* insurance cards  */
+
+.building-cards-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: var(--secondaryColor); */
+  background-color: #f9f9f9;
+  padding: 80px 50px 100px;
+  gap: 50px;
+}
+
+.building-cards-container > h1 {
+  font-size: 48px;
+  color: var(--primaryTextColor);
+  text-align: center;
+  width: 100%;
+}
+
+.building-cards-card {
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(7, 7, 77, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  width: 350px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.building-cards-card:hover {
+  transform: rotate(2deg);
+}
+
+.building-cards-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.building-cards-content h2,
+.building-cards-content p {
+  text-align: center;
+}
+
+.building-cards-content h2{
+  color: var(--primaryColor);
+  width: min-content;
+}
+
+.building-cards-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #545454;
+}
+
+@media screen and (max-width: 1023px) {
+  .building-insure-container {
+    padding: 50px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .building-insure-coverage-content {
+    padding: 0;
+  }
+
+  .building-cards-container > h1{
+    font-size: 36px;
+  }
+  
+  .building-insure-container > p {
+    text-align: center;
+  }
+}

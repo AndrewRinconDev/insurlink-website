@@ -5,7 +5,7 @@ export const teamMembers1 = [
     position: 'Gerente',
     image: '/images/about/team/alexandra-peña.png',
     qr: '/images/about/team/qr/Alexandra.png',
-    email: 'gerencia@insurlink.com.co',
+    email: 'alexandra.pena@insurlink.com.co',
     mobile: '3182137613'
   },
   {

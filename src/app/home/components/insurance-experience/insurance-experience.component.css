@@ -103,7 +103,7 @@
   .content {
     padding: 0;
     width: 100%;
-  } 
+  }
 
   .content::before {
     left: -120px;
@@ -163,6 +163,15 @@
     width: 90%;
     top: 0;
     left: 5%;
+  }
+
+  .content div h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .content div p {
+    text-align: center;
   }
 
   .divider-container::after {

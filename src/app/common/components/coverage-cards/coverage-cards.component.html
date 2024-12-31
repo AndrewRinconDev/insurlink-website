@@ -1,8 +1,8 @@
 <section class="coverage-cards-section">
   <div class="coverage-cards-container">
-    <h1 [ngClass]="{'secondary': isSecondary}">{{coverageCardsTitle}}</h1>
+    <h1 *ngIf="coverageCardsTitle != 'null'" [ngClass]="{'secondary': isSecondary}">{{coverageCardsTitle}}</h1>
     <div class="coverage-card" *ngFor="let coverageCard of coverageCardsData">
-      <div class="coverage-card-icon-container" [ngClass]="{'secondary': isSecondary}">
+      <div *ngIf="coverageCard.image" class="coverage-card-icon-container" [ngClass]="{'secondary': isSecondary}">
         <img [src]="coverageCard.image" alt="Icono de misión">
       </div>
       <div class="coverage-card-content">

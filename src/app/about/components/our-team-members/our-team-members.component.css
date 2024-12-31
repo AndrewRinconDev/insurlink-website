@@ -166,3 +166,9 @@
 ::ng-deep .carousel-indicators button.active {
   background-color: var(--primaryColor);
 }
+
+@media screen and (max-width: 767px) {
+  .our-team-members-section{
+    padding: 50px 20px 20px;
+  }
+}

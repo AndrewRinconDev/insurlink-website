@@ -15,7 +15,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50%;
+  width: 750px;
+  max-width: 60%;
   padding: 5%;
 }
 
@@ -35,12 +36,14 @@
 @media screen and (max-width: 1024px){
   .about-content{
     width: 60%;
+    max-width: 60%;
   }
 }
 
 @media screen and (max-width: 767px){
   .about-content{
     width: 100%;
+    max-width: 100%;
   }
 
   .about-content h1{

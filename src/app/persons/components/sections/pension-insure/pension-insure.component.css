@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px 80px;
+  padding: 50px 50px 80px;
 }
 
 .pension-insure-container {
@@ -65,8 +65,22 @@
   max-width: calc(100% - 36px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  .pension-insure-container {
+    padding: 50px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .pension-insure-coverage-content {
     padding: 0;
+  }
+
+  .pension-cards-container > h1{
+    font-size: 36px;
+  }
+  
+  .pension-insure-container > p {
+    text-align: center;
   }
 }

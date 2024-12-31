@@ -1,0 +1,8 @@
+<section class="financial-insure-section">
+  <div class="financial-insure-container">
+    <!-- <h1>Seguro de Salud</h1> -->
+    <p>{{financialProductsData.description}}</p>
+  </div>
+</section>
+
+<app-coverage-cards [coverageCardsData]="financialProductsData.otherProducts" coverageCardsTitle="null" />

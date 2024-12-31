@@ -1,0 +1,149 @@
+.financial-insure-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.financial-insure-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+
+}
+
+.financial-insure-container p {
+  font-size: 24px;
+  color: var(--primaryTextColor);
+}
+
+.financial-insure-coverage-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid var(--primaryColor);
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.financial-insure-coverage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 0 0;
+  gap: 10px;
+}
+
+.financial-insure-coverage-content li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  height: fit-content;
+}
+
+.financial-insure-coverage-container h2{
+  color: var(--primaryColor);
+}
+
+.financial-insure-coverage-content mat-icon {
+  color: var(--primaryColor);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.financial-insure-coverage-content p {
+  margin: 0;
+  max-width: calc(100% - 36px);
+}
+
+@media screen and (max-width: 768px) {
+  .financial-insure-coverage-content {
+    padding: 0;
+  }
+}
+/* Cards */
+
+/* insurance cards  */
+
+.financial-cards-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: var(--secondaryColor); */
+  background-color: #f9f9f9;
+  padding: 80px 50px 100px;
+  gap: 50px;
+}
+
+.financial-cards-container > h1 {
+  font-size: 48px;
+  color: var(--primaryTextColor);
+  text-align: center;
+  width: 100%;
+}
+
+.financial-cards-card {
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(7, 7, 77, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  width: 350px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.financial-cards-card:hover {
+  transform: rotate(2deg);
+}
+
+.financial-cards-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.financial-cards-content h2,
+.financial-cards-content p {
+  text-align: center;
+}
+
+.financial-cards-content h2{
+  color: var(--primaryColor);
+  width: min-content;
+}
+
+.financial-cards-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #545454;
+}
+
+@media screen and (max-width: 1023px) {
+  .financial-insure-container {
+    padding: 50px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .financial-insure-coverage-content {
+    padding: 0;
+  }
+
+  .financial-cards-container > h1{
+    font-size: 36px;
+  }
+  
+  .financial-insure-container > p {
+    text-align: center;
+  }
+}

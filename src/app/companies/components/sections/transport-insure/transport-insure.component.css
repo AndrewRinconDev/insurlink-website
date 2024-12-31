@@ -1,0 +1,149 @@
+.transport-insure-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.transport-insure-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+
+}
+
+.transport-insure-container p {
+  font-size: 24px;
+  color: var(--primaryTextColor);
+}
+
+.transport-insure-coverage-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid var(--primaryColor);
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transport-insure-coverage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 0 0;
+  gap: 10px;
+}
+
+.transport-insure-coverage-content li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  height: fit-content;
+}
+
+.transport-insure-coverage-container h2{
+  color: var(--primaryColor);
+}
+
+.transport-insure-coverage-content mat-icon {
+  color: var(--primaryColor);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.transport-insure-coverage-content p {
+  margin: 0;
+  max-width: calc(100% - 36px);
+}
+
+@media screen and (max-width: 768px) {
+  .transport-insure-coverage-content {
+    padding: 0;
+  }
+}
+/* Cards */
+
+/* insurance cards  */
+
+.transport-cards-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: var(--secondaryColor); */
+  background-color: #f9f9f9;
+  padding: 80px 50px 100px;
+  gap: 50px;
+}
+
+.transport-cards-container > h1 {
+  font-size: 48px;
+  color: var(--primaryTextColor);
+  text-align: center;
+  width: 100%;
+}
+
+.transport-cards-card {
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(7, 7, 77, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  width: 350px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.transport-cards-card:hover {
+  transform: rotate(2deg);
+}
+
+.transport-cards-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.transport-cards-content h2,
+.transport-cards-content p {
+  text-align: center;
+}
+
+.transport-cards-content h2{
+  color: var(--primaryColor);
+  width: min-content;
+}
+
+.transport-cards-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #545454;
+}
+
+@media screen and (max-width: 1023px) {
+  .transport-insure-container {
+    padding: 50px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .transport-insure-coverage-content {
+    padding: 0;
+  }
+
+  .transport-cards-container > h1{
+    font-size: 36px;
+  }
+  
+  .transport-insure-container > p {
+    text-align: center;
+  }
+}
