@@ -61,8 +61,7 @@ export class ContactFormComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       const routeParam = params.get('category');
-      
-      console.log('routeParam', routeParam);
+
       if (routeParam) {
         const currentInsure = insurersType.find((insurer) => insurer.route == routeParam);
         this.contactForm.patchValue({ insureType: currentInsure?.value });
