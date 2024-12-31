@@ -1,30 +1,101 @@
-<section class="contact-form-section">
-  <h1>Co</h1>
+<section class="contact-form-section" id="contact-form">
+  <h1>Contáctanos</h1>
+  <p>Déjanos tus datos y un asesor te contactará</p>
   <div class="contact-form-container">
-    <form class="contact-form">
-      <!-- <mat-form-field class="example-full-width">
-        <mat-label>Email</mat-label>
-        <input type="email" matInput [formControl]="form.name"
-                
-               placeholder="Ex. pat@example.com">
-        <mat-hint>Errors appear instantly!</mat-hint>
-        @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
-          <mat-error>Please enter a valid email address</mat-error>
+    <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="contact-input">
+        <mat-label>Nombre</mat-label>
+        <input type="text" matInput color="accent" formControlName="name" placeholder="Ingresa tu Nombre">
+        @if (contactForm.hasError('required', 'name')) {
+        <mat-error>Por favor ingresa tu Nombre</mat-error>
         }
-        @if (emailFormControl.hasError('required')) {
-          <mat-error>Email is <strong>required</strong></mat-error>
+      </mat-form-field>
+      <mat-form-field class="contact-input">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput color="accent" formControlName="email" placeholder="Ingresa tu email">
+        @if (contactForm.hasError('required', 'email')) {
+        <mat-error>Por favor ingresa tu Email</mat-error>
+        }
+        @if (contactForm.hasError('email', 'email') && !contactForm.hasError('required', 'email')) {
+        <mat-error>Por favor ingresa un Email válido</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field class="contact-input">
+        <mat-label>Teléfono</mat-label>
+        <input type="text" matInput color="accent" formControlName="phone" placeholder="Ingresa tu Teléfono">
+        @if (contactForm.hasError('required', 'phone')) {
+        <mat-error>Por favor ingresa tu Teléfono</mat-error>
+        }
+        @if (contactForm.hasError('minlength', 'phone') && !contactForm.hasError('required', 'phone')) {
+        <mat-error>Por favor ingresa tu Teléfono válido</mat-error>
         }
       </mat-form-field>
 
-      <mat-form-field>
-        <mat-label>Favorite food</mat-label>
-        <mat-select [(ngModel)]="selectedValue" name="food">
-          @for (food of foods; track food) {
-            <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
-          }
+      <mat-form-field class="contact-input">
+        <mat-label>Seguro de interés</mat-label>
+        <mat-select formControlName="insureType" color="accent">
+          <mat-option *ngFor="let insurer of insurersType" [value]="insurer.value">{{insurer.label}}</mat-option>
         </mat-select>
-      </mat-form-field> -->
-      
+        @if (contactForm.hasError('required', 'insureType')) {
+        <mat-error>Por favor selecciona el seguro de tu interés</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field class="contact-input">
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput color="accent" formControlName="message" placeholder="Ingresa un mensaje" rows="3"></textarea>
+      </mat-form-field>
+
+      <!-- <mat-form-field class="contact-input"> -->
+        <mat-slide-toggle formControlName="termAndConditions" color="accent">Autorizo el uso de mi información de acuerdo con nuestra
+          <a href="/docs/politicas-tratamiento-datos-personales.docx.pdf" target="_blank">
+            política de tratamiento de datos personales.
+          </a>
+        </mat-slide-toggle>
+        @if (submitted && !contactForm?.value?.termAndConditions) {
+        <mat-error>Por favor acepta los términos y condiciones</mat-error>
+        }
+      <!-- </mat-form-field> -->
+      <button mat-flat-button color="warn" class="contact-button" type="submit">Enviar</button>
     </form>
+    <div class="contact-info-container">
+      <div>
+        <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-icon" href="https://wa.me/+573184780787" target="_blank">  
+          <!-- <mat-icon>call</mat-icon> -->
+          <svg [cIcon]="icons.cibWhatsapp" width="30" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+        </a>
+        <div class="d-flex flex-column">
+          <h3>Llamanos</h3>
+          <p>3184780787</p>
+        </div>
+      </div>
+      <div>
+        <a mat-mini-fab color="accent" href="mailto:alexandra.pena@insurlink.com.co" class="contacts-icon" aria-label="Email icon">
+          <mat-icon>mail</mat-icon>
+        </a>        
+        <div class="d-flex flex-column">
+          <h3>Escribenos</h3>
+          <p>{{"alexandra.pena@insurlink.com.co"}}</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column contacts-social-container">
+        <h3>Redes Sociales</h3>
+        <div class="d-flex gap-4" >
+          <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-social-icon" href="https://www.facebook.com/profile.php?id=61561535879140&mibextid=ZbWKwL" target="_blank">  
+            <!-- <mat-icon>call</mat-icon> -->
+            <svg [cIcon]="icons.cibFacebook" width="20" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+          </a>
+          <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-social-icon" href="https://www.instagram.com/insurlink_seguros?igsh=bXdqbTFpbXc4OGw3" target="_blank">  
+            <!-- <mat-icon>call</mat-icon> -->
+            <svg [cIcon]="icons.cibInstagram" width="20" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+          </a>
+          <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-social-icon" href="https://www.linkedin.com/company/insurlink/" target="_blank">  
+            <!-- <mat-icon>call</mat-icon> -->
+            <svg [cIcon]="icons.cibLinkedin" width="20" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
+
 </section>

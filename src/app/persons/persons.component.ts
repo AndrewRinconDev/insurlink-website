@@ -15,6 +15,7 @@ import { FlightInsureComponent } from "./components/sections/flight-insure/fligh
 import { personOptions } from '../../constants/navOptions';
 import { LifeCategoryInsureComponent } from "./components/sections/life-category-insure/life-category-insure.component";
 import { PetInsureComponent } from "./components/sections/pet-insure/pet-insure.component";
+import { ContactFormComponent } from "../common/sections/contact-form/contact-form.component";
 
 @Component({
   selector: 'app-persons',
@@ -33,7 +34,8 @@ import { PetInsureComponent } from "./components/sections/pet-insure/pet-insure.
     BikeInsureComponent,
     FlightInsureComponent,
     LifeCategoryInsureComponent,
-    PetInsureComponent
+    PetInsureComponent,
+    ContactFormComponent
 ],
   templateUrl: './persons.component.html',
   styleUrl: './persons.component.css',

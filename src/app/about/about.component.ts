@@ -4,8 +4,9 @@ import { OurMissionComponent } from './components/our-mission/our-mission.compon
 import { OurHistoryComponent } from './components/our-history/our-history.component';
 import { OurValuesComponent } from './components/our-values/our-values.component';
 import { OurTeamComponent } from './components/our-team/our-team.component';
-import { OurInnovationComponent } from './components/our-innovation/our-innovation.component';
+// import { OurInnovationComponent } from './components/our-innovation/our-innovation.component';
 import { OurTeamMembersComponent } from './components/our-team-members/our-team-members.component';
+import { ContactFormComponent } from "../common/sections/contact-form/contact-form.component";
 
 @Component({
   selector: 'app-about',
@@ -16,9 +17,10 @@ import { OurTeamMembersComponent } from './components/our-team-members/our-team-
     OurHistoryComponent,
     OurValuesComponent,
     OurTeamComponent,
-    OurInnovationComponent,
+    // OurInnovationComponent,
     OurTeamMembersComponent,
-  ],
+    ContactFormComponent
+],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })

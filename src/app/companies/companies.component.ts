@@ -13,6 +13,7 @@ import { FinancialInsureComponent } from "./components/sections/financial-insure
 import { BuildingInsureComponent } from "./components/sections/building-insure/building-insure.component";
 import { TransportInsureComponent } from "./components/sections/transport-insure/transport-insure.component";
 import { PymeInsureComponent } from "./components/sections/pyme-insure/pyme-insure.component";
+import { ContactFormComponent } from "../common/sections/contact-form/contact-form.component";
 
 @Component({
   selector: 'app-companies',
@@ -29,7 +30,8 @@ import { PymeInsureComponent } from "./components/sections/pyme-insure/pyme-insu
     FinancialInsureComponent,
     BuildingInsureComponent,
     TransportInsureComponent,
-    PymeInsureComponent
+    PymeInsureComponent,
+    ContactFormComponent
 ],
   templateUrl: './companies.component.html',
   styleUrl: './companies.component.css',
@@ -39,6 +41,7 @@ export class CompaniesComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
+    console.log('companies component', this.route);
     this.route.paramMap.subscribe((params) => {
       const routeParam = params.get('category') ?? 'vida';
       this.selectedProduct =

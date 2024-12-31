@@ -7,6 +7,7 @@ import { CustomersComponent } from './components/customers/customers.component';
 import { HomeBannerComponent } from './components/home-banner/home-banner.component';
 import { WhyInsurlinkComponent } from './components/why-insurlink/why-insurlink.component';
 import { OurAlliesComponent } from '../common/components/our-allies/our-allies.component';
+import { ContactFormComponent } from "../common/sections/contact-form/contact-form.component";
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,8 @@ import { OurAlliesComponent } from '../common/components/our-allies/our-allies.c
     InsuranceExperienceComponent,
     CustomersComponent,
     HomeBannerComponent,
-    WhyInsurlinkComponent
+    WhyInsurlinkComponent,
+    ContactFormComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

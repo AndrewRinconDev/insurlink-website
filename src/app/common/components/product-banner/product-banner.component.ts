@@ -11,12 +11,12 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-product-banner',
   standalone: true,
-  imports: [MatButtonModule],
+  imports: [MatButtonModule, RouterLink],
   templateUrl: './product-banner.component.html',
   styleUrl: './product-banner.component.css',
   animations: [
