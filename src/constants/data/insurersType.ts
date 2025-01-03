@@ -1,5 +1,15 @@
 export const insurersType = [
   {
+    value: '',
+    route: 'default',
+    label: '',
+    contact: {
+      name: 'Default',
+      email: 'lider.beneficios@insurlink.com.co',
+      phone: '3184780787',
+    },
+  },
+  {
     value: '1',
     route: 'vida',
     label: 'Vida',

@@ -1,0 +1,11 @@
+<div class="dialog-container">
+  <button mat-icon-button class="close-button" aria-label="Close" (click)="closeDialog()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <button mat-mini-fab color="accent" aria-label="Phone icon" class="confirm-icon">  
+    <!-- <mat-icon>call</mat-icon> -->
+    <mat-icon>{{confirmData.icon}}</mat-icon>
+  </button>
+  <h2>{{confirmData.title}}</h2>
+  <p>{{confirmData.message}}</p>
+</div>

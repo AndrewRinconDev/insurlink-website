@@ -74,6 +74,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .collective-insure-section {
+    padding: 0;
+  }
+  
   .collective-insure-coverage-content {
     padding: 0;
   }

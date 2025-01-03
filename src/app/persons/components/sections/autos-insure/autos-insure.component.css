@@ -70,6 +70,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .autos-insure-section {
+    padding: 0;
+  }
+  
   .autos-insure-coverage-content {
     padding: 0;
   }

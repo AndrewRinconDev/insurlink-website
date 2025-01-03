@@ -1,20 +1,48 @@
 <footer>
   <div class="footer-container">
-    <div class="row">
-      <a class="footer-image-container col-md-6" routerLink="/inicio">
-        <img src="/images/insurlink-logo.png" alt="CodingTheSmartWay.com">
-      </a>
-      <p>Simplificamos tu experiencia con los seguros</p>
+    <div class="row footer-contact-container">
+      <div class="footer-image-wrapper">
+        <a class="footer-image-container" routerLink="/inicio">
+          <img src="/images/insurlink-logo.png" alt="CodingTheSmartWay.com">
+        </a>
+        <p>Simplificamos tu experiencia con los seguros</p>
+      </div>
+      <div class="footer-social-wrapper">
+        <a mat-mini-fab color="accent" aria-label="Phone icon" class="footer-contacts-social-icon" href="https://www.instagram.com/insurlink_seguros?igsh=bXdqbTFpbXc4OGw3" target="_blank">  
+          <!-- <mat-icon>call</mat-icon> -->
+          <svg [cIcon]="icons.cibInstagram" width="30" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+        </a>
+        <a mat-mini-fab color="accent" aria-label="Phone icon" class="footer-contacts-social-icon" href="https://www.facebook.com/profile.php?id=61561535879140&mibextid=ZbWKwL" target="_blank">  
+          <!-- <mat-icon>call</mat-icon> -->
+          <svg [cIcon]="icons.cibFacebookF" width="30" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+        </a>
+        <a mat-mini-fab color="accent" aria-label="Phone icon" class="footer-contacts-social-icon" href="https://www.linkedin.com/company/insurlink/" target="_blank">  
+          <!-- <mat-icon>call</mat-icon> -->
+          <svg [cIcon]="icons.cibLinkedinIn" width="30" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+        </a>
+      </div>
     </div>
+
     <div class="row">
       <ul class="footer-navigation col-md-10">
-        <li><a routerLink="/inicio">Inicio</a></li>
-        <li><a routerLink="/personas/autos">Personas</a></li>
-        <li><a routerLink="/empresas/cumplimiento">Empresas</a></li>
-        <li><a routerLink="/nosotros">Nosotros</a></li>
+        <li><a routerLink="/inicio" (click)="goTop()">Inicio</a></li>
+        <li><a routerLink="/personas/vida" (click)="goTop()">Personas</a></li>
+        <li><a routerLink="/empresas/colectivos" (click)="goTop()">Empresas</a></li>
+        <li><a routerLink="/nosotros" (click)="goTop()">Nosotros</a></li>
         <!-- <li><a routerLink="/blog">Blog</a></li> -->
-        <li><a routerLink="/aseguradoras">Aseguradoras</a></li>
-        <li><a routerLink="/contacto">Contactanos</a></li>
+        <li><a routerLink="/aseguradoras" (click)="goTop()">Aseguradoras</a></li>
+        <li><a routerLink="/contacto" (click)="goTop()">Contactanos</a></li>
+      </ul>
+    </div>
+    <div class="row policies-container">
+      <h3>Políticas</h3>
+      <ul class="footer-navigation col-md-10">
+        <li><a href="/docs/politica-de-privacidad.pdf" target="_blank">
+          Privacidad
+        </a></li>
+        <li><a href="/docs/politicas-tratamiento-datos-personales.pdf" target="_blank">
+          Tratamiento de datos personales
+        </a></li>
       </ul>
     </div>
   </div>

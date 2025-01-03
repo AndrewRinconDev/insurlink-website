@@ -75,6 +75,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .life-insure-section {
+    padding: 0;
+  }
+  
   .life-insure-coverage-content {
     padding: 0;
   }

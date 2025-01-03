@@ -1,0 +1,51 @@
+.dialog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: var(--secondaryColor);
+}
+
+::ng-deep .mat-mdc-dialog-surface {
+  background-color: var(--secondaryTextColor);
+  padding: 50px 20px;
+  overflow: hidden;
+}
+
+::ng-deep .cdk-overlay-dark-backdrop {
+  background: rgba(0, 0, 0, .6);
+}
+
+.dialog-container h2 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--primaryColor);
+}
+
+.dialog-container p {
+  text-align: center;
+  font-size: 20px;
+  color: var(--secondaryColor);
+  margin: 0;
+}
+
+.confirm-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.confirm-icon mat-icon {
+  font-size: 70px;
+  width: 70px;
+  height: 70px;
+}

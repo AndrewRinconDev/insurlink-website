@@ -65,6 +65,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .co-ownership-insure-section {
+    padding: 0;
+  }
+  
   .co-ownership-insure-coverage-content {
     padding: 0;
   }

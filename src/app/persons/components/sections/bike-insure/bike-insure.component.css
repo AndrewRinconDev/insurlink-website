@@ -72,6 +72,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .bike-insure-section {
+    padding: 0;
+  }
   .bike-insure-coverage-content {
     padding: 0;
   }

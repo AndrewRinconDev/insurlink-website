@@ -9,6 +9,9 @@
         @if (contactForm.hasError('required', 'name')) {
         <mat-error>Por favor ingresa tu Nombre</mat-error>
         }
+        @if (contactForm.hasError('maxlength', 'name') && !contactForm.hasError('required', 'name')) {
+        <mat-error>El Nombre no puede superar los 256 carácteres</mat-error>
+        }
       </mat-form-field>
       <mat-form-field class="contact-input">
         <mat-label>Email</mat-label>
@@ -19,6 +22,9 @@
         @if (contactForm.hasError('email', 'email') && !contactForm.hasError('required', 'email')) {
         <mat-error>Por favor ingresa un Email válido</mat-error>
         }
+        @if (contactForm.hasError('maxlength', 'email') && !contactForm.hasError('required', 'email')) {
+        <mat-error>El Email no puede superar los 100 carácteres</mat-error>
+        }
       </mat-form-field>
       <mat-form-field class="contact-input">
         <mat-label>Teléfono</mat-label>
@@ -28,6 +34,9 @@
         }
         @if (contactForm.hasError('minlength', 'phone') && !contactForm.hasError('required', 'phone')) {
         <mat-error>Por favor ingresa tu Teléfono válido</mat-error>
+        }
+        @if (contactForm.hasError('maxlength', 'phone') && !contactForm.hasError('required', 'phone')) {
+        <mat-error>El Teléfono no puede superar los 50 carácteres</mat-error>
         }
       </mat-form-field>
 
@@ -43,24 +52,30 @@
 
       <mat-form-field class="contact-input">
         <mat-label>Mensaje</mat-label>
-        <textarea matInput color="accent" formControlName="message" placeholder="Ingresa un mensaje" rows="3"></textarea>
+        <textarea matInput color="accent" formControlName="message" placeholder="Ingresa un mensaje"
+          rows="3"></textarea>
+          @if (contactForm.hasError('maxlength', 'message')) {
+            <mat-error>El Mensaje no puede superar los 500 carácteres</mat-error>
+            }
       </mat-form-field>
 
       <!-- <mat-form-field class="contact-input"> -->
-        <mat-slide-toggle formControlName="termAndConditions" color="accent">Autorizo el uso de mi información de acuerdo con nuestra
-          <a href="/docs/politicas-tratamiento-datos-personales.docx.pdf" target="_blank">
-            política de tratamiento de datos personales.
-          </a>
-        </mat-slide-toggle>
-        @if (submitted && !contactForm.value.termAndConditions) {
-        <mat-error>Por favor acepta los términos y condiciones</mat-error>
-        }
+      <mat-slide-toggle formControlName="termAndConditions" color="accent">Autorizo el uso de mi información de acuerdo
+        con nuestra
+        <a href="/docs/politicas-tratamiento-datos-personales.pdf" target="_blank">
+          política de tratamiento de datos personales.
+        </a>
+      </mat-slide-toggle>
+      @if (submitted && !contactForm.value.termAndConditions) {
+      <mat-error>Por favor acepta los términos y condiciones</mat-error>
+      }
       <!-- </mat-form-field> -->
       <button mat-flat-button color="warn" class="contact-button" type="submit">Enviar</button>
     </form>
     <div class="contact-info-container">
       <div>
-        <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-icon" href="https://wa.me/+573184780787" target="_blank">  
+        <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-icon" href="https://wa.me/+573184780787"
+          target="_blank">
           <!-- <mat-icon>call</mat-icon> -->
           <svg [cIcon]="icons.cibWhatsapp" width="30" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
         </a>
@@ -70,28 +85,33 @@
         </div>
       </div>
       <div>
-        <a mat-mini-fab color="accent" href="mailto:alexandra.pena@insurlink.com.co" class="contacts-icon" aria-label="Email icon">
+        <a mat-mini-fab color="accent" href="mailto:alexandra.pena@insurlink.com.co" class="contacts-icon"
+          aria-label="Email icon">
           <mat-icon>mail</mat-icon>
-        </a>        
+        </a>
         <div class="d-flex flex-column">
           <h3>Escribenos</h3>
           <p>{{"alexandra.pena@insurlink.com.co"}}</p>
         </div>
       </div>
+      <hr>
       <div class="d-flex flex-column contacts-social-container">
         <h3>Redes Sociales</h3>
-        <div class="d-flex gap-4" >
-          <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-social-icon" href="https://www.facebook.com/profile.php?id=61561535879140&mibextid=ZbWKwL" target="_blank">  
-            <!-- <mat-icon>call</mat-icon> -->
-            <svg [cIcon]="icons.cibFacebook" width="20" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
-          </a>
-          <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-social-icon" href="https://www.instagram.com/insurlink_seguros?igsh=bXdqbTFpbXc4OGw3" target="_blank">  
+        <div class="d-flex gap-4">
+          <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-social-icon"
+            href="https://www.instagram.com/insurlink_seguros?igsh=bXdqbTFpbXc4OGw3" target="_blank">
             <!-- <mat-icon>call</mat-icon> -->
             <svg [cIcon]="icons.cibInstagram" width="20" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
           </a>
-          <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-social-icon" href="https://www.linkedin.com/company/insurlink/" target="_blank">  
+          <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-social-icon"
+            href="https://www.facebook.com/profile.php?id=61561535879140&mibextid=ZbWKwL" target="_blank">
             <!-- <mat-icon>call</mat-icon> -->
-            <svg [cIcon]="icons.cibLinkedin" width="20" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+            <svg [cIcon]="icons.cibFacebookF" width="20" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
+          </a>
+          <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-social-icon"
+            href="https://www.linkedin.com/company/insurlink/" target="_blank">
+            <!-- <mat-icon>call</mat-icon> -->
+            <svg [cIcon]="icons.cibLinkedinIn" width="20" title="Whatsapp Icon" style="padding-bottom: 2px;"></svg>
           </a>
         </div>
       </div>
@@ -99,3 +119,11 @@
   </div>
 
 </section>
+
+<div class="whatsapp-button-container">
+  <a mat-mini-fab aria-label="Phone icon" class="contact-what-icon"
+    href="https://wa.me/+57{{currentInsurer.contact.phone}}?text=*Quiero mas información sobre:*" target="_blank">
+    <svg [cIcon]="icons.cibWhatsapp" width="40" title="Whatsapp Icon"
+      style="padding-bottom: 2px; --ci-primary-color: 'red'"></svg>
+  </a>
+</div>

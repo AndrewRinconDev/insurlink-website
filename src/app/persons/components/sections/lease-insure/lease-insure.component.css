@@ -71,6 +71,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .lease-insure-section {
+    padding: 0;
+  }
+
   .lease-insure-coverage-content {
     padding: 0;
   }

@@ -72,6 +72,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .flight-insure-section {
+    padding: 0;
+  }
+
   .flight-insure-coverage-content {
     padding: 0;
   }

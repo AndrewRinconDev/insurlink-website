@@ -135,6 +135,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .pyme-insure-section {
+    padding: 20px;
+  }
+  
   .pyme-insure-coverage-content {
     padding: 0;
   }

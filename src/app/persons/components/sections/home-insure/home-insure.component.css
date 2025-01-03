@@ -69,6 +69,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .home-insure-section {
+    padding: 0;
+  }
+
   .home-insure-coverage-content {
     padding: 0;
   }

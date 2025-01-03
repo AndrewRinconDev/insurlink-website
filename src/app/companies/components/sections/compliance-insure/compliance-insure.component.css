@@ -135,6 +135,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .compliance-insure-section {
+    padding: 0;
+  }
+
   .compliance-insure-coverage-content {
     padding: 0;
   }

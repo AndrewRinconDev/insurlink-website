@@ -72,6 +72,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .pension-insure-section {
+    padding: 0;
+  }
+  
   .pension-insure-coverage-content {
     padding: 0;
   }
