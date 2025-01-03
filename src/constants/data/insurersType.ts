@@ -142,7 +142,7 @@ export const insurersType = [
   },
   {
     value: '14',
-    route: 'responsabilidad-civil-contractual',
+    route: 'responsabilidad-civil-extracontractual',
     label: 'Responsabilidad Civil Extracontractual',
     contact: {
       name: 'Juan Carlos Lemus',
@@ -162,7 +162,7 @@ export const insurersType = [
   },
   {
     value: '16',
-    route: 'todo-riesgo-construcción',
+    route: 'todo-riesgo-construccion',
     label: 'Todo Riesgo Contrucción',
     contact: {
       name: 'Juan Carlos Lemus',

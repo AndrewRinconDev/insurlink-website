@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -63,6 +63,8 @@ export class ContactFormComponent implements OnInit {
     termAndConditions: new FormControl(false, Validators.requiredTrue),
   });
 
+  @Input() showContactForm = true;
+
   constructor(
     private route: ActivatedRoute,
     private notificationService: NotificationService
@@ -107,14 +109,13 @@ export class ContactFormComponent implements OnInit {
     const notificationData = {
       ...this.contactForm.value,
       insurance: insurerSelected.label,
-      contactEmail: 'andrew.rincon.94@gmail.com;arincon@lisit.cl',
+      contactEmail: 'andrew.rincon.94@gmail.com;lider.cumplimiento2@insurlink.com.co',
       // contactEmail: insurerSelected.contact.email,
       contactName: insurerSelected.contact.name,
     };
 
     this.notificationService.saveNotification(notificationData).subscribe(
       (response) => {
-        console.log('Notification sent', response);
         this.openDialog({ icon: 'check_circle', title: '¡Información enviada!', message: 'Gracias por contactarnos, en breve nos pondremos en contacto contigo.' });
         this.submitted = false;
         this.contactForm.reset();

@@ -41,7 +41,6 @@ export class CompaniesComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
-    console.log('companies component', this.route);
     this.route.paramMap.subscribe((params) => {
       const routeParam = params.get('category') ?? 'vida';
       this.selectedProduct =

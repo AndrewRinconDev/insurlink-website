@@ -38,8 +38,6 @@ export class DesktopNavigationComponent {
   constructor(public layoutService: LayoutService) {}
 
   ngOnInit() {
-    
-    // console.log('PersonsComponent', {test: this.linkActive});
   }
 
   goTop() {

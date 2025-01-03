@@ -1,5 +1,5 @@
 .about-banner{
-  background-image: url('/images/about/banner.png');
+  background-image: url('/images/about/banner.webp');
   background-size: cover;
   background-position: center;
   height: calc(100vh - 80px);
