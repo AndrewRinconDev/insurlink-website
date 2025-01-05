@@ -36,7 +36,6 @@
 .team-category-content{
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 50px;
   flex-wrap: wrap;
   width: 100%;
@@ -44,7 +43,8 @@
 }
 
 .team-member-card {
-  width: 350px;
+  width: 29%;
+  max-width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +55,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: all 0.3s;
+  flex: 1;
 }
 
 .team-member-card:hover{
@@ -89,12 +90,14 @@
   align-items: center;
   gap: 10px;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .team-member-details h2{
   font-size: 32px;
   margin: 0;
   color: var(--primaryTextColor);
+  text-align: center;
 }
 
 .team-member-details p{
@@ -102,6 +105,7 @@
   color: var(--primaryTextColor);
   text-align: center;
   margin: 0;
+  flex-grow: 1;
 }
 
 .team-member-details > button {
@@ -167,8 +171,24 @@
   background-color: var(--primaryColor);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
+  .our-team-members-section{
+    padding: 50px 30px;
+  }
+
+  .team-member-card {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
   .our-team-members-section{
     padding: 50px 20px 20px;
+  }
+
+  .team-category-content {
+    flex-direction: column;
+    align-items: center;
   }
 }

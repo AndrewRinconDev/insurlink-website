@@ -22,7 +22,7 @@ export class CustomersComponent {
     { name: 'Integra', image: '/images/logos/integra.png' },
     { name: 'Marketing Mix', image: '/images/logos/marketing-mix.png' },
     { name: 'Mullenlowe', image: '/images/logos/mullenlowe.png' },
-    { name: 'Alfa', image: '/images/logos/alfa.png' },
+    { name: 'Alfa Ingenieros', image: '/images/logos/alfa.png' },
     { name: 'Procesadora Colombiana de Carnes', image: '/images/logos/procesadora-colombiana.png' },
     { name: 'R&T', image: '/images/logos/r-and-t.png' },
     { name: 'VR Ingeniería', image: '/images/logos/vr-ing.jpg' },

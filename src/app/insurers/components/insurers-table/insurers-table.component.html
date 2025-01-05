@@ -30,16 +30,15 @@
 
   <!-- Payment Column -->
   <ng-container matColumnDef="link">
-    <mat-header-cell *matHeaderCellDef> Link </mat-header-cell>
+    <mat-header-cell *matHeaderCellDef>Para Pagos</mat-header-cell>
     <mat-cell *matCellDef="let element">
       <a mat-button [href]="element.url" target="_blank" class="insurers-link">
         <mat-icon>payments</mat-icon>
-        <span>Pagos</span>
+        <span>Pagar</span>
       </a>
     </mat-cell>
   </ng-container>
 
   <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true; top"></mat-header-row>
-  <!-- <mat-header-row *matHeaderRowDef="displayedColumns; sticky: 0"></mat-header-row> -->
   <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
 </mat-table>

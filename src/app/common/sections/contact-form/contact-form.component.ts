@@ -25,6 +25,7 @@ import { IconDirective } from '@coreui/icons-angular';
 import { ActivatedRoute } from '@angular/router';
 import { NotificationService } from '../../../services/notification.service';
 import { MatDialog } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ConfirmModalComponent } from '../../../contacts/components/confirm-modal/confirm-modal.component';
 
 @Component({
@@ -42,12 +43,14 @@ import { ConfirmModalComponent } from '../../../contacts/components/confirm-moda
     MatFormFieldModule,
     ReactiveFormsModule,
     IconDirective,
+    MatProgressSpinnerModule
   ],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.css',
 })
 export class ContactFormComponent implements OnInit {
   submitted = false;
+  isLoading = false;
   dialog = inject(MatDialog) as MatDialog;
   icons = { cibWhatsapp, cibLinkedinIn, cibFacebookF, cibInstagram };
   currentInsurer = insurersType[0];
@@ -56,7 +59,7 @@ export class ContactFormComponent implements OnInit {
     name: new FormControl('', [Validators.required, Validators.maxLength(256)]),
     // identification: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email, Validators.maxLength(100)]),
-    phone: new FormControl('', [Validators.required, Validators.maxLength(50)]),
+    phone: new FormControl('', [Validators.required, Validators.min(1000000000), Validators.max(999999999999999)]),
     message: new FormControl('', [Validators.maxLength(500)]),
     // department: new FormControl('', [Validators.required]),
     insureType: new FormControl('', [Validators.required]),
@@ -103,6 +106,7 @@ export class ContactFormComponent implements OnInit {
   onSubmit(): void {
     this.submitted = true;
     if (!this.contactForm.valid) return;
+    this.isLoading = true;
 
     const insurerSelected = this.getInsurerByValue(this.contactForm.value.insureType);
 
@@ -123,6 +127,9 @@ export class ContactFormComponent implements OnInit {
       (error) => {
         console.error('Error sending notification', error);
         this.openDialog({ icon: 'cancel', title: '¡Error al enviar la información!', message: 'Por favor intenta de nuevo más tarde.' });
+      },
+      () => {
+        this.isLoading = false;
       }
     );
   }

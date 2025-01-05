@@ -27,16 +27,16 @@
         }
       </mat-form-field>
       <mat-form-field class="contact-input">
-        <mat-label>Teléfono</mat-label>
-        <input type="text" matInput color="accent" formControlName="phone" placeholder="Ingresa tu Teléfono">
+        <mat-label>Celular</mat-label>
+        <input type="number" matInput color="accent" formControlName="phone" placeholder="Ingresa tu número de Celular">
         @if (contactForm.hasError('required', 'phone')) {
-        <mat-error>Por favor ingresa tu Teléfono</mat-error>
+        <mat-error>Por favor ingresa tu número de Celular</mat-error>
         }
-        @if (contactForm.hasError('minlength', 'phone') && !contactForm.hasError('required', 'phone')) {
-        <mat-error>Por favor ingresa tu Teléfono válido</mat-error>
+        @if (contactForm.hasError('min', 'phone') && !contactForm.hasError('required', 'phone')) {
+        <mat-error>Por favor ingresa un número de Celular válido</mat-error>
         }
-        @if (contactForm.hasError('maxlength', 'phone') && !contactForm.hasError('required', 'phone')) {
-        <mat-error>El Teléfono no puede superar los 50 carácteres</mat-error>
+        @if (contactForm.hasError('max', 'phone') && !contactForm.hasError('required', 'phone')) {
+        <mat-error>El número de Celular no puede superar los 50 carácteres</mat-error>
         }
       </mat-form-field>
 
@@ -70,8 +70,12 @@
       <mat-error>Por favor acepta los términos y condiciones</mat-error>
       }
       <!-- </mat-form-field> -->
-      <button mat-flat-button color="warn" class="contact-button" type="submit">Enviar</button>
+      <button mat-flat-button color="warn" class="contact-button" type="submit" [disabled]="isLoading">
+        <mat-spinner *ngIf="isLoading" diameter="20" mode="indeterminate" color="accent"></mat-spinner>
+        {{isLoading ? 'Enviando...' : 'Enviar'}}
+      </button>
     </form>
+    
     <div class="contact-info-container">
       <div>
         <a mat-mini-fab color="accent" aria-label="Phone icon" class="contacts-icon" href="https://wa.me/+573184780787"

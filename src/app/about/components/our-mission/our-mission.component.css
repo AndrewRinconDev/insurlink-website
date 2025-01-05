@@ -24,7 +24,8 @@
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
-  width: 350px;
+  width: 29%;
+  max-width: 350px;
   transition: all 0.3s ease;
 }
 
@@ -84,6 +85,19 @@
   font-size: 20px;
   margin-bottom: 0;
   color: #545454;
+}
+
+@media screen and (max-width: 1023px) {
+  .our-mission-container {
+    flex-direction: column;
+    padding: 50px 30px;
+    align-items: center;
+  }  
+
+  .mission-card {
+    width: 100%;
+    max-width: 350px;
+  }
 }
 
 @media screen and (max-width: 767px) {

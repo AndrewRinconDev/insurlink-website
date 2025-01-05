@@ -11,16 +11,16 @@ export const teamMembers1 = [
   {
     id: 2,
     name: 'Mary Pachón',
-    position: 'Lider Administrativa',
+    position: 'Líder Administrativa',
     image: '/images/fallback.png',
     qr: '/images/about/team/qr/Mary.png',
     email: 'lider.administrativo@insurlink.com.co',
-    mobile: '3182137614'
+    mobile: '3158862017'
   },
   {
     id: 3,
     name: 'Miguel Acero',
-    position: 'Lider de Operaciones',
+    position: 'Líder de Operaciones',
     image: '/images/about/team/miguel-acero.png',
     qr: '/images/about/team/qr/Miguel.png',
     email: 'lider.beneficios@insurlink.com.co',
