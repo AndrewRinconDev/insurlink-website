@@ -113,8 +113,7 @@ export class ContactFormComponent implements OnInit {
     const notificationData = {
       ...this.contactForm.value,
       insurance: insurerSelected.label,
-      contactEmail: 'andrew.rincon.94@gmail.com;lider.cumplimiento2@insurlink.com.co',
-      // contactEmail: insurerSelected.contact.email,
+      contactEmail: insurerSelected.contact.email,
       contactName: insurerSelected.contact.name,
     };
 

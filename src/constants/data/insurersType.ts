@@ -190,4 +190,14 @@ export const insurersType = [
       phone: '3176569238',
     },
   },
+  {
+    value: '19',
+    route: 'otros',
+    label: 'Otros',
+    contact: {
+      name: 'Otros',
+      email: 'lider.beneficios@insurlink.com.co',
+      phone: '3184780787',
+    },
+  },
 ];

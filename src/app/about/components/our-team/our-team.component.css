@@ -21,7 +21,7 @@
   justify-content: center;
   text-align: left;
   gap: 20px;
-  width: calc(100% - 450px);
+  width: calc(100% - 500px);
 }
 
 .our-team-content h1 {
@@ -35,8 +35,8 @@
 }
 
 .our-team-image-container {
-  width: 400px;
-  height: 300px;
+  width: 450px;
+  aspect-ratio: 5/3;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -45,7 +45,6 @@
 .our-team-image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 @media screen and (max-width: 1023px) {
@@ -58,6 +57,11 @@
   }
 
   .our-team-content {
+    width: 100%;
+  }
+
+  .our-team-content h1 {
+    text-align: center;
     width: 100%;
   }
 }
@@ -74,7 +78,6 @@
 
   .our-team-content h1 {
     font-size: 36px;
-    text-align: center;
   }
 
   .our-team-content p {

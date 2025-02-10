@@ -25,6 +25,6 @@ export class CustomersComponent {
     { name: 'Alfa Ingenieros', image: '/images/logos/alfa.png' },
     { name: 'Procesadora Colombiana de Carnes', image: '/images/logos/procesadora-colombiana.png' },
     { name: 'R&T', image: '/images/logos/r-and-t.png' },
-    { name: 'VR Ingeniería', image: '/images/logos/vr-ing.jpg' },
+    { name: 'VR Ingeniería', image: '/images/logos/vr-ing.png' },
   ];
 }

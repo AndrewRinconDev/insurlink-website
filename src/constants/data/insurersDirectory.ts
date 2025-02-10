@@ -199,7 +199,7 @@ export const insurersDirectory = [
       local: '601 4434818',
       national: '018000 123010',
     },
-    url: 'https://portaldepago.segurosdelestado.com/#/',
+    url: 'https://www.segurosdelestado.com/pages/Tips',
     image: 'estado.png',
   },
   {

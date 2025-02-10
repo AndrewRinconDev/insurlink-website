@@ -25,7 +25,6 @@
 .banner-3 {
   padding: 20px 10%;
   background-image: url('/images/home/main-banner-3.png');
-  /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/home/main-banner-3.png'); */
 }
 
 .is-ready {
@@ -102,6 +101,11 @@
   .banner-container {
     padding: 20px 10%;
     justify-content: center !important;
+  }
+
+  .banner-1 {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/home/main-banner-1.png');
+    background-position: center;
   }
 
   .banner-3 {

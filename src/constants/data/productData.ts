@@ -26,7 +26,7 @@ export const personProductsData = [
     shortName: 'Educacion',
     bannerImage: '/images/products/persons/educacion_2.png',
     introduction:
-      '<b>Invierte en el futuro de tus hijos</b> con la póliza educativa, asegura su educación y haz realidad sus sueños, pase lo que pase.',
+      '<b>Invierte en el futuro de tus hijos</b> con la póliza educativa, asegura su educación y haz realidad sus sueños.',
     description:
       'Protege el futuro educativo de tus hijos con la póliza de educación en Colombia. Se garantiza el pago de la matrícula, pensiones y otros gastos escolares en caso de imprevistos, asegurando que continúen sus estudios sin interrupciones. Una inversión en tranquilidad y en el bienestar académico de tu familia.',
   },
@@ -120,7 +120,7 @@ export const lifeProductsData = [
     name: 'Accidentes Personales',
     shortName: 'accidentes-personales',
     introduction:
-      'La póliza de Accidentes Personales en Colombia te protege ante eventos imprevistos que puedan afectar tu integridad física. Ofrecemos cobertura para gastos médicos, indemnización por incapacidad o muerte accidental, y asistencia en casos de emergencia. Es una solución práctica y accesible para cuidar de ti y tu familia, brindando respaldo económico en situaciones inesperadas.',
+      'La póliza de Accidentes Personales en Colombia te protege ante eventos imprevistos que puedan afectar tu integridad física. Cobertura para gastos médicos, indemnización por incapacidad o muerte accidental, y asistencia en casos de emergencia. Es una solución práctica y accesible para cuidar de ti y tu familia, brindando respaldo económico en situaciones inesperadas.',
     coverages: [
       'Indenización por muerte accidental',
       'Incapacidad total o parcial por accidente',
@@ -323,7 +323,7 @@ export const companyProductsData = [
     shortName: 'lineas-financieras',
     bannerImage: '/images/products/companies/lineas_financieras.png',
     introduction:
-      'Protege el futuro de tu negocio con nuestra Póliza de Líneas Financieras: cobertura completa para tu tranquilidad y la de tu empresa.',
+      'Protege el futuro de tu negocio con cobertura integral, garantizando la tranquilidad y estabilidad de tu empresa ante posibles riesgos.',
     description: 'Líneas Financieras',
   },
   {
