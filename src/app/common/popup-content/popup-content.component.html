@@ -1,0 +1,7 @@
+<div class="dialog-container">
+	<button mat-icon-button class="close-button" aria-label="Close" (click)="closeDialog()">
+		<mat-icon>close</mat-icon>
+	</button>
+	<h2>{{data.title}}</h2>
+	<p *ngFor="let content of data.contents">{{content}}</p>
+</div>
